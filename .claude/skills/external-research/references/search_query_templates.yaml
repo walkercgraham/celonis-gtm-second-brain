@@ -1,0 +1,422 @@
+# Search Query Templates for External Research
+# Organized by research category
+#
+# NOTE: For comprehensive industry-specific guidance including:
+# - Industry-specific search queries
+# - Signals to watch by industry
+# - Celonis relevance mapping
+# - Aramco example queries
+#
+# See: industry_research_guide.yaml
+#
+# This file contains GENERIC templates. Industry-specific templates
+# are in industry_research_guide.yaml under each industry section.
+#
+# =============================================================================
+# MANDATORY INVESTOR SOURCES
+# =============================================================================
+# These searches MUST be run for every public company research.
+# They provide the highest-value strategic insights.
+
+mandatory_investor_sources:
+
+  annual_reports:
+    description: "CEO letters, strategic priorities, risk factors, financial context"
+    searches:
+      - "[Company] annual report 2025 PDF"
+      - "[Company] annual report 2024 PDF"
+      - "[Company] integrated report 2025"
+      - "site:[company-domain] annual report"
+      - "[Company] investor relations annual report"
+    platforms:
+      - "Company IR page (usually /investors or /annual-report)"
+      - "AnnualReports.com"
+      - "Regulatory filing sites (SEC EDGAR for 10-K wrapper)"
+    extraction_focus:
+      - "CEO/Chairman letter - strategic priorities"
+      - "Risk factors section"
+      - "Segment performance breakdown"
+      - "Capital allocation plans"
+      - "Transformation programs with timelines"
+
+  earnings_call_transcripts:
+    description: "Executive priorities, analyst Q&A, forward guidance"
+    searches:
+      - "[Company] Q4 2025 earnings call transcript"
+      - "[Company] Q3 2025 earnings call transcript"
+      - "[Company] earnings transcript Seeking Alpha"
+      - "site:seekingalpha.com [Company] earnings call"
+      - "[Company] quarterly results conference call transcript"
+      - "[Company] results presentation [year]"
+      - "[Company] earnings webcast"
+    platforms:
+      seekingalpha:
+        url: "seekingalpha.com/symbol/[TICKER]/earnings/transcripts"
+        note: "Best for US companies; may require free account"
+      yahoo_finance:
+        url: "finance.yahoo.com/quote/[TICKER]/earnings"
+        note: "Earnings dates and some transcripts"
+      company_ir:
+        url: "[Company IR page]/events-presentations"
+        note: "Webcasts and slides; transcripts sometimes available"
+      motley_fool:
+        url: "fool.com/earnings/call-transcripts"
+        note: "Alternative transcript source"
+    extraction_focus:
+      - "CEO prepared remarks - top 3-5 priorities"
+      - "CFO financial commentary - margins, cash flow, guidance"
+      - "Analyst questions - what investors are concerned about"
+      - "Management responses - how they're addressing challenges"
+      - "Forward guidance - targets and timelines"
+    note: "UK/European companies often call these 'results presentations' rather than 'earnings calls'"
+
+  capital_markets_day:
+    description: "3-5 year strategy, investment priorities, transformation programs"
+    searches:
+      - "[Company] capital markets day 2025"
+      - "[Company] investor day 2025 presentation"
+      - "[Company] CMD presentation"
+      - "[Company] strategic update investor day"
+      - "[Company] analyst day presentation"
+    platforms:
+      - "[Company IR page]/events-presentations"
+      - "SlideShare (sometimes leaked/shared)"
+    extraction_focus:
+      - "Long-term financial targets"
+      - "Strategic pillars / transformation themes"
+      - "Capital allocation priorities"
+      - "Technology investment plans"
+      - "Operational efficiency targets with $ amounts"
+    note: "CMDs are goldmines - companies reveal multi-year strategy. Search even if >12 months old."
+
+  regulatory_filings:
+    description: "Risk factors, legal disclosures, segment detail - varies by listing location"
+
+    by_region:
+      us:
+        filing_types: ["10-K (annual)", "10-Q (quarterly)", "8-K (material events)", "20-F (foreign issuers)"]
+        searches:
+          - "site:sec.gov [Company] 10-K"
+          - "site:sec.gov [Company] 10-Q 2025"
+          - "[Company] SEC EDGAR annual report"
+          - "[Company] 8-K material event 2025"
+        direct_access: "https://www.sec.gov/cgi-bin/browse-edgar?company=[company]&type=10-K"
+        extraction_focus:
+          - "Item 1A: Risk Factors"
+          - "Item 7: MD&A (management discussion)"
+          - "Item 1: Business description"
+
+      uk:
+        filing_types: ["Annual Report", "Half-Year Report", "RNS Announcements"]
+        searches:
+          - "[Company] annual report PDF"
+          - "site:londonstockexchange.com [Company]"
+          - "[Company] Companies House filing"
+          - "[Company] RNS announcement"
+        platforms:
+          - "Companies House (find-and-update.company-information.service.gov.uk)"
+          - "London Stock Exchange RNS"
+        note: "UK companies report half-yearly, not quarterly"
+
+      germany:
+        filing_types: ["Geschäftsbericht (Annual Report)", "Quartalsbericht"]
+        searches:
+          - "[Company] annual report english PDF"
+          - "[Company] geschäftsbericht english"
+          - "site:deutsche-boerse.com [Company]"
+        note: "DAX companies publish English versions"
+
+      france:
+        filing_types: ["Universal Registration Document", "Rapport annuel"]
+        searches:
+          - "[Company] universal registration document"
+          - "[Company] annual report english"
+
+      saudi_arabia:
+        filing_types: ["Annual Report", "Quarterly Financial Statements", "Board Report"]
+        searches:
+          - "site:tadawul.com.sa [Company]"
+          - "[Company] Tadawul filing"
+          - "site:[company].com investor relations"
+        note: "Large Saudi companies (Aramco, SABIC) have excellent English IR"
+
+      uae:
+        filing_types: ["Annual Report", "ADX/DFM Announcements"]
+        searches:
+          - "[Company] ADX investor relations"
+          - "[Company] DFM annual report"
+
+      australia:
+        filing_types: ["Annual Report", "Half-Year Report", "ASX Announcements"]
+        searches:
+          - "site:asx.com.au [Company]"
+          - "[Company] ASX announcement"
+        note: "Australian fiscal year often June-July"
+
+      japan:
+        filing_types: ["Annual Securities Report", "Quarterly Reports"]
+        searches:
+          - "[Company] investor relations english"
+          - "[Company] annual report english PDF"
+        note: "Full filings in Japanese; English summaries available for large companies"
+
+      hong_kong:
+        filing_types: ["Annual Report", "Interim Report", "HKEx Announcements"]
+        searches:
+          - "site:hkexnews.hk [Company]"
+          - "[Company] HKEx announcement"
+
+      india:
+        filing_types: ["Annual Report", "Quarterly Results"]
+        searches:
+          - "[Company] BSE annual report"
+          - "[Company] NSE filing"
+        note: "Indian companies file in English"
+
+      china:
+        filing_types: ["Annual Report (H-shares)", "20-F (US ADRs)"]
+        searches:
+          - "site:hkexnews.hk [Company]"
+          - "site:sec.gov [Company] 20-F"
+        note: "A-shares primarily Chinese; H-shares/ADRs have English filings"
+
+  analyst_coverage:
+    description: "Industry positioning, competitive context, credit outlook"
+    searches:
+      - "[Company] Gartner Magic Quadrant"
+      - "[Company] Forrester Wave"
+      - "[Company] IDC MarketScape"
+      - "[Company] Moody's credit rating"
+      - "[Company] S&P rating outlook"
+      - "[Company] analyst report [Industry]"
+    note: "Often paywalled - extract from snippets or look for press releases announcing ratings"
+    extraction_focus:
+      - "Credit rating and outlook (stable/positive/negative)"
+      - "Analyst price targets and ratings"
+      - "Industry positioning vs competitors"
+
+# =============================================================================
+# WEB SEARCH APPROACH
+# =============================================================================
+# Use DuckDuckGo HTML endpoint for search, then fetch top results.
+#
+# Step 1: Search via DuckDuckGo (primary) or Google (fallback)
+#   WebFetch URL: https://html.duckduckgo.com/html/?q=[URL-encoded-query]
+#   Prompt: "Extract all search result URLs and titles"
+#
+# Step 2: Fetch top 5-10 relevant URLs from results
+#   Prioritize: Seeking Alpha (earnings), SEC EDGAR, company IR pages,
+#   industry publications (OGJ, Argaam), news sites
+#
+# Step 3: Handle blocked sites by skipping and trying alternatives
+#   Common blocks: LinkedIn (999), Reuters (403), Bloomberg (403)
+#
+# Example workflow:
+#   1. WebFetch "https://html.duckduckgo.com/html/?q=Saudi+Aramco+earnings+call+2025"
+#   2. Extract URLs from results
+#   3. WebFetch each promising URL with targeted extraction prompt
+# =============================================================================
+
+web_search_urls:
+  duckduckgo_base: "https://html.duckduckgo.com/html/?q="
+  google_fallback: "https://www.google.com/search?q="
+
+  example_searches:
+    earnings: "https://html.duckduckgo.com/html/?q=Saudi+Aramco+Q4+2025+earnings+call+transcript"
+    strategy: "https://html.duckduckgo.com/html/?q=Saudi+Aramco+investor+day+2025+presentation"
+    technology: "https://html.duckduckgo.com/html/?q=Saudi+Aramco+SAP+digital+transformation"
+    competitive: "https://html.duckduckgo.com/html/?q=Saudi+Aramco+process+mining+Celonis"
+
+company_financials:
+  earnings_calls:
+    - "[Company] Q1 2026 earnings call transcript"
+    - "[Company] Q4 2025 earnings call transcript"
+    - "[Company] investor day 2025 transcript"
+    - "[Company] capital markets day presentation"
+
+  sec_filings:
+    - "[Company] 10-K 2025 SEC filing"
+    - "[Company] 10-Q [quarter] 2026 SEC filing"
+    - "[Company] 8-K SEC filing 2026"
+    - "site:sec.gov [Company] 10-K"
+
+  annual_reports:
+    - "[Company] annual report 2025 PDF"
+    - "[Company] integrated report 2025"
+    - "[Company] sustainability report 2025"
+    - "[Company] investor relations annual report"
+
+  financial_news:
+    - "[Company] revenue earnings 2025"
+    - "[Company] financial results [quarter] 2026"
+    - "[Company] profit margin analysis"
+
+strategic_priorities:
+  executive_statements:
+    - "[Company] CEO strategy 2026"
+    - "[Company] CEO letter shareholders"
+    - "[Company] CEO interview 2025"
+    - "[Company] CFO strategic priorities"
+
+  initiatives:
+    - "[Company] digital transformation initiative"
+    - "[Company] operational excellence program"
+    - "[Company] cost reduction initiative"
+    - "[Company] efficiency improvement"
+    - "[Company] process optimization"
+
+  investor_communications:
+    - "[Company] investor presentation 2026"
+    - "[Company] strategic vision investor"
+    - "[Company] growth strategy analyst"
+
+trigger_events:
+  leadership:
+    - "[Company] new CEO appointed"
+    - "[Company] CFO change"
+    - "[Company] executive leadership change 2025"
+
+  corporate_actions:
+    - "[Company] acquisition announcement 2025"
+    - "[Company] merger news"
+    - "[Company] divestiture spin-off"
+    - "[Company] restructuring announcement"
+
+  expansion_investment:
+    - "[Company] expansion investment 2025"
+    - "[Company] new facility plant"
+    - "[Company] capital investment program"
+    - "[Company] growth investment"
+
+  challenges:
+    - "[Company] supply chain challenges"
+    - "[Company] operational challenges"
+    - "[Company] regulatory pressure"
+
+technology_signals:
+  erp_systems:
+    - "[Company] SAP implementation"
+    - "[Company] SAP S/4HANA migration"
+    - "[Company] Oracle ERP"
+    - "[Company] ERP transformation"
+    - "[Company] ERP case study"
+
+  cloud_platforms:
+    - "[Company] AWS cloud partnership"
+    - "[Company] Azure migration"
+    - "[Company] Google Cloud"
+    - "[Company] cloud transformation"
+
+  ai_initiatives:
+    - "[Company] artificial intelligence AI initiative"
+    - "[Company] machine learning ML program"
+    - "[Company] AI center of excellence"
+    - "[Company] generative AI"
+
+  digital_transformation:
+    - "[Company] digital transformation"
+    - "[Company] Industry 4.0"
+    - "[Company] smart manufacturing"
+    - "[Company] automation initiative"
+
+  job_postings:
+    - "site:linkedin.com/jobs [Company] process mining"
+    - "site:linkedin.com/jobs [Company] SAP developer"
+    - "site:linkedin.com/jobs [Company] digital transformation"
+    - "site:linkedin.com/jobs [Company] Celonis"
+
+competitive_landscape:
+  process_mining:
+    - "[Company] process mining"
+    - "[Company] Celonis"
+    - "[Company] process intelligence"
+
+  competitors:
+    - "[Company] ServiceNow implementation"
+    - "[Company] Blue Yonder"
+    - "[Company] UiPath automation"
+    - "[Company] Microsoft Power Platform"
+    - "[Company] SAP Signavio"
+
+  vendor_selection:
+    - "[Company] RFP process automation"
+    - "[Company] vendor evaluation digital"
+
+industry_specific:
+  # NOTE: For comprehensive industry guidance, see industry_research_guide.yaml
+  # These are quick-reference queries - full playbooks are in the industry guide
+
+  energy_oil_gas:
+    # Primary test case: Saudi Aramco
+    # Full guidance: industry_research_guide.yaml > energy_oil_gas
+    earnings_and_strategy:
+      - "[Company] quarterly earnings oil production"
+      - "[Company] refining margin results"
+      - "[Company] CEO strategy interview"
+      - "[Company] investor day presentation"
+    operational:
+      - "[Company] asset reliability maintenance"
+      - "[Company] plant turnaround optimization"
+      - "[Company] predictive maintenance program"
+      - "[Company] operational efficiency refinery"
+      - "[Company] HSE safety improvement"
+      - "[Company] schedule compliance maintenance"
+    technology:
+      - "[Company] SAP S/4HANA implementation"
+      - "[Company] SAP PM plant maintenance"
+      - "[Company] digital twin asset"
+      - "[Company] Fourth Industrial Revolution 4IR"
+    aramco_specific:
+      - "Saudi Aramco Q4 2025 earnings results"
+      - "Aramco operational excellence initiative"
+      - "Saudi Aramco downstream expansion"
+      - "Aramco In-Kingdom Value IKTVA"
+      - "site:aramco.com investor presentation"
+
+  manufacturing:
+    - "[Company] lean manufacturing"
+    - "[Company] OEE improvement"
+    - "[Company] supply chain optimization"
+    - "[Company] production efficiency"
+    - "[Company] Industry 4.0 smart factory"
+
+  financial_services:
+    - "[Company] regulatory compliance automation"
+    - "[Company] customer onboarding digital"
+    - "[Company] loan processing efficiency"
+    - "[Company] efficiency ratio improvement"
+    - "[Company] digital transformation banking"
+
+  retail_cpg:
+    - "[Company] inventory optimization"
+    - "[Company] order to cash"
+    - "[Company] demand forecasting"
+    - "[Company] supply chain visibility"
+    - "[Company] omnichannel strategy"
+
+  automotive:
+    # Full guidance: industry_research_guide.yaml > automotive
+    - "[Company] supply chain resilience"
+    - "[Company] on-time delivery"
+    - "[Company] working capital optimization"
+    - "[Company] time to market"
+    - "[Company] EV electric vehicle strategy"
+
+# Special search operators
+search_operators:
+  site_specific:
+    - "site:sec.gov [Company]"
+    - "site:linkedin.com [Company]"
+    - "site:[company-domain] investor relations"
+
+  file_type:
+    - "[Company] annual report filetype:pdf"
+    - "[Company] investor presentation filetype:pptx"
+
+  recency:
+    - "[Company] [topic] 2026"
+    - "[Company] [topic] after:2025-01-01"
+
+  exact_phrase:
+    - '"[Company]" "strategic priorities"'
+    - '"[Company]" "digital transformation"'

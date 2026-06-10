@@ -1,0 +1,301 @@
+# Stakeholder Search Query Templates
+# Organized by research category
+#
+# Replace [Name], [Company], [Title], [Industry], [Year] with actual values
+# Example: [Name] = "Ibrahim Al Buainain", [Company] = "Saudi Aramco"
+#
+# WEB SEARCH APPROACH:
+# Use DuckDuckGo HTML endpoint for search, then fetch top results
+#
+# Step 1: Search via DuckDuckGo
+#   WebFetch URL: https://html.duckduckgo.com/html/?q=[URL-encoded-query]
+#   Prompt: "Extract all search result URLs and titles"
+#
+# Step 2: Fetch top 3-5 relevant URLs
+#   WebFetch each URL with targeted extraction prompt
+#
+# Step 3: If DuckDuckGo fails, try Google (may redirect to consent)
+#   WebFetch URL: https://www.google.com/search?q=[URL-encoded-query]
+
+metadata:
+  purpose: "Search query templates for stakeholder research"
+  version: "1.1"
+  last_updated: "2026-04-07"
+
+# =============================================================================
+# DUCKDUCKGO SEARCH URLs (Primary Method)
+# =============================================================================
+duckduckgo_searches:
+  base_url: "https://html.duckduckgo.com/html/?q="
+
+  profile_searches:
+    - query: "[Name]+[Company]+[Title]"
+      example: "https://html.duckduckgo.com/html/?q=Ibrahim+Al+Buainain+Saudi+Aramco+EVP+Manufacturing"
+    - query: "[Name]+[Company]+biography"
+      example: "https://html.duckduckgo.com/html/?q=Ibrahim+Al+Buainain+Saudi+Aramco+biography"
+    - query: "[Name]+[Company]+LinkedIn"
+      example: "https://html.duckduckgo.com/html/?q=Ibrahim+Al+Buainain+Saudi+Aramco+LinkedIn"
+
+  career_searches:
+    - query: "[Name]+appointed+[Company]"
+    - query: "[Name]+[Company]+career+history"
+    - query: "[Name]+previously+[Title]"
+
+  statements_searches:
+    - query: "[Name]+[Company]+interview"
+    - query: "[Name]+[Company]+keynote+conference"
+    - query: "[Name]+[Company]+quote"
+
+  verification_searches:
+    - query: "[Company]+[Title]+appointed+[Year]"
+      purpose: "Verify the actual person in the role matches input name"
+
+# =============================================================================
+# BASIC PROFILE
+# =============================================================================
+basic_profile:
+  linkedin:
+    - "site:linkedin.com/in [Name] [Company]"
+    - "[Name] [Title] [Company] LinkedIn"
+    - "[Name] [Company] LinkedIn profile"
+
+  company_bio:
+    - "site:[company-domain] [Name]"
+    - "[Company] executive team [Name]"
+    - "[Company] leadership [Name]"
+    - "[Company] [Name] biography"
+    - "[Name] [Company] executive bio"
+
+  appointment_announcement:
+    - "[Name] appointed [Company]"
+    - "[Name] named [Title] [Company]"
+    - "[Name] joins [Company]"
+    - "[Name] promoted [Company]"
+    - "[Company] announces [Name] [Title]"
+
+# =============================================================================
+# CAREER BACKGROUND
+# =============================================================================
+career_background:
+  career_history:
+    - "[Name] career history"
+    - "[Name] previously [Company]"
+    - "[Name] former [Title]"
+    - "[Name] experience background"
+    - "[Name] professional history"
+
+  previous_companies:
+    - "[Name] before [Company]"
+    - "[Name] prior to [Company]"
+    - "[Name] earlier career"
+    - "[Name] previous roles"
+
+  education:
+    - "[Name] [Company] education"
+    - "[Name] MBA OR university OR degree"
+    - "[Name] [Company] graduate"
+    - "[Name] studied OR educated"
+
+  achievements:
+    - "[Name] [Company] award"
+    - "[Name] [Company] recognition"
+    - "[Name] [Company] achievement"
+    - "[Name] industry award"
+
+# =============================================================================
+# PUBLIC STATEMENTS
+# =============================================================================
+public_statements:
+  interviews:
+    - "[Name] [Company] interview"
+    - "[Name] [Company] Q&A"
+    - "[Name] [Company] conversation"
+    - "[Name] speaks about"
+
+  podcasts:
+    - "[Name] [Company] podcast"
+    - "[Name] podcast interview"
+    - "[Name] podcast guest"
+
+  conferences:
+    - "[Name] keynote"
+    - "[Name] [Company] conference"
+    - "[Name] summit OR forum"
+    - "[Name] speaking [Industry]"
+    - "[Name] [Industry] conference [Year]"
+    - "[Name] panel discussion"
+    - "[Name] presented"
+
+  media_quotes:
+    - "[Name] [Company] says"
+    - "[Name] [Company] stated"
+    - "[Name] [Company] announced"
+    - "[Name] quote"
+    - "[Name] [Company] commented"
+
+# =============================================================================
+# PROFESSIONAL ACTIVITIES
+# =============================================================================
+professional_activities:
+  board_roles:
+    - "[Name] board director"
+    - "[Name] board member"
+    - "[Name] advisory board"
+    - "[Name] non-executive director"
+
+  publications:
+    - "[Name] authored"
+    - "[Name] published"
+    - "[Name] wrote"
+    - "[Name] article"
+    - "[Name] book"
+
+  associations:
+    - "[Name] member [Industry] association"
+    - "[Name] fellow"
+    - "[Name] council member"
+
+# =============================================================================
+# INDUSTRY-SPECIFIC SEARCHES
+# =============================================================================
+industry_specific:
+  energy_oil_gas:
+    conferences:
+      - "[Name] World Petroleum Congress"
+      - "[Name] ADIPEC"
+      - "[Name] CERAWeek"
+      - "[Name] SPE conference"
+      - "[Name] IPTC"
+
+    publications:
+      - "[Name] Oil & Gas Journal"
+      - "[Name] Petroleum Economist"
+      - "[Name] Hart Energy"
+      - "[Name] World Oil"
+
+    topics:
+      - "[Name] operational excellence"
+      - "[Name] digital transformation oil gas"
+      - "[Name] 4IR industry 4.0"
+      - "[Name] asset reliability"
+      - "[Name] refinery"
+      - "[Name] downstream"
+
+  manufacturing:
+    conferences:
+      - "[Name] Manufacturing Leadership Summit"
+      - "[Name] IndustryWeek"
+      - "[Name] World Manufacturing Forum"
+
+    topics:
+      - "[Name] lean manufacturing"
+      - "[Name] operational excellence"
+      - "[Name] Industry 4.0"
+      - "[Name] smart manufacturing"
+
+  financial_services:
+    conferences:
+      - "[Name] Sibos"
+      - "[Name] Money 20/20"
+      - "[Name] American Banker"
+
+    topics:
+      - "[Name] digital banking"
+      - "[Name] fintech"
+      - "[Name] regulatory compliance"
+
+# =============================================================================
+# REGION-SPECIFIC SEARCHES
+# =============================================================================
+region_specific:
+  middle_east:
+    sources:
+      - "[Name] Arab News"
+      - "[Name] Gulf News"
+      - "[Name] Zawya"
+      - "[Name] Argaam"  # Arabic business news
+      - "[Name] Asharq Bloomberg"
+
+    conferences:
+      - "[Name] ADIPEC"
+      - "[Name] Future Investment Initiative"
+      - "[Name] World Government Summit"
+
+  europe:
+    sources:
+      - "[Name] Financial Times"
+      - "[Name] Reuters"
+      - "[Name] Bloomberg"
+
+  asia_pacific:
+    sources:
+      - "[Name] Nikkei"
+      - "[Name] South China Morning Post"
+      - "[Name] Economic Times India"
+
+# =============================================================================
+# RECENCY FILTERS
+# =============================================================================
+recency_filters:
+  recent_activity:
+    - "[Name] [Company] [Year]"
+    - "[Name] [Company] recent"
+    - "[Name] latest news"
+
+  date_filters:
+    # Google search date operators
+    - "[Name] after:[Year-1]-01-01"
+    - "[Name] [Company] 2026 OR 2025"
+
+# =============================================================================
+# SEARCH OPERATORS
+# =============================================================================
+search_operators:
+  site_specific:
+    - "site:linkedin.com [Name] [Company]"
+    - "site:[company-domain] [Name]"
+    - "site:bloomberg.com [Name]"
+    - "site:reuters.com [Name] [Company]"
+
+  exact_phrase:
+    - '"[Full Name]" [Company]'
+    - '"[Name]" "[Title]"'
+
+  exclusions:
+    # Exclude common false positives
+    - "[Name] [Company] -LinkedIn -Facebook -Twitter"
+
+# =============================================================================
+# ARAMCO-SPECIFIC (Test Case)
+# =============================================================================
+aramco_specific:
+  note: "Queries tailored for Saudi Aramco stakeholder research"
+
+  profile:
+    - "site:aramco.com [Name]"
+    - "site:linkedin.com/in [Name] Aramco"
+    - "[Name] Saudi Aramco biography"
+    - "[Name] Saudi Aramco executive"
+
+  statements:
+    - "[Name] Aramco interview"
+    - "[Name] Saudi Aramco keynote"
+    - "[Name] ADIPEC presentation"
+    - "[Name] World Petroleum Congress"
+    - "[Name] Aramco operational excellence"
+    - "[Name] Aramco digital transformation"
+
+  news:
+    - "[Name] Aramco announced"
+    - "[Name] Aramco appointed"
+    - "[Name] Aramco Arab News"
+    - "[Name] Aramco Reuters"
+
+  example_queries:
+    # Specific queries for Ibrahim Q. Al Ghamdi test case
+    - "site:linkedin.com/in Ibrahim Al Ghamdi Aramco"
+    - "Ibrahim Al Ghamdi EVP Manufacturing Aramco"
+    - "Ibrahim Al Ghamdi Saudi Aramco biography"
+    - "Ibrahim Al Ghamdi Aramco interview"
+    - "Ibrahim Al Ghamdi ADIPEC"
+    - "Ibrahim Al Ghamdi Aramco operational excellence"

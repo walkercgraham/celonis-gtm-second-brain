@@ -1,0 +1,480 @@
+# Role Research Guide for Stakeholder Research
+# Role-specific priorities, pain points, and engagement approaches
+#
+# Use this guide to understand typical concerns for different executive roles.
+# Always customize based on actual research findings - these are baselines.
+
+metadata:
+  purpose: "Role-specific playbooks for stakeholder research"
+  version: "1.0"
+  last_updated: "2026-04-07"
+
+# =============================================================================
+# C-SUITE OPERATIONS
+# =============================================================================
+c_suite_operations:
+  roles:
+    - "COO"
+    - "Chief Operations Officer"
+    - "Chief Operating Officer"
+    - "EVP Operations"
+    - "EVP Global Manufacturing"
+    - "President, Operations"
+
+  career_stage: "C-suite"
+
+  typical_priorities:
+    - priority: "Enterprise-wide operational efficiency"
+      rationale: "Accountable for operational P&L and cost structure"
+      celonis_relevance: "Process intelligence enables visibility into operational bottlenecks"
+
+    - priority: "Operational risk management"
+      rationale: "Responsible for business continuity and operational resilience"
+      celonis_relevance: "Conformance checking identifies process deviations before they become incidents"
+
+    - priority: "Digital transformation of operations"
+      rationale: "Under pressure to modernize while maintaining reliability"
+      celonis_relevance: "Data-driven process improvement vs gut-feel decisions"
+
+    - priority: "Cross-functional process optimization"
+      rationale: "Owns end-to-end operational processes spanning multiple functions"
+      celonis_relevance: "End-to-end visibility across organizational silos"
+
+  role_typical_pain_points:
+    - "Siloed visibility across business units"
+    - "Manual, spreadsheet-based operational reporting"
+    - "Slow decision-making due to data latency"
+    - "Difficulty prioritizing improvement initiatives"
+    - "Proving ROI of operational investments"
+
+  engagement_approach:
+    recommended_tone: "Strategic, peer-to-peer, outcome-focused"
+    topics_to_emphasize:
+      - "Enterprise-wide visibility and control"
+      - "Operational KPIs and business outcomes"
+      - "Scalability across business units"
+      - "Executive dashboards and decision support"
+    topics_to_avoid:
+      - "Deeply technical implementation details"
+      - "Individual process-level minutiae"
+      - "Comparison to point solutions"
+
+# =============================================================================
+# C-SUITE FINANCE
+# =============================================================================
+c_suite_finance:
+  roles:
+    - "CFO"
+    - "Chief Financial Officer"
+    - "EVP Finance"
+    - "Group CFO"
+
+  career_stage: "C-suite"
+
+  typical_priorities:
+    - priority: "Cost reduction and efficiency"
+      rationale: "Directly accountable for cost structure and margins"
+      celonis_relevance: "Identifies hidden costs in processes (maverick spend, rework)"
+
+    - priority: "Working capital optimization"
+      rationale: "Cash flow management is a key CFO responsibility"
+      celonis_relevance: "Accelerates order-to-cash, optimizes procure-to-pay"
+
+    - priority: "Financial close efficiency"
+      rationale: "Under pressure for faster, more accurate closes"
+      celonis_relevance: "Identifies blockers and bottlenecks in record-to-report"
+
+    - priority: "ROI visibility on investments"
+      rationale: "Must justify technology and operational investments to board"
+      celonis_relevance: "Quantifiable, measurable process improvements"
+
+  role_typical_pain_points:
+    - "Cash conversion cycle too long"
+    - "Financial close takes too many days"
+    - "Forecast accuracy issues"
+    - "Unclear ROI on digital investments"
+    - "Hidden operational costs"
+
+  engagement_approach:
+    recommended_tone: "Data-driven, ROI-focused, financially rigorous"
+    topics_to_emphasize:
+      - "Working capital metrics (DSO, DPO)"
+      - "Cost avoidance and efficiency gains"
+      - "Measurable, quantified outcomes"
+      - "Time-to-value and payback period"
+    topics_to_avoid:
+      - "Vague 'transformation' language"
+      - "Benefits that can't be measured"
+      - "Long implementation timelines"
+
+# =============================================================================
+# VP/SVP OPERATIONS
+# =============================================================================
+vp_operations:
+  roles:
+    - "VP Operations"
+    - "VP Plant Operations"
+    - "SVP Operations"
+    - "VP Manufacturing"
+    - "SVP Global Manufacturing"
+    - "VP Production"
+    - "VP Operational Excellence"
+
+  career_stage: "Established"  # Usually
+
+  typical_priorities:
+    - priority: "Operational KPI improvement"
+      rationale: "Directly measured on operational metrics"
+      celonis_relevance: "Root cause analysis for KPI underperformance"
+
+    - priority: "Asset utilization and reliability"
+      rationale: "Responsible for maximizing asset productivity"
+      celonis_relevance: "Identifies maintenance bottlenecks, downtime patterns"
+
+    - priority: "Operational excellence program delivery"
+      rationale: "Often leading or sponsoring continuous improvement"
+      celonis_relevance: "Data-driven prioritization of improvement initiatives"
+
+    - priority: "Cross-site standardization"
+      rationale: "Managing multiple facilities requires consistency"
+      celonis_relevance: "Benchmarking and conformance across locations"
+
+  role_typical_pain_points:
+    - "Process bottlenecks impacting throughput"
+    - "Lack of visibility into root causes"
+    - "Compliance and audit burden"
+    - "Asset utilization below targets"
+    - "Difficulty scaling best practices"
+
+  engagement_approach:
+    recommended_tone: "Data-driven, operationally credible, KPI-focused"
+    topics_to_emphasize:
+      - "Specific operational metrics (OEE, throughput, uptime)"
+      - "Root cause analysis capabilities"
+      - "Continuous improvement methodology"
+      - "Benchmarking across facilities"
+    topics_to_avoid:
+      - "High-level strategy without operational detail"
+      - "IT-centric language"
+      - "Overly long implementation timelines"
+
+# =============================================================================
+# VP/SVP SUPPLY CHAIN
+# =============================================================================
+vp_supply_chain:
+  roles:
+    - "VP Supply Chain"
+    - "SVP Supply Chain"
+    - "Chief Supply Chain Officer"
+    - "VP Logistics"
+    - "VP Procurement and Supply Chain"
+
+  career_stage: "Established"
+
+  typical_priorities:
+    - priority: "Supply chain visibility and resilience"
+      rationale: "Post-pandemic focus on supply chain risk"
+      celonis_relevance: "End-to-end visibility across supplier, internal, customer"
+
+    - priority: "Inventory optimization"
+      rationale: "Balancing service levels with working capital"
+      celonis_relevance: "Identifies excess inventory, stockout patterns"
+
+    - priority: "Supplier performance management"
+      rationale: "Responsible for supplier relationships and performance"
+      celonis_relevance: "Supplier delivery and quality analytics"
+
+    - priority: "Logistics cost optimization"
+      rationale: "Transportation and warehousing costs significant"
+      celonis_relevance: "Identifies inefficiencies in logistics processes"
+
+  role_typical_pain_points:
+    - "Lack of end-to-end supply chain visibility"
+    - "Demand forecasting accuracy"
+    - "Supplier delivery performance"
+    - "Inventory imbalances (excess and stockouts)"
+    - "Manual order management processes"
+
+  engagement_approach:
+    recommended_tone: "Outcome-focused, operationally savvy, resilience-aware"
+    topics_to_emphasize:
+      - "End-to-end supply chain visibility"
+      - "OTIF (On-Time In-Full) metrics"
+      - "Inventory turns and working capital"
+      - "Supplier performance visibility"
+    topics_to_avoid:
+      - "Purely internal process focus (ignoring supply chain)"
+      - "Technology-first messaging"
+
+# =============================================================================
+# VP/SVP TECHNOLOGY / DIGITAL
+# =============================================================================
+vp_technology:
+  roles:
+    - "CTO"
+    - "Chief Technology Officer"
+    - "VP Digital"
+    - "VP IT"
+    - "Chief Digital Officer"
+    - "VP Enterprise Architecture"
+    - "VP Digital Transformation"
+
+  career_stage: "Established to C-suite"
+
+  typical_priorities:
+    - priority: "Technology modernization"
+      rationale: "Responsible for technology roadmap and architecture"
+      celonis_relevance: "Process intelligence as data layer on existing systems"
+
+    - priority: "System integration and data connectivity"
+      rationale: "Managing complex technology ecosystem"
+      celonis_relevance: "Native connectors to ERP, cloud, and enterprise systems"
+
+    - priority: "Scaling digital initiatives"
+      rationale: "Moving from pilots to enterprise-wide deployment"
+      celonis_relevance: "Enterprise platform with governance and scalability"
+
+    - priority: "Demonstrating technology ROI"
+      rationale: "Under pressure to show value from technology investments"
+      celonis_relevance: "Measurable business outcomes from process improvements"
+
+  role_typical_pain_points:
+    - "Data silos and integration complexity"
+    - "Legacy system modernization challenges"
+    - "Vendor sprawl and management overhead"
+    - "Proving business value of technology"
+    - "Scaling pilots to production"
+
+  engagement_approach:
+    recommended_tone: "Technically credible, architecture-aware, outcome-linked"
+    topics_to_emphasize:
+      - "Integration capabilities and connectors"
+      - "Data security and governance"
+      - "Platform architecture and scalability"
+      - "Business-technology alignment"
+    topics_to_avoid:
+      - "Purely business outcomes without technical credibility"
+      - "Oversimplifying implementation complexity"
+      - "Competing with their existing investments"
+
+# =============================================================================
+# VP/SVP PROCUREMENT
+# =============================================================================
+vp_procurement:
+  roles:
+    - "CPO"
+    - "Chief Procurement Officer"
+    - "VP Procurement"
+    - "VP Sourcing"
+    - "SVP Procurement"
+    - "VP Strategic Sourcing"
+
+  career_stage: "Established"
+
+  typical_priorities:
+    - priority: "Spend visibility and control"
+      rationale: "Responsible for managing enterprise spend"
+      celonis_relevance: "Spend analytics and maverick spend identification"
+
+    - priority: "Supplier performance and risk"
+      rationale: "Accountable for supplier relationships"
+      celonis_relevance: "Supplier delivery, quality, and compliance analytics"
+
+    - priority: "Procure-to-pay efficiency"
+      rationale: "Owns the end-to-end P2P process"
+      celonis_relevance: "P2P process intelligence and automation"
+
+    - priority: "Contract compliance"
+      rationale: "Ensuring negotiated terms are realized"
+      celonis_relevance: "Contract compliance monitoring and enforcement"
+
+  role_typical_pain_points:
+    - "Maverick spend and off-contract purchasing"
+    - "Invoice processing bottlenecks"
+    - "Poor visibility into supplier performance"
+    - "Contract leakage and compliance gaps"
+    - "Manual, paper-based processes"
+
+  engagement_approach:
+    recommended_tone: "Value-focused, spend-aware, outcome-driven"
+    topics_to_emphasize:
+      - "Spend under management and compliance"
+      - "Procure-to-pay cycle times"
+      - "Supplier performance metrics"
+      - "Cost savings and avoidance"
+    topics_to_avoid:
+      - "Generic process intelligence without procurement context"
+      - "Disrupting established supplier relationships"
+
+# =============================================================================
+# VP/SVP FINANCE (Non-CFO)
+# =============================================================================
+vp_finance:
+  roles:
+    - "VP Finance"
+    - "VP Financial Planning"
+    - "VP FP&A"
+    - "VP Controller"
+    - "VP Treasury"
+    - "SVP Finance"
+
+  career_stage: "Established"
+
+  typical_priorities:
+    - priority: "Financial process efficiency"
+      rationale: "Responsible for financial operations"
+      celonis_relevance: "Financial close, AR/AP process optimization"
+
+    - priority: "Financial controls and compliance"
+      rationale: "SOX, audit, and regulatory compliance"
+      celonis_relevance: "Automated controls and compliance monitoring"
+
+    - priority: "Cash flow management"
+      rationale: "Working capital and liquidity focus"
+      celonis_relevance: "AR collections, AP timing optimization"
+
+    - priority: "Finance transformation"
+      rationale: "Often leading shared services or digitization"
+      celonis_relevance: "Process standardization across regions"
+
+  role_typical_pain_points:
+    - "Days to close too high"
+    - "AR aging and collections efficiency"
+    - "AP invoice processing backlogs"
+    - "Manual reconciliations"
+    - "Audit preparation burden"
+
+  engagement_approach:
+    recommended_tone: "Process-oriented, metrics-driven, compliance-aware"
+    topics_to_emphasize:
+      - "Financial close efficiency"
+      - "Working capital metrics (DSO, DPO)"
+      - "Compliance and controls"
+      - "Shared services optimization"
+    topics_to_avoid:
+      - "Generic process improvement language"
+      - "Non-financial use cases unless relevant"
+
+# =============================================================================
+# MANUFACTURING-SPECIFIC ROLES
+# =============================================================================
+manufacturing_executive:
+  roles:
+    - "Plant Manager"
+    - "VP Plant Operations"
+    - "VP Refinery Operations"
+    - "SVP Manufacturing"
+    - "VP Asset Reliability"
+    - "VP Maintenance"
+
+  career_stage: "Established"
+
+  typical_priorities:
+    - priority: "Asset reliability and uptime"
+      rationale: "Directly measured on asset availability"
+      celonis_relevance: "Maintenance process optimization, predictive insights"
+
+    - priority: "Maintenance efficiency"
+      rationale: "Responsible for maintenance costs and effectiveness"
+      celonis_relevance: "Work order analytics, PM compliance"
+
+    - priority: "Safety and environmental compliance"
+      rationale: "HSE is critical in manufacturing"
+      celonis_relevance: "Compliance monitoring, incident prevention"
+
+    - priority: "Production throughput"
+      rationale: "Accountable for output and efficiency"
+      celonis_relevance: "Bottleneck identification, cycle time optimization"
+
+  role_typical_pain_points:
+    - "Unplanned downtime"
+    - "Maintenance backlog management"
+    - "Schedule compliance for planned maintenance"
+    - "Turnaround optimization"
+    - "Spare parts availability"
+
+  engagement_approach:
+    recommended_tone: "Operationally credible, reliability-focused, safety-conscious"
+    topics_to_emphasize:
+      - "Asset reliability metrics (MTBF, MTTR)"
+      - "PM compliance and work order efficiency"
+      - "Turnaround planning and execution"
+      - "SAP PM integration"
+    topics_to_avoid:
+      - "Generic digital transformation"
+      - "Finance-centric metrics"
+      - "Overpromising on predictive maintenance"
+
+# =============================================================================
+# ENERGY/OIL & GAS SPECIFIC VARIATIONS
+# =============================================================================
+energy_sector_variations:
+  note: "These variations apply to roles at Energy/Oil & Gas companies"
+
+  additional_priorities:
+    - priority: "Energy transition and sustainability"
+      rationale: "Industry-wide pressure on emissions and ESG"
+      celonis_relevance: "Operational efficiency reduces emissions intensity"
+
+    - priority: "In-Kingdom Value / Local content"
+      rationale: "National oil companies have local economic mandates"
+      celonis_relevance: "Supply chain visibility for local content compliance"
+
+    - priority: "Turnaround excellence"
+      rationale: "Planned shutdowns are massive cost and risk events"
+      celonis_relevance: "Turnaround planning and execution optimization"
+
+  additional_pain_points:
+    - "Turnaround schedule and cost overruns"
+    - "HSE incident prevention"
+    - "Regulatory compliance burden"
+    - "Skills shortage and knowledge transfer"
+
+  sector_specific_kpis:
+    - "Upstream production reliability (%)"
+    - "Refinery utilization rate"
+    - "Unplanned downtime hours"
+    - "PM compliance rate"
+    - "On-time completion rate"
+    - "Schedule adherence"
+    - "HSE incident rates (TRIR, LTIR)"
+
+# =============================================================================
+# CAREER STAGE MODIFIERS
+# =============================================================================
+career_stage_modifiers:
+  rising:
+    description: "Director/VP level, building reputation, <10 years executive experience"
+    tone_adjustment: "More focused on career-building opportunities, innovation"
+    emphasis_shift:
+      - "Opportunity to lead transformation"
+      - "Visibility and recognition"
+      - "Building the business case"
+    typical_concerns:
+      - "Getting executive buy-in"
+      - "Building internal support"
+      - "Proving value quickly"
+
+  established:
+    description: "SVP/EVP level, known in industry, 10-20 years executive experience"
+    tone_adjustment: "Peer conversation, operational depth, proven track record"
+    emphasis_shift:
+      - "Operational excellence"
+      - "Scaling what works"
+      - "Cross-functional impact"
+    typical_concerns:
+      - "Integration with existing programs"
+      - "Change management at scale"
+      - "Measurable outcomes"
+
+  c_suite:
+    description: "CxO title, 20+ years, enterprise responsibility"
+    tone_adjustment: "Strategic, peer-to-peer, outcome-focused"
+    emphasis_shift:
+      - "Enterprise transformation"
+      - "Board-level visibility"
+      - "Competitive advantage"
+    typical_concerns:
+      - "Enterprise scalability"
+      - "Strategic alignment"
+      - "Return on investment"

@@ -1,0 +1,566 @@
+# Industry Research Guide for External Research Skill
+# Provides industry-specific research approaches, search queries, and signals
+# Primary example: Saudi Aramco (Energy/Oil&Gas)
+
+metadata:
+  purpose: "Industry-specific research guidance for External Research skill"
+  primary_example: "Saudi Aramco (Energy/Oil&Gas)"
+  version: "1.0"
+  last_updated: "2026-04-06"
+  cross_reference: "references/industry_messaging_library.json"
+
+# =============================================================================
+# ENERGY / OIL & GAS (PRIMARY - FULL DEPTH)
+# =============================================================================
+energy_oil_gas:
+  overview:
+    description: |
+      Research approach for integrated oil companies, national oil companies (NOCs),
+      refiners, chemical producers, and mining companies.
+    sub_industries:
+      - "Oil & Gas - Integrated (e.g., Aramco, Shell, ExxonMobil)"
+      - "Oil & Gas - E&P (upstream focused)"
+      - "Oil & Gas - Refining & Marketing (downstream focused)"
+      - "Chemicals & Petrochemicals"
+      - "Mining & Metals"
+    key_characteristics:
+      - "Capital-intensive with long investment cycles"
+      - "Volatile commodity prices drive strategic shifts"
+      - "Heavy regulatory and ESG scrutiny"
+      - "Complex asset bases requiring maintenance optimization"
+      - "Energy transition pressures alongside legacy operations"
+    typical_fiscal_year: "Calendar year (Jan-Dec) for most; some follow Apr-Mar"
+
+  disclosure_patterns:
+    public_companies:
+      us_listed: "SEC 10-K, 10-Q, 8-K filings"
+      uk_listed: "Annual Report, Half-Year Report via RNS"
+      saudi_listed: "Tadawul filings, Integrated Annual Report"
+      note: "Most large energy companies publish English investor materials"
+    private_national_oil_companies:
+      examples: ["ADNOC (UAE)", "QatarEnergy", "PEMEX (Mexico)"]
+      approach: "Annual reports, press releases, government announcements"
+
+  # ---------------------------------------------------------------------------
+  # ARAMCO-SPECIFIC EXAMPLE (Running example throughout)
+  # ---------------------------------------------------------------------------
+  aramco_example:
+    company: "Saudi Aramco"
+    ticker: "2222.SR (Tadawul)"
+    disclosure_sources:
+      primary:
+        - url: "aramco.com/en/investors"
+          content: "Quarterly results, annual reports, investor presentations"
+        - url: "tadawul.com.sa"
+          content: "Official filings, board reports, material announcements"
+      secondary:
+        - "Seeking Alpha transcripts for earnings calls"
+        - "Reuters, Bloomberg for news coverage"
+        - "Wood Mackenzie, Rystad Energy for analyst coverage"
+
+    search_queries_that_work:
+      earnings_and_financials:
+        - "Saudi Aramco Q4 2025 earnings results"
+        - "Aramco quarterly earnings transcript"
+        - "Saudi Aramco annual report 2024 PDF"
+        - "Aramco capital expenditure capex program"
+        - "site:aramco.com investor presentation"
+      strategic_priorities:
+        - "Aramco downstream expansion strategy"
+        - "Saudi Aramco operational excellence initiative"
+        - "Aramco In-Kingdom Total Value Add IKTVA"
+        - "Aramco CEO Amin Nasser strategy"
+        - "Saudi Aramco energy transition"
+      technology_signals:
+        - "Aramco SAP implementation"
+        - "Saudi Aramco digital transformation"
+        - "Aramco predictive maintenance program"
+        - "Aramco AI artificial intelligence"
+        - "Saudi Aramco Fourth Industrial Revolution 4IR"
+      trigger_events:
+        - "Aramco acquisition announcement"
+        - "Saudi Aramco new refinery"
+        - "Aramco joint venture JV"
+        - "Saudi Aramco IPO expansion"
+
+    key_findings_to_expect:
+      strategic_priorities:
+        - "Downstream expansion to capture more value chain"
+        - "In-Kingdom Value creation (IKTVA program)"
+        - "Operational excellence and cost discipline"
+        - "Energy transition investments (hydrogen, CCS)"
+        - "Digitalization and Fourth Industrial Revolution"
+      trigger_events:
+        - "Downstream expansion programs ($50B+ investments)"
+        - "Petrochemical integration (SATORP, SASREF expansions)"
+        - "Hydrogen and low-carbon fuel initiatives"
+        - "International expansion (acquisitions, JVs)"
+      technology_signals:
+        - "SAP S/4HANA deployment across operations"
+        - "AWS and Google Cloud partnerships"
+        - "AI Center of Excellence"
+        - "Digital twin implementations for assets"
+
+  # ---------------------------------------------------------------------------
+  # GENERAL ENERGY SEARCH QUERIES
+  # ---------------------------------------------------------------------------
+  search_queries:
+    earnings_and_financials:
+      - "[Company] quarterly earnings oil production"
+      - "[Company] refining margin results"
+      - "[Company] upstream downstream capex split"
+      - "[Company] annual report integrated report PDF"
+      - "[Company] investor day presentation"
+      - "[Company] capital allocation priorities"
+      - "site:sec.gov [Company] 10-K" # For US-listed
+
+    strategic_priorities:
+      - "[Company] CEO strategy interview"
+      - "[Company] energy transition strategy"
+      - "[Company] operational excellence program"
+      - "[Company] cost reduction efficiency initiative"
+      - "[Company] downstream expansion investment"
+      - "[Company] low carbon hydrogen CCS"
+      - "[Company] sustainability ESG report"
+
+    technology_signals:
+      - "[Company] SAP S/4HANA implementation"
+      - "[Company] digital transformation Industry 4.0"
+      - "[Company] predictive maintenance program"
+      - "[Company] digital twin asset"
+      - "[Company] AI machine learning initiative"
+      - "[Company] cloud AWS Azure partnership"
+      - "site:linkedin.com/jobs [Company] process mining OR Celonis"
+      - "site:linkedin.com/jobs [Company] SAP plant maintenance PM"
+
+    trigger_events:
+      - "[Company] acquisition announcement 2025"
+      - "[Company] new CEO CFO appointed"
+      - "[Company] restructuring reorganization"
+      - "[Company] expansion investment capex"
+      - "[Company] plant turnaround shutdown"
+      - "[Company] regulatory change impact"
+
+    operational_pain_points:
+      - "[Company] unplanned downtime equipment failure"
+      - "[Company] maintenance reliability improvement"
+      - "[Company] turnaround optimization"
+      - "[Company] HSE safety incident"
+      - "[Company] supply chain disruption"
+
+    competitive_landscape:
+      - "[Company] process mining"
+      - "[Company] Celonis"
+      - "[Company] ServiceNow implementation"
+      - "[Company] SAP Signavio"
+      - "[Company] automation RPA initiative"
+
+  # ---------------------------------------------------------------------------
+  # SIGNALS TO WATCH
+  # ---------------------------------------------------------------------------
+  signals_to_watch:
+    strategic_signals:
+      high_relevance:
+        - signal: "Operational excellence or efficiency programs"
+          why: "Direct indicator of process improvement appetite"
+          celonis_angle: "Process intelligence enables operational excellence"
+        - signal: "Downstream expansion investments"
+          why: "New assets = new maintenance complexity"
+          celonis_angle: "Asset reliability for new facilities"
+        - signal: "Cost discipline or capital efficiency mandates"
+          why: "Looking for waste reduction opportunities"
+          celonis_angle: "Identify cash leakage across processes"
+        - signal: "Digital transformation or Industry 4.0 programs"
+          why: "Receptive to technology solutions"
+          celonis_angle: "Process intelligence as digital foundation"
+      medium_relevance:
+        - signal: "Energy transition or sustainability investments"
+          why: "May shift priorities but opens new conversations"
+          celonis_angle: "Emissions monitoring, carbon accounting processes"
+        - signal: "M&A activity or joint ventures"
+          why: "Integration challenges = process complexity"
+          celonis_angle: "Post-merger process harmonization"
+
+    operational_signals:
+      high_relevance:
+        - signal: "Plant turnaround announcements"
+          why: "Major maintenance events with optimization potential"
+          celonis_angle: "Turnaround planning and execution optimization"
+        - signal: "Reliability or uptime improvement initiatives"
+          why: "Direct pain point Celonis addresses"
+          celonis_angle: "Asset reliability use case"
+        - signal: "Maintenance backlog concerns"
+          why: "Indicates process inefficiency"
+          celonis_angle: "Work order optimization"
+        - signal: "HSE incidents or safety focus"
+          why: "Often triggers process reviews"
+          celonis_angle: "Compliance and safety process monitoring"
+
+    technology_signals:
+      high_relevance:
+        - signal: "SAP S/4HANA deployment or migration"
+          why: "SAP foundation = easier Celonis integration"
+          celonis_angle: "Process intelligence on SAP data"
+        - signal: "SAP PM (Plant Maintenance) usage"
+          why: "Direct data source for asset reliability"
+          celonis_angle: "Work order process analysis"
+        - signal: "Digital twin initiatives"
+          why: "Aligned concept to process intelligence"
+          celonis_angle: "Living digital twin of processes"
+      medium_relevance:
+        - signal: "Cloud platform adoption"
+          why: "Modern architecture = integration friendly"
+        - signal: "AI/ML initiatives"
+          why: "May be exploring advanced analytics"
+
+  # ---------------------------------------------------------------------------
+  # TYPICAL STRATEGIC PRIORITIES BY SUB-INDUSTRY
+  # ---------------------------------------------------------------------------
+  typical_priorities:
+    integrated_oil_companies:
+      - "Balance upstream/downstream investments"
+      - "Energy transition while maintaining fossil fuel revenues"
+      - "Operational efficiency across global assets"
+      - "Supply chain resilience"
+    national_oil_companies:
+      - "In-country value creation"
+      - "Maximize government revenue"
+      - "Diversification (downstream, petrochemicals)"
+      - "Technology transfer and workforce development"
+    refiners:
+      - "Margin optimization"
+      - "Feedstock flexibility"
+      - "Turnaround efficiency"
+      - "Environmental compliance"
+    chemicals:
+      - "Feedstock cost management"
+      - "Production efficiency"
+      - "Supply chain optimization"
+      - "Sustainability/circular economy"
+
+  # ---------------------------------------------------------------------------
+  # CELONIS RELEVANCE MAPPING
+  # ---------------------------------------------------------------------------
+  celonis_relevance:
+    primary_domains:
+      - domain: "Asset Reliability"
+        alternative_names: ["Plant Maintenance", "Maintenance & Reliability"]
+        relevance: "HIGH - Core pain point for energy companies"
+        typical_kpis:
+          - "On-Time Completion Rate"
+          - "Preventive Maintenance Rate"
+          - "Schedule Adherence"
+          - "PM Compliance Rate"
+        messaging_reference: "industry_messaging_library.json > Energy > spotlights > Asset Reliability"
+      - domain: "Supply Chain"
+        relevance: "HIGH - Complex global supply chains"
+        typical_kpis:
+          - "On-Time Delivery"
+          - "Inventory Turns"
+          - "Vendor Performance"
+        messaging_reference: "industry_messaging_library.json > Energy > spotlights > Supply Chain"
+    secondary_domains:
+      - domain: "Accounts Payable"
+        relevance: "MEDIUM - Large vendor spend"
+      - domain: "Procurement"
+        relevance: "MEDIUM - Strategic sourcing opportunities"
+
+  # ---------------------------------------------------------------------------
+  # ENERGY-SPECIFIC TERMINOLOGY
+  # ---------------------------------------------------------------------------
+  terminology:
+    use_these_terms:
+      - "asset reliability" # not "equipment uptime"
+      - "plant maintenance" # not "facility management"
+      - "work order" # standard SAP PM term
+      - "preventive maintenance (PM)"
+      - "schedule compliance"
+      - "turnaround" # planned major maintenance
+      - "HSE" # Health, Safety, Environment
+      - "OPEX" # operating expenditure
+      - "CAPEX" # capital expenditure
+    avoid_these_terms:
+      - "process mining" # lead with business outcomes
+      - "workflow automation" # too generic
+
+# =============================================================================
+# AUTOMOTIVE (HIGH DEPTH)
+# =============================================================================
+automotive:
+  overview:
+    description: |
+      Research approach for automotive OEMs, tier-1 suppliers, and mobility companies.
+    sub_industries:
+      - "OEM (Original Equipment Manufacturers)"
+      - "Tier-1 Suppliers"
+      - "Tier-2/3 Suppliers"
+      - "Mobility & Fleet Services"
+    key_characteristics:
+      - "Long product development cycles (3-5 years)"
+      - "Complex multi-tier supply chains"
+      - "High pressure on margins and working capital"
+      - "EV transition creating disruption"
+      - "Trade wars and tariffs increasing complexity"
+    typical_fiscal_year: "Calendar year for most; Toyota/Honda follow Apr-Mar"
+
+  search_queries:
+    earnings_and_financials:
+      - "[Company] quarterly earnings production volume"
+      - "[Company] automotive revenue operating margin"
+      - "[Company] annual report automotive"
+      - "[Company] investor presentation automotive"
+      - "[Company] working capital inventory"
+
+    strategic_priorities:
+      - "[Company] CEO automotive strategy"
+      - "[Company] EV electric vehicle strategy"
+      - "[Company] supply chain resilience"
+      - "[Company] cost reduction efficiency"
+      - "[Company] time to market product development"
+      - "[Company] software defined vehicle"
+
+    technology_signals:
+      - "[Company] SAP automotive"
+      - "[Company] digital transformation automotive"
+      - "[Company] Industry 4.0 manufacturing"
+      - "[Company] predictive supply chain"
+      - "site:linkedin.com/jobs [Company] process mining"
+
+    trigger_events:
+      - "[Company] supply chain disruption semiconductor"
+      - "[Company] new model launch"
+      - "[Company] plant opening closing"
+      - "[Company] joint venture partnership"
+      - "[Company] restructuring layoffs"
+
+  signals_to_watch:
+    strategic_signals:
+      high_relevance:
+        - signal: "Supply chain resilience initiatives"
+          celonis_angle: "E2E supply chain visibility"
+        - signal: "Time-to-market acceleration"
+          celonis_angle: "Idea-to-Offer process optimization"
+        - signal: "Working capital optimization"
+          celonis_angle: "Inventory and cash flow processes"
+        - signal: "Cost reduction programs"
+          celonis_angle: "Process efficiency across functions"
+
+    operational_signals:
+      high_relevance:
+        - signal: "Delivery delays or customer complaints"
+          celonis_angle: "Order-to-Delivery optimization"
+        - signal: "Inventory build-up concerns"
+          celonis_angle: "Inventory management processes"
+        - signal: "Supplier quality issues"
+          celonis_angle: "Supplier performance monitoring"
+
+  celonis_relevance:
+    primary_domains:
+      - domain: "Order to Delivery"
+        relevance: "HIGH - Core operational challenge"
+        typical_kpis:
+          - "On-Time Delivery Rate"
+          - "Lead Time"
+          - "Customer Wait Time"
+        messaging_reference: "industry_messaging_library.json > Automotive > spotlights > Order to Delivery"
+      - domain: "Supply Chain"
+        relevance: "HIGH - Multi-tier complexity"
+        typical_kpis:
+          - "Inventory Turns"
+          - "Supplier On-Time Delivery"
+          - "Material Availability"
+        messaging_reference: "industry_messaging_library.json > Automotive > spotlights > Supply Chain"
+
+  terminology:
+    use_these_terms:
+      - "on-time delivery"
+      - "lead time"
+      - "working capital"
+      - "time to market"
+      - "supply chain resilience"
+    avoid_these_terms:
+      - "process mining" # lead with outcomes
+
+# =============================================================================
+# MANUFACTURING (MODERATE DEPTH)
+# =============================================================================
+manufacturing:
+  overview:
+    description: |
+      Research approach for discrete and process manufacturers, industrial equipment,
+      and diversified industrials.
+    sub_industries:
+      - "Discrete Manufacturing (assembly-based)"
+      - "Process Manufacturing (continuous flow)"
+      - "Industrial Equipment & Machinery"
+      - "Aerospace & Defense"
+    key_characteristics:
+      - "Shop floor efficiency critical"
+      - "Complex production planning"
+      - "Supply chain optimization focus"
+      - "Industry 4.0 adoption varying"
+
+  search_queries:
+    earnings_and_financials:
+      - "[Company] quarterly earnings manufacturing"
+      - "[Company] operating margin efficiency"
+      - "[Company] annual report industrial"
+
+    strategic_priorities:
+      - "[Company] operational excellence manufacturing"
+      - "[Company] lean manufacturing initiative"
+      - "[Company] supply chain optimization"
+      - "[Company] Industry 4.0 smart factory"
+      - "[Company] OEE improvement"
+
+    technology_signals:
+      - "[Company] SAP manufacturing MES"
+      - "[Company] smart factory digital"
+      - "[Company] predictive maintenance manufacturing"
+      - "site:linkedin.com/jobs [Company] process engineer"
+
+  signals_to_watch:
+    strategic_signals:
+      high_relevance:
+        - signal: "Lean manufacturing or operational excellence"
+          celonis_angle: "Process efficiency and waste reduction"
+        - signal: "OEE (Overall Equipment Effectiveness) focus"
+          celonis_angle: "Shop floor process optimization"
+        - signal: "Supply chain resilience"
+          celonis_angle: "E2E visibility"
+
+  celonis_relevance:
+    primary_domains:
+      - domain: "Shopfloor"
+        relevance: "HIGH - Production efficiency"
+      - domain: "Supply Chain"
+        relevance: "HIGH - Material flow optimization"
+
+# =============================================================================
+# BANKING & FINANCIAL SERVICES (MODERATE DEPTH)
+# =============================================================================
+banking_financial_services:
+  overview:
+    description: |
+      Research approach for retail banks, commercial banks, investment banks,
+      and financial services firms.
+    sub_industries:
+      - "Retail Banking"
+      - "Commercial Banking"
+      - "Investment Banking"
+      - "Insurance"
+      - "Asset Management"
+    key_characteristics:
+      - "Heavy regulatory environment"
+      - "Digital transformation pressures"
+      - "Customer experience focus"
+      - "Risk and compliance critical"
+      - "Legacy system modernization"
+
+  search_queries:
+    earnings_and_financials:
+      - "[Bank] quarterly earnings results"
+      - "[Bank] efficiency ratio cost income"
+      - "[Bank] annual report"
+      - "[Bank] investor day presentation"
+
+    strategic_priorities:
+      - "[Bank] digital transformation strategy"
+      - "[Bank] customer experience initiative"
+      - "[Bank] operational efficiency program"
+      - "[Bank] automation RPA initiative"
+      - "[Bank] risk management compliance"
+
+    technology_signals:
+      - "[Bank] core banking transformation"
+      - "[Bank] cloud migration"
+      - "[Bank] API open banking"
+      - "[Bank] automation RPA"
+      - "site:linkedin.com/jobs [Bank] process improvement"
+
+    trigger_events:
+      - "[Bank] regulatory fine penalty"
+      - "[Bank] merger acquisition"
+      - "[Bank] new CEO appointed"
+      - "[Bank] branch closure digital"
+
+  signals_to_watch:
+    strategic_signals:
+      high_relevance:
+        - signal: "Efficiency ratio improvement targets"
+          celonis_angle: "Process efficiency across operations"
+        - signal: "Customer onboarding improvement"
+          celonis_angle: "Client onboarding process optimization"
+        - signal: "Regulatory compliance programs"
+          celonis_angle: "Risk and controls monitoring"
+        - signal: "Digital transformation"
+          celonis_angle: "Process intelligence as foundation"
+
+  celonis_relevance:
+    primary_domains:
+      - domain: "Client Onboarding"
+        relevance: "HIGH - Customer experience + compliance"
+      - domain: "Risk & Controls"
+        relevance: "HIGH - Regulatory requirements"
+      - domain: "Accounts Payable"
+        relevance: "MEDIUM - Operational efficiency"
+
+# =============================================================================
+# RETAIL & CPG (MODERATE DEPTH - COMBINED)
+# =============================================================================
+retail_cpg:
+  overview:
+    description: |
+      Research approach for retailers, consumer packaged goods companies,
+      and consumer products manufacturers.
+    sub_industries:
+      - "Grocery Retail"
+      - "Fashion & Apparel Retail"
+      - "E-commerce"
+      - "Food & Beverage CPG"
+      - "Personal Care & Household Products"
+    key_characteristics:
+      - "Consumer demand volatility"
+      - "Omnichannel complexity"
+      - "Supply chain efficiency critical"
+      - "Promotional deductions management"
+      - "Thin margins requiring optimization"
+
+  search_queries:
+    earnings_and_financials:
+      - "[Company] quarterly earnings retail CPG"
+      - "[Company] comparable store sales"
+      - "[Company] gross margin operating margin"
+      - "[Company] inventory turnover"
+
+    strategic_priorities:
+      - "[Company] omnichannel strategy"
+      - "[Company] supply chain optimization"
+      - "[Company] working capital improvement"
+      - "[Company] e-commerce digital"
+      - "[Company] sustainability packaging"
+
+    technology_signals:
+      - "[Company] SAP retail"
+      - "[Company] demand forecasting"
+      - "[Company] inventory management system"
+      - "[Company] supply chain visibility"
+
+  signals_to_watch:
+    strategic_signals:
+      high_relevance:
+        - signal: "Inventory optimization initiatives"
+          celonis_angle: "Inventory management processes"
+        - signal: "Supply chain resilience"
+          celonis_angle: "E2E supply chain visibility"
+        - signal: "Working capital improvement"
+          celonis_angle: "Order to cash, inventory processes"
+
+  celonis_relevance:
+    primary_domains:
+      - domain: "Supply Chain"
+        relevance: "HIGH - Demand volatility management"
+      - domain: "Order to Cash"
+        relevance: "HIGH - Revenue leakage prevention"
+      - domain: "Deductions" # CPG-specific
+        relevance: "HIGH for CPG - Major cash drain"

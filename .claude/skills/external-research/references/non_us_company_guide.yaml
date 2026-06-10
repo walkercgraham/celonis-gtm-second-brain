@@ -1,0 +1,492 @@
+# Non-US Company Research Guide
+# Guidance for researching EMEA, APAC, and private companies
+# Primary example: Saudi Aramco (Saudi Arabia / EMEA)
+
+metadata:
+  purpose: "Research guidance for companies outside US regulatory framework"
+  primary_example: "Saudi Aramco (Tadawul-listed, Saudi Arabia)"
+  version: "1.0"
+  last_updated: "2026-04-06"
+
+# =============================================================================
+# KEY PRINCIPLE
+# =============================================================================
+key_principle: |
+  Non-US companies have different disclosure requirements than SEC-regulated firms.
+  Adjust your research approach based on:
+  1. Where the company is listed (or if private)
+  2. What language materials are available
+  3. What the local disclosure requirements mandate
+
+  For most large-cap international companies, English investor materials ARE available.
+  Search English first before assuming you need local language sources.
+
+# =============================================================================
+# EMEA (Europe, Middle East, Africa)
+# =============================================================================
+emea:
+  overview: |
+    EMEA companies follow IFRS (not US GAAP) and have varying disclosure requirements
+    by country. Most large companies publish English investor materials.
+
+  # ---------------------------------------------------------------------------
+  # MIDDLE EAST (Aramco focus)
+  # ---------------------------------------------------------------------------
+  middle_east:
+    saudi_arabia:
+      overview: |
+        Saudi Arabia has a well-developed capital market with Tadawul (Saudi Exchange).
+        Large-cap companies like Aramco provide comprehensive English disclosures.
+
+      primary_exchange: "Tadawul (Saudi Exchange)"
+      regulator: "Capital Market Authority (CMA)"
+
+      disclosure_sources:
+        official_filings:
+          url: "tadawul.com.sa"
+          content:
+            - "Annual reports"
+            - "Quarterly financial statements"
+            - "Board of Directors reports"
+            - "Material announcements"
+          timing:
+            quarterly: "Within 45 days of period end"
+            annual: "Within 90 days of fiscal year end"
+
+        company_ir_sites:
+          note: "Large Saudi companies have English IR sections"
+          typical_url_pattern: "[company].com/en/investors"
+
+      language:
+        primary: "Arabic"
+        english_availability: "HIGH for large caps (Aramco, SABIC, STC)"
+        recommendation: "Search English IR section first"
+
+      # ARAMCO-SPECIFIC GUIDANCE
+      aramco_example:
+        company: "Saudi Aramco"
+        ticker: "2222.SR"
+
+        primary_sources:
+          - source: "Aramco Investor Relations"
+            url: "aramco.com/en/investors"
+            content:
+              - "Annual Reports (English PDF)"
+              - "Quarterly results presentations"
+              - "Earnings call transcripts (via Seeking Alpha)"
+              - "Sustainability reports"
+            quality: "Tier 1 - Direct"
+
+          - source: "Tadawul Company Page"
+            url: "tadawul.com.sa (search: 2222)"
+            content:
+              - "Official filings"
+              - "Material announcements"
+              - "Board reports"
+            quality: "Tier 1 - Direct"
+
+          - source: "Seeking Alpha"
+            url: "seekingalpha.com/symbol/ARMCO"
+            content:
+              - "Earnings call transcripts"
+              - "Analyst coverage"
+            quality: "Tier 1 - Direct"
+
+        search_queries_that_work:
+          - "Saudi Aramco annual report 2024 PDF"
+          - "Aramco investor presentation"
+          - "site:aramco.com investor"
+          - "Aramco earnings call transcript"
+          - "Saudi Aramco Q4 2025 results"
+
+        what_to_expect:
+          available_in_english:
+            - "Annual/Integrated Reports"
+            - "Quarterly earnings presentations"
+            - "Press releases"
+            - "Sustainability reports"
+          may_require_arabic:
+            - "Detailed regulatory filings"
+            - "Some board communications"
+
+    uae:
+      primary_exchanges:
+        - "Abu Dhabi Securities Exchange (ADX)"
+        - "Dubai Financial Market (DFM)"
+      major_companies: ["ADNOC Distribution", "Emirates NBD", "Emaar"]
+      english_availability: "HIGH for large caps"
+
+    qatar:
+      primary_exchange: "Qatar Stock Exchange"
+      major_companies: ["QatarEnergy (state-owned)", "Qatar National Bank"]
+      note: "QatarEnergy is not publicly listed but publishes annual reviews"
+
+  # ---------------------------------------------------------------------------
+  # EUROPE
+  # ---------------------------------------------------------------------------
+  europe:
+    overview: |
+      European companies follow IFRS and have strong disclosure requirements.
+      Most publish English materials for international investors.
+
+    united_kingdom:
+      primary_sources:
+        - source: "Companies House"
+          url: "find-and-update.company-information.service.gov.uk"
+          content: "Annual accounts, confirmation statements"
+        - source: "FCA Regulatory News Service (RNS)"
+          content: "Material announcements for listed companies"
+        - source: "London Stock Exchange"
+          url: "londonstockexchange.com"
+          content: "Filings, announcements"
+
+      disclosure_timing:
+        annual: "Within 4 months of fiscal year end"
+        interim: "Half-year reports within 3 months"
+
+      language: "English"
+
+      search_tips:
+        - "UK companies call them 'annual reports' not '10-K'"
+        - "Search for 'results presentation' not 'earnings call'"
+        - "Half-year results, not quarterly (most UK companies)"
+
+    germany:
+      primary_sources:
+        - source: "Bundesanzeiger (Federal Gazette)"
+          url: "bundesanzeiger.de"
+          content: "Official filings"
+        - source: "Deutsche Börse"
+          url: "deutsche-boerse.com"
+          content: "Listed company filings"
+
+      language:
+        primary: "German"
+        english_availability: "HIGH for DAX companies"
+
+      major_companies: ["Siemens", "BASF", "Volkswagen", "BMW", "SAP"]
+
+      search_tips:
+        - "Large German companies have English IR sections"
+        - "Search: [Company] annual report english PDF"
+        - "German fiscal year often calendar year"
+
+    france:
+      primary_sources:
+        - source: "AMF (Autorité des marchés financiers)"
+          url: "amf-france.org"
+        - source: "Euronext Paris"
+
+      language:
+        primary: "French"
+        english_availability: "HIGH for CAC 40 companies"
+
+      major_companies: ["TotalEnergies", "LVMH", "Sanofi", "BNP Paribas"]
+
+    netherlands:
+      note: "Many multinationals headquartered here (Shell, Unilever, ASML)"
+      english_availability: "Very high - often primary language"
+
+  # ---------------------------------------------------------------------------
+  # AFRICA
+  # ---------------------------------------------------------------------------
+  africa:
+    south_africa:
+      primary_exchange: "Johannesburg Stock Exchange (JSE)"
+      major_companies: ["Sasol", "Anglo American", "Naspers"]
+      language: "English"
+      disclosure_quality: "Strong (comparable to UK)"
+
+    nigeria:
+      primary_exchange: "Nigerian Stock Exchange"
+      language: "English"
+      note: "Oil & gas companies often have international presence"
+
+# =============================================================================
+# APAC (Asia-Pacific)
+# =============================================================================
+apac:
+  overview: |
+    APAC disclosure norms vary significantly by market. Japan and Australia have
+    strong requirements; China and India have improving but different practices.
+
+  japan:
+    primary_sources:
+      - source: "EDINET"
+        url: "disclosure.edinet-fsa.go.jp"
+        content: "Official securities filings (in Japanese)"
+      - source: "Tokyo Stock Exchange"
+        url: "jpx.co.jp"
+        content: "Listed company information"
+      - source: "Company IR Sites"
+        content: "English summaries and presentations"
+
+    language:
+      primary: "Japanese"
+      english_availability: "MEDIUM - summaries available, full filings often Japanese only"
+
+    major_companies: ["Toyota", "Sony", "Honda", "Hitachi", "Mitsubishi"]
+
+    fiscal_year: "Many follow April-March (Toyota, Honda)"
+
+    search_tips:
+      - "Search: [Company] investor relations english"
+      - "Japanese companies often provide English annual reports"
+      - "Earnings 'presentations' more common than call transcripts"
+      - "Note fiscal year differences when comparing to Western peers"
+
+  china:
+    primary_sources:
+      - source: "Shanghai Stock Exchange"
+        url: "sse.com.cn"
+        content: "A-share listings (primarily Chinese)"
+      - source: "Shenzhen Stock Exchange"
+        url: "szse.cn"
+      - source: "Hong Kong Stock Exchange"
+        url: "hkexnews.hk"
+        content: "H-share listings (English available)"
+      - source: "SEC (for US-listed ADRs)"
+        content: "20-F filings for US-listed Chinese companies"
+
+    language:
+      mainland_exchanges: "Chinese (Mandarin)"
+      hong_kong: "English and Chinese"
+      us_adrs: "English (SEC filings)"
+
+    major_companies:
+      a_shares: ["PetroChina", "Sinopec", "ICBC"]
+      h_shares_adrs: ["Alibaba", "Tencent", "BYD"]
+
+    search_tips:
+      - "For H-shares/ADRs: search English filings via HKEX or SEC"
+      - "US-listed ADRs file 20-F (annual) instead of 10-K"
+      - "Be cautious about data quality for smaller A-share companies"
+
+  india:
+    primary_sources:
+      - source: "BSE (Bombay Stock Exchange)"
+        url: "bseindia.com"
+      - source: "NSE (National Stock Exchange)"
+        url: "nseindia.com"
+      - source: "SEBI"
+        content: "Regulatory filings"
+
+    language: "English (official business language)"
+
+    major_companies: ["Reliance Industries", "TCS", "HDFC Bank", "Infosys"]
+
+    search_tips:
+      - "Indian companies file in English"
+      - "Annual reports readily available"
+      - "Many Indian IT/pharma companies have global presence"
+
+  australia:
+    primary_sources:
+      - source: "ASX (Australian Securities Exchange)"
+        url: "asx.com.au"
+        content: "Announcements, annual reports"
+
+    language: "English"
+
+    major_companies: ["BHP", "Rio Tinto", "Commonwealth Bank", "CSL"]
+
+    fiscal_year: "Often June-July"
+
+    search_tips:
+      - "Australian disclosure similar to UK/US quality"
+      - "Mining companies (BHP, Rio Tinto) particularly well-covered"
+
+  singapore:
+    primary_exchange: "Singapore Exchange (SGX)"
+    language: "English"
+    note: "Regional hub with strong disclosure standards"
+
+# =============================================================================
+# PRIVATE COMPANIES
+# =============================================================================
+private_companies:
+  overview: |
+    Private companies have limited public disclosure requirements. Research requires
+    alternative sources and should set appropriate confidence expectations.
+
+  challenges:
+    - "No mandatory quarterly/annual filings"
+    - "Financial data may be estimated or dated"
+    - "Strategic priorities harder to validate"
+    - "Technology stack less visible"
+
+  alternative_sources:
+    tier_1_for_private:
+      - source: "Press releases"
+        value: "Often the only official company communications"
+        quality: "Direct (for what's disclosed)"
+      - source: "Executive interviews and podcasts"
+        value: "Strategic insights from leadership"
+        quality: "Direct"
+
+    tier_2_for_private:
+      - source: "Industry analyst reports"
+        value: "May include private company coverage"
+        quality: "Inferred"
+        examples: ["Gartner", "Forrester", "IDC", "industry-specific analysts"]
+      - source: "News coverage"
+        value: "Funding rounds, partnerships, expansions"
+        quality: "Inferred"
+      - source: "Crunchbase / PitchBook"
+        value: "Funding history, valuation estimates, key investors"
+        quality: "Inferred"
+        note: "Best for VC/PE-backed companies"
+
+    tier_3_for_private:
+      - source: "Job postings"
+        value: "Technology signals, growth indicators, organizational structure"
+        quality: "Inferred"
+        search: "site:linkedin.com/jobs [Company]"
+      - source: "LinkedIn company page"
+        value: "Employee count trends, leadership changes"
+        quality: "Inferred"
+      - source: "Glassdoor"
+        value: "Company culture, employee sentiment"
+        quality: "Inferred"
+      - source: "D&B / ZoomInfo"
+        value: "Firmographic data, revenue estimates"
+        quality: "Inferred"
+        note: "Data quality varies"
+
+    tier_4_for_private:
+      - source: "Company website"
+        value: "Product info, leadership bios, press releases"
+        quality: "Direct for facts, Inferred for strategy"
+      - source: "Trade publications"
+        value: "Industry context and company mentions"
+        quality: "Inferred"
+
+  adjusted_expectations:
+    source_count: |
+      Lower expectation to 6-10 sources (vs 10-15 for public)
+      Focus on quality over quantity
+
+    confidence_levels: |
+      - Mark more findings as "Inferred" quality
+      - Financial data should be flagged as estimates
+      - Strategic priorities based on PR, not filings
+
+    documentation: |
+      - Explicitly note data limitations
+      - Flag which findings need AE validation
+      - Be clear about recency of information
+
+  search_strategy:
+    recommended_sequence:
+      1: "Company website and press releases"
+      2: "News search (last 12 months)"
+      3: "Industry analyst reports mentioning company"
+      4: "Job postings for technology and growth signals"
+      5: "LinkedIn for employee count and leadership"
+      6: "Crunchbase/PitchBook for funding (if applicable)"
+
+    queries:
+      - "[Company] press release"
+      - "[Company] funding announcement"
+      - "[Company] CEO interview"
+      - "[Company] expansion announcement"
+      - "site:linkedin.com [Company]"
+      - "site:crunchbase.com [Company]"
+
+  output_adjustments:
+    outputs_log_note: |
+      When documenting private company research, include a note like:
+      "Private company with limited public disclosure. Findings based on
+      press releases, news, and job postings. Financial data are estimates.
+      Recommend AE validate key assumptions during discovery."
+
+    confidence_mapping:
+      financial_data: "Inferred (estimates)"
+      strategic_priorities: "Inferred (from PR/news)"
+      technology_signals: "Inferred (from job postings)"
+      competitive_landscape: "Low confidence"
+
+# =============================================================================
+# NON-ENGLISH SOURCE HANDLING
+# =============================================================================
+non_english_sources:
+  general_approach: |
+    1. Search in English first - most large international companies publish
+       English investor materials
+    2. If English sources are insufficient, search in local language
+    3. For critical documents, note language and request translation if needed
+    4. Mark content derived from non-English sources appropriately
+
+  search_strategy:
+    step_1:
+      action: "Search English investor materials"
+      queries:
+        - "[Company] annual report english PDF"
+        - "[Company] investor relations english"
+        - "site:[company].com/en investor"
+
+    step_2:
+      action: "If insufficient, search local language"
+      note: "Use Google Translate for query if needed"
+
+    step_3:
+      action: "For critical documents, note language limitation"
+
+  documentation_requirements:
+    when_source_is_non_english:
+      - "Note source language in finding documentation"
+      - "If summarized/translated, mark quality as 'Inferred'"
+      - "Include original source URL for verification"
+
+    example:
+      finding: "Aramco announced expansion of Jazan refinery"
+      source: "Saudi Aramco press release (Arabic original, English translation)"
+      quality: "Direct"
+      note: "English version available on aramco.com"
+
+  aramco_specific:
+    situation: |
+      Saudi Aramco provides comprehensive English materials through their
+      IR website. Arabic sources exist but are rarely needed for research.
+
+    english_sources:
+      - "Annual Reports (full English versions)"
+      - "Quarterly earnings presentations"
+      - "Press releases (English versions)"
+      - "Sustainability reports"
+
+    recommendation: |
+      For Aramco, conduct research entirely in English using aramco.com/en/investors.
+      Arabic sources are unnecessary for typical presales research.
+
+# =============================================================================
+# RESEARCH QUALITY ADJUSTMENTS BY COMPANY TYPE
+# =============================================================================
+quality_adjustments:
+  public_non_us:
+    source_expectation: "10-15 sources (same as US)"
+    tier_1_availability: "HIGH for large caps"
+    confidence_adjustment: "None - similar quality to US"
+
+  private_large:
+    description: "Large private companies (e.g., Cargill, Koch Industries)"
+    source_expectation: "8-12 sources"
+    tier_1_availability: "LIMITED - rely on press and news"
+    confidence_adjustment: "Mark more findings as Inferred"
+
+  private_mid_market:
+    description: "Mid-sized private companies"
+    source_expectation: "6-10 sources"
+    tier_1_availability: "LOW"
+    confidence_adjustment: |
+      Mark most findings as Inferred
+      Flag financial data as estimates
+      Recommend AE validation
+
+  state_owned_enterprises:
+    description: "Government-owned companies (QatarEnergy, ADNOC)"
+    source_expectation: "8-12 sources"
+    tier_1_availability: "MEDIUM - varies by company"
+    confidence_adjustment: |
+      Some SOEs have excellent disclosure (Aramco)
+      Others are opaque - adjust expectations accordingly

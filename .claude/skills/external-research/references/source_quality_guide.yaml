@@ -1,0 +1,104 @@
+# Source Quality Guide for External Research
+# Use this to assess and document research sources
+
+source_hierarchy:
+  tier_1_highest_value:
+    description: "Primary sources with direct executive statements"
+    examples:
+      - "Earnings call transcripts"
+      - "Investor day presentations"
+      - "SEC 10-K and 10-Q filings"
+      - "Annual/Integrated reports"
+      - "CEO letters to shareholders"
+    quality_rating: "Direct"
+    typical_freshness: "Quarterly to annual"
+
+  tier_2_high_value:
+    description: "Authoritative secondary sources"
+    examples:
+      - "Industry analyst reports (Gartner, Forrester, IDC)"
+      - "Credit rating agency reports (Moody's, S&P)"
+      - "Investment bank research notes"
+      - "Major business publications (WSJ, FT, Reuters)"
+    quality_rating: "Direct or Inferred"
+    typical_freshness: "Monthly to quarterly"
+
+  tier_3_medium_value:
+    description: "Useful supplementary sources"
+    examples:
+      - "Company press releases"
+      - "Trade publications"
+      - "Industry association reports"
+      - "Job postings (for tech signals)"
+      - "Conference presentations"
+    quality_rating: "Inferred"
+    typical_freshness: "Real-time to monthly"
+
+  tier_4_supporting:
+    description: "Background and validation sources"
+    examples:
+      - "Company website (about, leadership)"
+      - "LinkedIn company pages"
+      - "Wikipedia (for basic facts)"
+      - "General news articles"
+    quality_rating: "Inferred or Stale"
+    typical_freshness: "Variable"
+
+quality_ratings:
+  Direct:
+    definition: "Explicit statement from company or authoritative source"
+    example: "CEO said in earnings call: 'Our top priority is...'"
+    confidence: "High"
+
+  Inferred:
+    definition: "Reasonable conclusion drawn from available evidence"
+    example: "Multiple job postings for SAP developers suggest SAP implementation"
+    confidence: "Medium"
+
+  Stale:
+    definition: "Information older than 12 months or from outdated source"
+    example: "2023 annual report mentions initiative (may have changed)"
+    confidence: "Low - verify with AE"
+
+freshness_guidelines:
+  current: "Within last 3 months"
+  recent: "3-12 months old"
+  stale: "12+ months old"
+  note: "Business context can change rapidly - prefer current sources"
+
+minimum_source_requirements:
+  total_sources: 12  # Increased from 10
+  tier_1_minimum: 4  # Increased from 2
+  tier_1_breakdown:
+    - "At least 1 annual report or equivalent filing"
+    - "At least 1 earnings call / results presentation transcript (if public)"
+    - "At least 1 investor presentation (CMD, investor day, or quarterly deck)"
+    - "At least 1 regulatory filing (SEC for US, Companies House for UK, Tadawul for Saudi, etc.)"
+  tier_2_minimum: 3  # Increased from 2
+  recency_requirement: "At least 6 sources from last 12 months"
+
+  investor_source_checklist:
+    public_companies:
+      required_attempts:
+        - "Annual report search"
+        - "Earnings / results presentation transcript search (2 recent periods)"
+        - "Capital markets day / investor day search"
+        - "Regulatory filing search (region-appropriate)"
+      success_criteria: "At least 3 of 4 source types found and extracted"
+      note: "Document which sources were unavailable and why"
+    private_companies:
+      required_attempts:
+        - "Funding announcements / press releases"
+        - "Industry coverage / trade press"
+        - "Executive interviews / podcasts"
+      note: "Private companies have limited disclosure; document what's unavailable"
+      adjusted_tier_1_minimum: 2  # Lower bar for private companies
+
+documentation_format:
+  for_each_finding:
+    - what: "The specific data point or insight"
+    - source: "Document title and publication"
+    - url: "Direct link if available"
+    - date: "Publication date"
+    - quality: "Direct, Inferred, or Stale"
+    - quote: "Relevant excerpt (if Direct)"

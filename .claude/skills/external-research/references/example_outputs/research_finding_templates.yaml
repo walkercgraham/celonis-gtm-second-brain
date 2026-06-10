@@ -1,0 +1,383 @@
+# Research Finding Templates
+# Use these templates for consistent documentation of research findings
+# Each template shows the expected format plus good/bad examples
+
+metadata:
+  purpose: "Templates for consistent research finding documentation"
+  version: "1.0"
+  last_updated: "2026-04-06"
+
+# =============================================================================
+# STRATEGIC PRIORITY TEMPLATE
+# =============================================================================
+strategic_priority:
+  description: |
+    Strategic priorities are the top 3-5 things the company is focused on achieving.
+    They should be outcome-focused, supported by evidence, and rated for quality.
+
+  format:
+    priority: "[Outcome-focused statement of what company is trying to achieve]"
+    evidence: "[Direct quote or specific reference with context - include speaker if available]"
+    source: "[Document name, date, page/section if applicable]"
+    quality: "[Direct|Inferred|Stale]"
+
+  quality_ratings:
+    Direct: "Explicit statement from company leadership or official document"
+    Inferred: "Reasonable conclusion drawn from multiple data points"
+    Stale: "Information older than 12 months - flag for AE validation"
+
+  good_examples:
+    - priority: "Maximize value from existing assets through operational excellence"
+      evidence: |
+        CEO Amin H. Nasser stated in Q4 2025 earnings call: "Operational excellence
+        is not optional - it is the foundation of our competitive advantage. We
+        continue to invest in digitalization and advanced analytics to drive
+        efficiency across our operations."
+      source: "Q4 2025 Earnings Call Transcript, Seeking Alpha"
+      quality: "Direct"
+      why_good:
+        - "Priority is outcome-focused (maximize value, operational excellence)"
+        - "Evidence includes direct quote with speaker attribution"
+        - "Source is specific (which call, where to find it)"
+        - "Quality is correctly rated as Direct"
+
+    - priority: "Downstream expansion to capture more value chain margin"
+      evidence: |
+        Investor Day 2025 presentation stated $50B capital program for new refineries
+        and petrochemical integration. CEO noted: "We are building the infrastructure
+        to be the world's most integrated energy company."
+      source: "Investor Day 2025 Presentation, slide 12"
+      quality: "Direct"
+      why_good:
+        - "Specific capital commitment cited ($50B)"
+        - "Includes direct quote"
+        - "Source includes specific slide reference"
+
+  bad_examples:
+    - priority: "They want to be more efficient"
+      evidence: "Company website says they focus on efficiency"
+      source: "Website"
+      quality: "Direct"
+      why_bad:
+        - "Priority is vague ('be more efficient' - in what way?)"
+        - "Evidence has no specific quote or data point"
+        - "Source is not specific (which page? when accessed?)"
+        - "Quality should be 'Inferred' given vague source"
+
+    - priority: "Digital transformation"
+      evidence: "They have a digital transformation program"
+      source: "Annual report"
+      quality: "Direct"
+      why_bad:
+        - "Priority is generic (what outcome are they seeking?)"
+        - "No specific quote or evidence"
+        - "Source lacks year/page"
+        - "Reads like circular reasoning"
+
+  better_version_of_bad:
+    - priority: "Digital transformation to enable $2B annual efficiency gains"
+      evidence: |
+        SVP presented at World Petroleum Congress: "Our company-wide operational
+        excellence program targets $2B in annual efficiency gains through process
+        optimization and digital tools."
+      source: "World Petroleum Congress 2025, Aramco presentation"
+      quality: "Direct"
+
+# =============================================================================
+# TRIGGER EVENT TEMPLATE
+# =============================================================================
+trigger_event:
+  description: |
+    Trigger events are specific occurrences that create opportunity or urgency
+    for Celonis. They should be factual, dated, and include relevance analysis.
+
+  format:
+    event: "[Specific, factual description of the event]"
+    date: "[YYYY-MM or Q# YYYY]"
+    source: "[Specific source with URL if available]"
+    relevance: "[Why this creates opportunity for Celonis - be specific about the connection]"
+    confidence: "[High|Medium|Low]"
+
+  confidence_ratings:
+    High: "Event is confirmed from primary sources, relevance is clear"
+    Medium: "Event is confirmed but relevance requires some inference"
+    Low: "Event is reported but not confirmed, or relevance is speculative"
+
+  good_examples:
+    - event: "$50B downstream expansion program announced over next decade"
+      date: "2025-09"
+      source: "Investor Day 2025 presentation, confirmed in Q4 earnings call"
+      relevance: |
+        Expansion adds 5+ new refineries requiring maintenance operations.
+        Increases asset complexity, creating demand for maintenance optimization.
+        New facilities represent greenfield opportunity to establish process
+        intelligence from project start. Operational excellence will be critical
+        to realizing return on this significant capital investment.
+      confidence: "High"
+      why_good:
+        - "Event is specific ($50B, timeframe)"
+        - "Date is provided"
+        - "Multiple sources cited"
+        - "Relevance explains the Celonis connection specifically"
+        - "Confidence appropriately rated High"
+
+    - event: "New CEO appointed with operational efficiency mandate"
+      date: "2025-06"
+      source: "Company press release"
+      relevance: |
+        New CEO previously led operational excellence at prior company. Press
+        release emphasized 'efficiency and modernization' as priorities. New
+        leadership typically reviews technology investments. Creates window
+        for introducing process intelligence solutions.
+      confidence: "Medium"
+      why_good:
+        - "Event is specific (new CEO)"
+        - "Relevance connects CEO background to Celonis value"
+        - "Confidence is Medium (appropriate given inference required)"
+
+  bad_examples:
+    - event: "They're growing"
+      date: "2025"
+      source: "News"
+      relevance: "Growing companies need efficiency"
+      confidence: "High"
+      why_bad:
+        - "Event is vague (what kind of growth?)"
+        - "Date is imprecise"
+        - "Source is not specific"
+        - "Relevance is generic, not specific to this company"
+        - "Confidence should not be High given vague inputs"
+
+    - event: "Company announced digital transformation"
+      date: "2025-01"
+      source: "Press release"
+      relevance: "They might want Celonis"
+      confidence: "Medium"
+      why_bad:
+        - "Event is generic"
+        - "Relevance is lazy ('might want')"
+        - "No analysis of why digital transformation = Celonis opportunity"
+
+  better_version_of_bad:
+    - event: "Company launched enterprise-wide digital transformation program with $500M budget"
+      date: "2025-01"
+      source: "Press release, January 15, 2025"
+      relevance: |
+        $500M budget indicates significant investment capacity for technology.
+        Press release specifically mentioned 'process automation' and 'operational
+        visibility' as program pillars - both align with Celonis capabilities.
+        Program reporting to COO suggests operational focus vs pure IT initiative.
+      confidence: "Medium"
+
+# =============================================================================
+# TECHNOLOGY SIGNAL TEMPLATE
+# =============================================================================
+technology_signal:
+  description: |
+    Technology signals indicate what systems the company uses and their digital
+    maturity. Focus on signals that indicate Celonis compatibility or opportunity.
+
+  format:
+    signal_type: "[ERP|Cloud|AI/ML|Digital Transformation|Competitive]"
+    finding: "[What was discovered]"
+    evidence: "[Specific source or observation]"
+    celonis_implication: "[How this affects Celonis opportunity]"
+    quality: "[Direct|Inferred]"
+
+  signal_types:
+    ERP: "Core transactional systems (SAP, Oracle, etc.)"
+    Cloud: "Cloud platform adoption (AWS, Azure, GCP)"
+    AI_ML: "AI/ML initiatives and analytics programs"
+    Digital_Transformation: "Broad digitalization programs"
+    Competitive: "Process intelligence or competitor tool adoption"
+
+  good_examples:
+    - signal_type: "ERP"
+      finding: "SAP S/4HANA deployed across core functions including plant maintenance"
+      evidence: |
+        2024 Annual Report, p.67: "Our enterprise resource planning transformation
+        continues with SAP S/4HANA deployed across our core business functions,
+        including finance, procurement, and plant maintenance operations."
+      celonis_implication: |
+        SAP foundation enables straightforward Celonis integration. SAP PM module
+        provides rich data for asset reliability use case. Existing SAP investment
+        suggests receptivity to SAP ecosystem solutions.
+      quality: "Direct"
+
+    - signal_type: "Competitive"
+      finding: "No process mining tools detected - Greenfield opportunity"
+      evidence: |
+        - No process mining roles in LinkedIn job postings
+        - No Celonis or competitor mentions in analyst coverage
+        - Gartner Process Mining Market Guide 2025 does not list company as customer
+      celonis_implication: |
+        Greenfield means no displacement required. Can position as net-new
+        capability rather than replacement. No existing biases from competitor
+        implementations.
+      quality: "Inferred"
+
+  bad_examples:
+    - signal_type: "ERP"
+      finding: "They use SAP"
+      evidence: "Found on website"
+      celonis_implication: "SAP is good for Celonis"
+      quality: "Direct"
+      why_bad:
+        - "Finding lacks specificity (which SAP product?)"
+        - "Evidence is vague"
+        - "Implication is generic"
+
+# =============================================================================
+# FINANCIAL CONTEXT TEMPLATE
+# =============================================================================
+financial_context:
+  description: |
+    Financial context helps understand the company's ability and motivation
+    to invest in process improvement. Focus on metrics that indicate pain
+    points or investment capacity.
+
+  format:
+    summary: "[2-3 sentence overview of financial position and trajectory]"
+    growth_trajectory: "[Growing|Stable|Declining|Restructuring]"
+    key_metrics:
+      - "[Specific metric with number and date]"
+
+  growth_trajectory_definitions:
+    Growing: "Revenue and/or profitability increasing year-over-year"
+    Stable: "Consistent performance, no major changes"
+    Declining: "Revenue and/or profitability decreasing"
+    Restructuring: "Major changes underway (cost cuts, reorg, etc.)"
+
+  good_example:
+    summary: |
+      World's most profitable company with exceptional financial flexibility.
+      Operating cash flow of $49B supports both dividend commitments and
+      significant capital investment. Capital discipline balanced with ambitious
+      $50B downstream expansion program.
+    growth_trajectory: "Stable"
+    key_metrics:
+      - "Revenue: $400B+ (2024)"
+      - "Operating cash flow: $49B (2024)"
+      - "CAPEX program: $50B+ over next decade (downstream)"
+      - "Upstream reliability: 99.8%"
+      - "Refinery utilization: 94.2%"
+    why_good:
+      - "Summary provides context, not just numbers"
+      - "Metrics are specific with dates"
+      - "Includes operational metrics relevant to Celonis use cases"
+
+  bad_example:
+    summary: "Big company with lots of revenue"
+    growth_trajectory: "Growing"
+    key_metrics:
+      - "Revenue: high"
+      - "Profitable"
+    why_bad:
+      - "Summary is vague"
+      - "No specific numbers"
+      - "Growth trajectory not substantiated"
+
+# =============================================================================
+# SOURCE DOCUMENTATION TEMPLATE
+# =============================================================================
+source_documentation:
+  description: |
+    Every finding should have its source documented. This enables verification
+    and helps assess confidence.
+
+  format:
+    id: "[Sequential number]"
+    tier: "[1|2|3|4]"
+    type: "[Document type]"
+    title: "[Specific title]"
+    url: "[Direct URL if available]"
+    date: "[Publication date]"
+    quality: "[Direct|Inferred|Stale]"
+    key_extracts:
+      - finding: "[What you found]"
+        quote: "[Direct quote if available]"
+        relevance: "[Why it matters]"
+
+  tier_definitions:
+    1: "Earnings calls, SEC/regulatory filings, annual reports"
+    2: "Analyst reports, credit ratings, major business publications"
+    3: "Press releases, job postings, trade publications"
+    4: "Company website, LinkedIn, general background"
+
+  good_example:
+    id: 1
+    tier: 1
+    type: "Earnings Call Transcript"
+    title: "Saudi Aramco Q4 2025 Earnings Call"
+    url: "seekingalpha.com/article/aramco-q4-2025-earnings-call-transcript"
+    date: "2026-02-15"
+    quality: "Direct"
+    key_extracts:
+      - finding: "Downstream expansion as top strategic priority"
+        quote: |
+          "Our strategic focus remains on downstream integration. We are investing
+          over $50 billion in the next decade to expand our refining and
+          petrochemical capacity."
+        speaker: "Amin H. Nasser, President & CEO"
+        relevance: "Confirms major capital programs requiring operational excellence"
+
+  bad_example:
+    id: 1
+    tier: 1
+    type: "Earnings call"
+    title: "Earnings call"
+    url: null
+    date: "2025"
+    quality: "Direct"
+    key_extracts:
+      - finding: "They talked about strategy"
+        relevance: "Important"
+    why_bad:
+      - "Title is not specific (which quarter? which company?)"
+      - "No URL provided"
+      - "Date is imprecise"
+      - "Extract is vague with no quote"
+
+# =============================================================================
+# COMPETITIVE LANDSCAPE TEMPLATE
+# =============================================================================
+competitive_landscape:
+  description: |
+    Assess whether the company has existing process intelligence or competing tools.
+    This determines positioning strategy.
+
+  format:
+    situation: "[Greenfield|Competitor Deployed|Evaluation Underway|Unknown]"
+    tools_detected: "[List of tools found, or empty if none]"
+    evidence:
+      - "[How you determined the situation]"
+    pitch_implications: "[How to position given the competitive situation]"
+
+  situation_definitions:
+    Greenfield: "No process mining or directly competing tools detected"
+    Competitor_Deployed: "Evidence of competitor tool in production use"
+    Evaluation_Underway: "Signs of active vendor evaluation"
+    Unknown: "Insufficient information to determine"
+
+  good_example:
+    situation: "Greenfield"
+    tools_detected: []
+    evidence:
+      - "No process mining roles in LinkedIn job postings (searched 2026-04-01)"
+      - "No Celonis or competitor mentions in analyst coverage"
+      - "Gartner Process Mining Market Guide 2025 does not list company as customer"
+      - "No RFP or vendor evaluation news found"
+    pitch_implications: |
+      Position Celonis as enterprise-wide platform for operational excellence.
+      Align with existing 4IR and SAP investments. No displacement messaging
+      required - focus on net-new capability and business outcomes.
+
+  bad_example:
+    situation: "Greenfield"
+    tools_detected: []
+    evidence:
+      - "Didn't find anything"
+    pitch_implications: "Good opportunity"
+    why_bad:
+      - "Evidence is not substantiated (what did you actually search?)"
+      - "Pitch implications are generic"

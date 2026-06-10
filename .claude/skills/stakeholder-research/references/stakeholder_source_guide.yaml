@@ -1,0 +1,252 @@
+# Stakeholder Source Quality Guide
+# Use this to assess and document stakeholder research sources
+#
+# Note: Stakeholder research typically has fewer sources than company research
+# due to more limited public information about individuals.
+
+metadata:
+  purpose: "Source quality tiers and documentation standards for stakeholder research"
+  version: "1.0"
+  last_updated: "2026-04-07"
+
+# =============================================================================
+# SOURCE HIERARCHY
+# =============================================================================
+source_hierarchy:
+  tier_1_highest_value:
+    description: "Primary sources with direct stakeholder information"
+    examples:
+      - "LinkedIn profile (verified, current)"
+      - "Company executive biography page"
+      - "Direct interviews or podcasts"
+      - "Conference keynote presentations"
+      - "Authored articles or publications"
+    quality_rating: "Direct"
+    typical_freshness: "Current to 2 years"
+    minimum_required: 1
+
+  tier_2_high_value:
+    description: "Authoritative sources with stakeholder context"
+    examples:
+      - "Industry publications featuring the stakeholder"
+      - "Conference panel discussions"
+      - "Investment analyst reports mentioning executive"
+      - "Major business publications (WSJ, FT, Bloomberg)"
+    quality_rating: "Direct or Inferred"
+    typical_freshness: "1-3 years"
+    minimum_required: 2
+
+  tier_3_medium_value:
+    description: "Supplementary sources for additional context"
+    examples:
+      - "Appointment/promotion announcements"
+      - "Press releases with quotes"
+      - "Industry news articles"
+      - "Trade publication mentions"
+      - "Association memberships"
+    quality_rating: "Inferred"
+    typical_freshness: "Variable"
+    minimum_required: 2
+
+  tier_4_supporting:
+    description: "Background sources for validation"
+    examples:
+      - "General web search results"
+      - "Company website (non-exec page)"
+      - "Wikipedia (for basic facts)"
+      - "Social media mentions"
+    quality_rating: "Inferred"
+    typical_freshness: "Variable"
+    minimum_required: 0
+
+# =============================================================================
+# QUALITY RATINGS
+# =============================================================================
+quality_ratings:
+  Direct:
+    definition: "Explicit information from stakeholder or authoritative source"
+    examples:
+      - "LinkedIn profile states: 'EVP Global Manufacturing since 2023'"
+      - "In interview, stated: 'Our top priority is operational excellence'"
+      - "Company bio describes 20-year career at Aramco"
+    confidence: "High"
+    use_for:
+      - "Name, title, tenure"
+      - "Direct quotes about priorities"
+      - "Career history facts"
+      - "Education and achievements"
+
+  Inferred:
+    definition: "Reasonable conclusion from available evidence"
+    examples:
+      - "Role-typical priorities based on EVP Manufacturing position"
+      - "Priorities inferred from company strategic direction"
+      - "Career stage determined from visible experience"
+    confidence: "Medium"
+    use_for:
+      - "Likely priorities (combined with rationale)"
+      - "Role-typical pain points"
+      - "Engagement approach recommendations"
+    always_include_rationale: true
+
+# =============================================================================
+# MINIMUM SOURCE REQUIREMENTS
+# =============================================================================
+minimum_source_requirements:
+  total_sources: 6
+  tier_1_minimum: 1
+  tier_2_plus_minimum: 3  # At least 3 from Tier 1+2
+  recency_requirement: "At least 3 sources from last 3 years"
+
+  relaxed_requirements:
+    description: "Use when stakeholder has limited public presence"
+    total_sources: 4
+    tier_1_minimum: 1
+    note: "Flag limited public presence in outputs_log"
+
+# =============================================================================
+# DOCUMENTATION FORMAT
+# =============================================================================
+documentation_format:
+  for_each_finding:
+    - what: "The specific data point (name, title, quote, etc.)"
+    - source: "Document title and publication"
+    - url: "Direct link if available"
+    - date: "Publication date or 'Current' for LinkedIn"
+    - quality: "Direct or Inferred"
+    - quote: "Relevant excerpt (if Direct)"
+
+  example_documentation:
+    good_example:
+      finding: "20+ year career at Saudi Aramco, rose through refinery operations"
+      source: "LinkedIn Profile"
+      url: "linkedin.com/in/ibrahim-al-ghamdi"
+      date: "Current (accessed 2026-04-07)"
+      quality: "Direct"
+      quote: "Experience section shows continuous Aramco tenure since 2003"
+
+    bad_example:
+      finding: "Long career at company"
+      source: "Website"
+      quality: "Direct"
+      why_bad:
+        - "Finding is vague (how long?)"
+        - "Source is not specific"
+        - "No date or URL"
+        - "Quality should be 'Inferred' given vagueness"
+
+# =============================================================================
+# SOURCE-SPECIFIC GUIDANCE
+# =============================================================================
+source_specific_guidance:
+  linkedin:
+    tier: 1
+    notes:
+      - "Check if profile is verified/active"
+      - "Note last activity date if visible"
+      - "Career history is usually reliable"
+      - "Endorsements may indicate priorities"
+    cautions:
+      - "Job titles may not match company's official titles"
+      - "Dates may be approximate"
+      - "Summaries are self-written (may be promotional)"
+
+  company_executive_bio:
+    tier: 1
+    notes:
+      - "Official company perspective on role"
+      - "Usually accurate for current position"
+      - "May include responsibility scope"
+    cautions:
+      - "Often lacks personal perspective"
+      - "May be outdated if website not maintained"
+
+  interviews_podcasts:
+    tier: 1
+    notes:
+      - "Best source for stated priorities"
+      - "Reveals communication style"
+      - "Often includes direct quotes"
+    cautions:
+      - "May be curated/prepared statements"
+      - "Check date - priorities may have changed"
+
+  press_releases:
+    tier: 3
+    notes:
+      - "Good for appointment details"
+      - "May include prior role context"
+    cautions:
+      - "Promotional language"
+      - "Limited personal insight"
+
+  news_articles:
+    tier: 3
+    notes:
+      - "External perspective on stakeholder"
+      - "May capture unofficial views"
+    cautions:
+      - "May be inaccurate"
+      - "Verify against primary sources"
+
+# =============================================================================
+# HANDLING GAPS
+# =============================================================================
+handling_gaps:
+  limited_public_presence:
+    definition: "Fewer than 4 sources found, no Tier 1 sources"
+    approach:
+      - "Rely more heavily on role_research_guide.yaml"
+      - "Mark more findings as 'Inferred'"
+      - "Include clear rationale for inferences"
+      - "Flag in outputs_log for AE to supplement"
+    output_log_example:
+      skill: "stakeholder-research"
+      status: "Partial"
+      notes: "Limited public profile - 4 sources found, priorities largely role-inferred. Recommend AE supplement with direct knowledge."
+
+  no_tier_1_sources:
+    approach:
+      - "Document search attempts"
+      - "Use role-typical patterns as baseline"
+      - "All priorities marked 'Inferred'"
+      - "Flag for AE validation"
+
+  stale_information:
+    definition: "Most recent source >3 years old"
+    approach:
+      - "Note staleness in findings"
+      - "Recommend AE verify current role"
+      - "Priorities may have changed"
+
+# =============================================================================
+# FRESHNESS GUIDELINES
+# =============================================================================
+freshness_guidelines:
+  current: "Within last 12 months"
+  recent: "1-3 years old"
+  dated: "3-5 years old"
+  stale: "5+ years old"
+
+  impact_on_confidence:
+    current: "High confidence for current priorities"
+    recent: "Good confidence, verify major changes"
+    dated: "Medium confidence, priorities may have evolved"
+    stale: "Low confidence, treat as historical context only"
+
+# =============================================================================
+# COMPARISON TO COMPANY RESEARCH
+# =============================================================================
+comparison_to_company_research:
+  company_research:
+    total_sources: "10-15"
+    tier_1_minimum: 2
+    primary_sources: "Earnings calls, SEC filings, annual reports"
+    confidence_level: "Higher - public companies well documented"
+
+  stakeholder_research:
+    total_sources: "6-10"
+    tier_1_minimum: 1
+    primary_sources: "LinkedIn, executive bios, interviews"
+    confidence_level: "Lower - individuals less documented"
+    key_difference: "More reliance on role-typical patterns with inference"

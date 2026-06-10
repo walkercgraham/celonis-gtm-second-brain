@@ -1,0 +1,1402 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-04-23",
+  "notes": "Curated from FY27 industry GTM decks. Some industries need further manual curation from auto-extracted content.",
+  "industries": [
+    {
+      "industry": "Energy",
+      "sub_industries": ["Oil & Gas", "Chemicals", "Mining"],
+      "overview": {
+        "state_of_industry": "The global Energy industry faces macroeconomic, geopolitical, organizational and operational complexity. Capital discipline is paramount while funding energy transitions. Oil & Gas firms must maintain legacy assets while funding low-carbon initiatives. Chemicals faces compressed margins from oversupply. Mining deals with dropping ore quality requiring more processing.",
+        "industry_challenges": [
+          "Capital discipline while funding energy transition",
+          "Maintaining legacy fossil fuel assets while investing in low-carbon alternatives",
+          "Compressed margins from oversupply and overbuilt capacity",
+          "Dropping ore grade quality requiring more intensive mining operations",
+          "Supply chain complexity and geopolitical volatility",
+          "Equipment reliability and unplanned downtime",
+          "Scope 1, 2, and 3 emissions monitoring and reduction"
+        ],
+        "celonis_value_proposition": "Celonis enables the Energy industry to navigate complexity by connecting to data across the enterprise and enriching it with each company's unique business context. The result is a living digital twin that provides real-time visibility into operations, enabling AI-driven optimization and autonomous operation.",
+        "key_messages": [
+          "The Energy industry is focusing on what they can control: reducing cash leakage, increasing contract compliance, and optimizing supply chains",
+          "Process intelligence is the connective tissue of the enterprise, creating a digital twin to drive value across operations",
+          "Celonis helps reduce mundane tasks, increase productivity, and monitor key equipment to reduce failure, cost, and downtime"
+        ],
+        "strategic_transformations": [
+          "Optimize Logistics & Distribution",
+          "Streamline Maintenance & Operations",
+          "Transform Working Capital"
+        ],
+        "proof_points": [
+          {
+            "customer": "International Oil Company",
+            "outcome": "Credit memo aging optimization",
+            "quote": "Process Mining showed us the value, volume and aging of credit memos. With this insight we were able to clean the lake and stop the river from flowing."
+          },
+          {
+            "customer": "Oil & Gas Supermajor",
+            "outcome": "E2E maintenance work order transformation",
+            "quote": "Leveraging Celonis, the team can confidently and sustainably increase/monitor inventory to support maintenance reliability"
+          }
+        ],
+        "key_personas": [
+          "CSCO/COO",
+          "VP of Plant Maintenance",
+          "VP of Supply Chain",
+          "VP of Logistics",
+          "Maintenance Planner",
+          "Materials Superintendent"
+        ],
+        "use_case_areas": [
+          "Maintenance & Reliability",
+          "Supply Chain",
+          "Logistics & Distribution",
+          "Working Capital",
+          "Accounts Payable/Receivable"
+        ],
+        "terminology_use": ["asset reliability", "plant maintenance", "work order", "preventive maintenance", "schedule compliance", "digital twin"],
+        "terminology_avoid": ["process mining (lead with outcomes instead)"]
+      },
+      "spotlights": [
+        {
+          "domain_name": "Asset Reliability",
+          "alternative_names": ["Plant Maintenance", "Maintenance & Reliability"],
+          "strategic_priorities_framing": "Energy leaders must enforce cost and capital discipline while improving operational efficiency",
+          "key_pain_points": [
+            "Unplanned downtime and equipment failures",
+            "Poor schedule compliance in maintenance activities",
+            "Silent killers - issues that go undetected until due dates are missed",
+            "Lack of real-time visibility into maintenance workflow bottlenecks",
+            "Costly breakdowns from missed preventive maintenance",
+            "Disconnected systems preventing holistic maintenance view"
+          ],
+          "celonis_value_proposition": "Celonis is uniquely positioned to address mission-critical asset reliability challenges by providing system-agnostic modeling of E2E maintenance processes, from notification to completion.",
+          "kpis_targeted": [
+            "On-Time Completion Rate",
+            "Preventive Maintenance Rate",
+            "Schedule Adherence Rate",
+            "Touchless Work Order Rate",
+            "Cost per Work Order",
+            "PM Compliance Rate"
+          ],
+          "use_cases": [
+            "Smart prioritization of work orders",
+            "Automated readiness checks",
+            "Bottleneck analysis in maintenance workflow",
+            "Material availability prediction",
+            "Deferral guardrail enforcement",
+            "Silent killer identification and alerting"
+          ],
+          "proof_points": [
+            {
+              "metric": "Increase in schedule compliance within one year",
+              "context": "By identifying 'silent killers' and alerting planners before due dates are missed"
+            },
+            {
+              "metric": "Average increase in PM compliance rates",
+              "context": "Significantly reducing risk of catastrophic failure"
+            }
+          ],
+          "typical_personas": ["VP of Plant Maintenance", "Maintenance Planner", "Materials Superintendent"],
+          "demo_views": [
+            "Real-time high-level overview for strategic decisions",
+            "Process cockpit for value opportunity analysis",
+            "Operational apps for day-to-day work order management"
+          ]
+        },
+        {
+          "domain_name": "Supply Chain",
+          "alternative_names": ["Energy Supply Chain", "Logistics & Distribution"],
+          "strategic_priorities_framing": "Transform supply chain resilience and optimize logistics in a volatile environment",
+          "key_pain_points": [
+            "Supply chain disruptions from geopolitical volatility",
+            "Lack of end-to-end transparency across supply chain",
+            "Manual operational activities slowing response time",
+            "Cross-process inefficiency",
+            "Vendor management complexity"
+          ],
+          "celonis_value_proposition": "Automate operational supply chain activities, increase end-to-end transparency, and optimize cross-process efficiency.",
+          "kpis_targeted": [
+            "On-Time Delivery",
+            "Inventory Turns",
+            "Order Cycle Time",
+            "Supply Chain Cost",
+            "Vendor Performance"
+          ],
+          "use_cases": [
+            "Vendor rationalization",
+            "Local supply ecosystem development",
+            "Integrated supply chain management",
+            "Transportation optimization",
+            "Inventory management"
+          ],
+          "proof_points": [],
+          "typical_personas": ["CSCO", "VP of Supply Chain", "VP of Logistics"]
+        }
+      ]
+    },
+    {
+      "industry": "Automotive",
+      "sub_industries": ["OEM", "Supplier"],
+      "overview": {
+        "state_of_industry": "The automotive industry is undergoing significant transformation driven by intensifying competition, continued supply chain volatility, and rising costs. New market entrants are challenging incumbents with competitive cost structures and faster development cycles — Toyota plans to sell US-made vehicles in Japan, China's BYD has overtaken Tesla as the world's biggest EV seller, and Foxconn is making EVs for Japan's Mitsubishi Motors. Legacy OEMs are responding: Ford's CEO Jim Farley stated they are 'redeploying capital into higher-return growth opportunities — Ford Pro, trucks and vans, hybrids'; GM described how it has 'structurally transformed over the past decade to focus on profitable growth and durable cash flows, with a leaner cost structure'; BMW anchors its strategy on 'a systematic focus on customers, a more flexible approach, and consistent cost discipline.' Supply chain disruptions have not gone away — DRAM makers are prioritizing AI demand over automotive, Honda has extended China production halts, and Ford expects to take a $1B earnings hit from supply chain issues. Automakers are transforming operating models to build resilience. Across the industry, AI is emerging as the key enabler — from cutting evaluation times in R&D to dynamic pricing and supply chain optimization.",
+        "industry_challenges": [
+          "Intensifying competition from new market entrants with lower cost structures and faster development cycles (BYD, Foxconn, Chinese OEMs)",
+          "Supply chain disruptions and component volatility — semiconductors, geopolitical shocks, tariffs",
+          "Trade wars and tariffs increasing the cost and complexity of building vehicles (Ford flagged $1B earnings impact)",
+          "Warranty cost escalation — ~2.5% of revenue lost to warranty, draining ~25% of EBIT annually",
+          "EV transition pressure requiring faster engineering cycles, new platform architectures, and BoM complexity",
+          "Escalating cost pressures forcing operating model transformation and capital redeployment",
+          "Rising customer expectations for faster delivery and transparent order visibility"
+        ],
+        "celonis_value_proposition": "Celonis builds a living digital twin of automotive operations — connecting engineering, supply chain, production, and aftersales systems into a single real-time view of how the business actually runs. Because OEMs have this digital twin, they can finally answer which orders are late and why, where supply chain plans break downstream, how warranty failures link across R&D and production, and how to prevent these issues from recurring. This is the operational context that Enterprise AI needs to deliver measurable results — and that no single system can provide alone.",
+        "key_messages": [
+          "The automotive industry is under pressure to operate leaner, faster, and with greater precision — Celonis provides the objective view of how operations actually run to make that possible",
+          "Celonis is the missing operational foundation for Enterprise AI — grounding AI in real operational reality so it delivers measurable return, not experimentation",
+          "From vehicle development to delivery to aftersales — Celonis reduces time to market, protects working capital, and ensures customers get what they ordered, when they ordered it"
+        ],
+        "strategic_transformations": [
+          "Accelerate time to market",
+          "Preserve market position through operational excellence",
+          "Run a resilient, cost-efficient supply chain",
+          "Reduce warranty cost and protect brand reputation"
+        ],
+        "proof_points": [
+          {
+            "customer": "Jaguar Land Rover (JLR)",
+            "outcome": "£9.4M / €10M bottom-line impact from ECM process transformation",
+            "detail": "Used Celonis as single source of truth to investigate root causes of idle times and WIP requests in engineering change management. Improved SLA adherence and first-time-right rate. Reduced ECM throughput time."
+          },
+          {
+            "customer": "BMW",
+            "outcome": "40% reduction in production interruptions at a single plant",
+            "detail": "Connected production planning and execution data to identify why processes were not running in sync. Used Process Explorer to identify failure activities and CoPilot for less-technical teams."
+          },
+          {
+            "customer": "Mercedes-Benz",
+            "outcome": "Connected 90+ systems and 30TB of data; prevented >$5M in buybacks in 2 months",
+            "detail": "AI matched free-text fields between engineering systems and claims to streamline repair procedure identification. Claims-management AI agent saved $1.5M in 3 months.",
+            "quote": "Our work with Celonis is extremely powerful because the ability of Celonis to combine data, create transparency, and boost efficiency is simply outstanding. — Jörg Burzer, Member of the Board, Mercedes-Benz Group AG"
+          },
+          {
+            "customer": "Scania",
+            "outcome": "Improved delivery precision and reduced vehicle lead times across entire value chain within 18 months",
+            "detail": "Introduced Process Intelligence across core functions. Reduced planning volatility, removed process buffers at bodybuilders, and reduced manual work.",
+            "quote": "The entire purpose with this project is to increase delivery precision and improve customer trust, making sure that they get what they have ordered, on-time, as requested. — Jesper Blomster, Business Transformation Leader, Scania"
+          },
+          {
+            "customer": "Mahle",
+            "outcome": "Reduced inventory across 148 plants through proactive material planner alerts",
+            "detail": "Proactive alerts notified material planners of actions to take — like adjusting material master data — to avoid excess inventory."
+          },
+          {
+            "customer": "thyssenkrupp",
+            "outcome": "Targeting 33% improvement in inventory turnover",
+            "detail": "Improved order prioritization during material shortages to only produce material customers actually need."
+          },
+          {
+            "customer": "Daimler Truck",
+            "outcome": "Procurement spend control via AI Annotations on free-text orders",
+            "detail": "AI groups free-text orders for routing to preferred suppliers or negotiating new deals. Supplier scoring based on on-time delivery and automation rates — not just catalog tags."
+          },
+          {
+            "customer": "European Premium OEM",
+            "outcome": "€7M realized within 8 weeks from buyback prevention",
+            "detail": "Linked spare and new part inventory with repair database. AI matched repair procedures to actual defects, helping dealerships accelerate repairs and prevent buybacks."
+          },
+          {
+            "customer": "European OEM (Claims)",
+            "outcome": ">€2M operational efficiencies + >€1M suspicious claims identified",
+            "detail": "Celonis found and fixed redundant steps in claims management from creation to payment. Write-back capability blocked anomalous claims from being paid out."
+          },
+          {
+            "customer": "Porsche",
+            "outcome": "E2E supply chain transformation",
+            "quote": "Celonis is a decisive factor in increasing productivity, minimizing resource consumption and making supply chains more resilient."
+          },
+          {
+            "metric": "$100M+",
+            "outcome": "Value delivered across 7 automotive business units"
+          },
+          {
+            "metric": "$1.5B+",
+            "outcome": "Value delivered across Automotive & Manufacturing clients globally"
+          }
+        ],
+        "key_personas": [
+          "Chief Engineering Officer",
+          "SVP/VP of Engineering or Product Development",
+          "CSCO/COO",
+          "VP of Order Fulfillment",
+          "VP of Logistics",
+          "VP After Sales",
+          "VP Customer Service",
+          "VP Quality",
+          "Head of Warranty",
+          "CFO (warranty reserves and working capital)"
+        ],
+        "use_case_areas": [
+          "Order to Delivery",
+          "Supply Chain",
+          "Idea to Offer",
+          "Quality and Warranty",
+          "After Sales"
+        ],
+        "terminology_use": ["order-to-delivery", "vehicle lead time", "OTIF", "first-time-right", "warranty reserve", "claim approval", "IRA", "engineering change", "BoM", "ECM", "grounded vehicle", "buyback prevention", "supply chain resilience", "time to market", "working capital"],
+        "terminology_avoid": ["process mining (lead with outcomes instead)"]
+      },
+      "spotlights": [
+        {
+          "domain_name": "Order to Delivery",
+          "alternative_names": ["O2D", "OTD", "Fulfillment", "Vehicle Delivery"],
+          "strategic_priorities_framing": "Order-to-Delivery faces mounting pressure to minimize lead times, reduce logistics costs, and ensure customers receive what they ordered — while operating in a market where carrier capacity is declining and inventory carrying costs have hit $302B globally",
+          "key_pain_points": [
+            "Extended waiting times for customers despite vehicles being available — 8-12 months for certain configurations",
+            "Delivery delays harming customer satisfaction and loyalty, especially during model transitions",
+            "High transport and holding costs — 30% of vehicles have 3+ stops at €100 per stop",
+            "Lack of real-time visibility across the full order lifecycle from configuration to handover",
+            "-3.7% drop in motor carrier capacity creating structural delivery constraints"
+          ],
+          "celonis_value_proposition": "Celonis provides a live digital twin of every vehicle's journey from order to delivery — enabling teams to minimize lead times, reduce unnecessary transport stops, optimize route and compound selection, and proactively manage customer delivery commitments",
+          "kpis_targeted": [
+            "On-Time Delivery Rate",
+            "Vehicle Lead Time",
+            "Transport Cost per Vehicle",
+            "Holding Cost",
+            "Customer Wait Time",
+            "Stops per Vehicle"
+          ],
+          "use_cases": [
+            "Carrier performance & cost benchmarking",
+            "Production planning and order scheduling optimization",
+            "Smart order prioritization and rescheduling",
+            "Route and compound optimization to reduce transport stops",
+            "Regional hub and outbound logistics management"
+          ],
+          "proof_points": [
+            {
+              "metric": "€49.3M working capital savings",
+              "context": "5-day lead time improvement on 1.5M vehicles at €30k average value and 8% WACC"
+            },
+            {
+              "metric": "€22.5M logistics cost savings",
+              "context": "Reducing transport and holding costs by eliminating at least 1 unnecessary stop on 30% of vehicles"
+            },
+            {
+              "customer": "Scania",
+              "metric": "Improved delivery precision within 18 months",
+              "context": "Reduced planning volatility and removed process buffers, cutting vehicle lead times across the value chain"
+            }
+          ],
+          "typical_personas": ["VP of Order Fulfillment", "VP of Logistics", "CSCO", "COO"],
+          "demo_views": [
+            "OTD Control Tower",
+            "Lead Time Deviation Explorer",
+            "Outbound Logistics Optimizer",
+            "Order Prioritization View"
+          ]
+        },
+        {
+          "domain_name": "Supply Chain",
+          "alternative_names": ["Automotive Supply Chain", "Materials Management"],
+          "strategic_priorities_framing": "Automotive supply chains face unprecedented volatility — semiconductor lead times averaging 12.9 weeks, operating margins down 40% from peak, and tariffs reshaping sourcing strategies. Resilience and working capital optimization are board-level priorities",
+          "key_pain_points": [
+            "Component shortages discovered too late — after production lines have already been impacted",
+            "Lack of E2E supply chain visibility across complex multi-tier supplier networks",
+            "Excess inventory tying up working capital as OEMs shift from JIT to buffer strategies (+4.8% days supply on dealer lots)",
+            "Manual inventory management processes unable to keep pace with demand volatility",
+            "Inbound logistics capacity constraints and unpredictable lead times (8-12 months for customized vehicles)"
+          ],
+          "celonis_value_proposition": "Celonis connects procurement, production, and logistics data into a real-time supply chain digital twin — enabling shortage prediction 30+ days ahead, intelligent material allocation across plants, and working capital optimization without replacing existing planning systems",
+          "kpis_targeted": [
+            "Inventory Turns",
+            "Supplier On-Time Delivery",
+            "Material Availability",
+            "Shortage Frequency",
+            "Inventory Carrying Costs",
+            "Days Inventory Outstanding"
+          ],
+          "use_cases": [
+            "Material shortage prediction and prevention (30+ days ahead)",
+            "Intelligent material allocation across plants",
+            "E2E supply chain steering and control tower",
+            "Inbound logistics capacity planning",
+            "Inventory right-sizing and working capital optimization"
+          ],
+          "proof_points": [
+            {
+              "customer": "Mercedes-Benz",
+              "metric": "Connected 90+ systems and 30TB of data; proactive shortage management 30 days ahead",
+              "context": "Optimized inventory levels, improved cash flow, reduced tied-up capital. Enabled teams to proactively source materials at risk and intelligently move critical materials between plants."
+            },
+            {
+              "customer": "Mahle",
+              "metric": "Inventory reduction across 148 plants",
+              "context": "Proactive alerts to material planners on actions to avoid excess — including adjusting material master data."
+            },
+            {
+              "metric": "~10% reduction in end-to-end lead times, ~20% reduction in working capital, ~30% reduction in inventory holding costs",
+              "context": "Industry-level outcomes from automotive supply chain transformations with Celonis"
+            }
+          ],
+          "typical_personas": ["CSCO", "VP of Supply Chain", "VP Procurement", "Inventory Manager", "VP Demand Planning"],
+          "demo_views": [
+            "Supply Chain Control Tower",
+            "Shortage Prediction Dashboard",
+            "Inventory Optimization Explorer",
+            "Inbound Capacity Planner"
+          ]
+        },
+        {
+          "domain_name": "Idea to Offer",
+          "alternative_names": ["I2O", "Vehicle Development", "Engineering", "NPI", "Product Development"],
+          "strategic_priorities_framing": "Automotive OEMs face relentless pressure to compress vehicle development cycles while managing the engineering complexity of EV transitions — late-stage design changes and disconnected PLM/ERP systems are eroding time-to-market advantage against faster-moving competitors",
+          "key_pain_points": [
+            "Late-stage design changes causing program delays and budget overruns",
+            "Engineering change management (ECM) cycle times too slow — missing SLAs, degrading first-time-right rates",
+            "Disconnected PLM and ERP systems preventing visibility into downstream impact of design decisions",
+            "High idle times and WIP backlog in cross-team engineering coordination",
+            "EV platform development adding BoM complexity and simultaneous engineering challenges",
+            "Difficulty identifying root causes of program delays without a single source of truth"
+          ],
+          "celonis_value_proposition": "Celonis connects PLM, ERP, and MES into a unified view of the vehicle development process — enabling engineering teams to identify root causes of delays, improve ECM throughput times, increase first-time-right rates, and accelerate time-to-market with agentic design and change management assistants",
+          "kpis_targeted": [
+            "Time-to-Market",
+            "ECM Throughput Time",
+            "First-Time-Right Rate",
+            "Engineering Change Cycle Time",
+            "SLA Adherence Rate",
+            "BoM Accuracy"
+          ],
+          "use_cases": [
+            "ECM root cause analysis and throughput time reduction",
+            "BoM and sourcing visibility with cost impact estimation",
+            "SLA adherence monitoring for engineering changes",
+            "Simultaneous engineering coordination across global teams",
+            "Design review efficiency and NPI program launch tracking"
+          ],
+          "proof_points": [
+            {
+              "customer": "Jaguar Land Rover (JLR)",
+              "metric": "£9.4M / €10M bottom-line impact",
+              "context": "Celonis as single source of truth to investigate root causes behind idle times and WIP in ECM process. Improved SLA adherence, first-time-right rate, and reduced ECM throughput time."
+            }
+          ],
+          "typical_personas": [
+            "Chief Engineering Officer",
+            "SVP/VP Engineering",
+            "VP Product Development",
+            "Program Manager",
+            "Head of R&D"
+          ],
+          "demo_views": [
+            "I2O Process Overview",
+            "ECM Throughput Explorer",
+            "BoM Cost Visibility",
+            "Program Launch Tracker"
+          ]
+        },
+        {
+          "domain_name": "Quality & Warranty",
+          "alternative_names": ["Quality and Warranty", "Warranty Management", "Quality Management", "Q&W"],
+          "strategic_priorities_framing": "Warranty costs represent ~2.5% of automotive revenue and drain ~25% of EBIT — with only 60% of recalls ever completed and warranty costs growing 15% YoY since 2020, OEMs need a connected view across R&D, production, and aftersales to detect failure patterns before they become recalls",
+          "key_pain_points": [
+            "Warranty costs growing at 15% YoY since 2020, representing >$10Bn industry-wide annually",
+            "Only 60% of recalls ever completed — scope difficult to narrow without cross-system failure data",
+            "Symptoms detected but root causes invisible across siloed R&D, production, and aftersales systems",
+            "Manual and inefficient claim approval processes with high cost per claim and anomalous/duplicate payouts",
+            "Grounded vehicles accumulating at dealerships while awaiting parts and repair procedures",
+            "Supplier recovery share below best-in-class 30% due to slow evidence collection",
+            "Warranty reserve forecasting driven by manual processes — limited accuracy and slow cycle times"
+          ],
+          "celonis_value_proposition": "Celonis builds a unified operating system for quality across R&D, production, and aftersales — connecting diagnostic, claims, engineering, and supplier systems to enable earlier failure detection, automated claim approval, buyback prevention, and improved supplier recovery",
+          "kpis_targeted": [
+            "Warranty Cost as % of Revenue",
+            "Claim Approval Cycle Time",
+            "Cost per Claim",
+            "First-Time-Right Repair Rate",
+            "Buyback Rate",
+            "Grounded Vehicle Resolution Time",
+            "Recall Completion Rate",
+            "Supplier Recovery Share",
+            "Failure Resolution Time (D0-D8)",
+            "Warranty Reserve Forecasting Accuracy"
+          ],
+          "use_cases": [
+            "Buyback prevention — prioritized list of grounded vehicles at risk, AI-matched repair procedures",
+            "Anomalous and duplicate claims identification with write-back to block fraudulent payouts",
+            "Claims management process intelligence — eliminate redundant steps, pre-fill dealer submissions",
+            "Supplier recovery acceleration — link quality, production, and claims data to identify affected vehicle tranches",
+            "Recall scope narrowing via telematics data to reduce affected vehicle population",
+            "Warranty reserve forecasting via real-time claims, vehicle, and dealer data",
+            "Repair procedure matching — AI matches error codes and descriptions to optimal repair procedures"
+          ],
+          "proof_points": [
+            {
+              "customer": "European Premium OEM",
+              "metric": "€7M realized within 8 weeks",
+              "context": "Buyback prevention: linked spare and new part inventory with repair database; AI matched repair procedures to actual defects, helping dealerships accelerate repairs and prevent buybacks."
+            },
+            {
+              "customer": "Leading European OEM",
+              "metric": ">€2M operational efficiencies + >€1M suspicious claims identified",
+              "context": "Claims management process intelligence: found redundant steps from claim creation to payment; write-back blocks anomalous claims; pre-fills dealer submissions to reduce insufficient submissions."
+            },
+            {
+              "customer": "Mercedes-Benz",
+              "metric": "Prevented >$5M of buybacks in 2 months",
+              "context": "AI matched free-text fields between engineering systems and claims, streamlining path to optimal repair procedures and accelerating resolution time."
+            },
+            {
+              "customer": "Premium OEM",
+              "metric": "$1.5M savings within 3 months",
+              "context": "Claims-management AI agent reviewed historic claims, augmented missing information, and summarized each claim — increasing automation rate and assessment quality."
+            },
+            {
+              "metric": "Up to 30% improvement in warranty reserve forecasting accuracy",
+              "context": "Real-time connection between claims management system, vehicle data, and dealership data enables predictive reserve modeling."
+            },
+            {
+              "metric": "4,000+ supplier surveys automated annually",
+              "context": "Fully automated generation, sending, and response capture of supplier surveys."
+            }
+          ],
+          "typical_personas": [
+            "VP Quality",
+            "Head of Warranty",
+            "Quality Director",
+            "VP Aftersales",
+            "CFO (warranty reserves)",
+            "Supplier Quality Manager"
+          ],
+          "demo_views": [
+            "Quality Control Tower",
+            "Claims Approval Explorer",
+            "Buyback Prevention Dashboard",
+            "Failure Root Cause Analysis",
+            "Supplier Recovery View"
+          ]
+        },
+        {
+          "domain_name": "After Sales",
+          "alternative_names": ["Aftersales", "After-Sales", "Service & Parts", "Parts & Service"],
+          "strategic_priorities_framing": "Aftersales is a historical bedrock of automotive profitability — but rising model variability, increasing warranty costs, and growing customer expectations are squeezing margins and NPS simultaneously, with 20-25% of inventory value lost to carrying costs annually",
+          "key_pain_points": [
+            "Warranty costs growing >$10Bn annually, 15% YoY, with direct margin impact",
+            "20-25% of spare parts inventory value lost to carrying costs annually since chip crisis",
+            "8-12% increase in 12MIS (maintenance information system events) in EMEA and NAM over 5 years — degrading NPS",
+            "Long throughput times for inbound, outbound, and internal parts flow at dealerships and warehouses",
+            "Grounded vehicles accumulating at dealerships — visible to customers, invisible to OEM operations",
+            "Fragmented systems (Salesforce, DMS, ERP, Diagnostics, Telematics) preventing a 360° customer and vehicle view"
+          ],
+          "celonis_value_proposition": "Celonis connects aftersales systems into a single intelligent view — accelerating grounded vehicle resolution, optimizing spare parts inventory, reducing warranty claim cost per unit, and enabling proactive dealer and customer interventions before satisfaction drops",
+          "kpis_targeted": [
+            "Net Promoter Score (NPS)",
+            "Grounded Vehicle Resolution Time",
+            "Parts Inventory Carrying Cost",
+            "Warranty Cost per Claim",
+            "12MIS Rate",
+            "Parts Availability Rate",
+            "Time to Resolve"
+          ],
+          "use_cases": [
+            "Grounded vehicle control tower — real-time visibility and prioritized resolution",
+            "Spare parts inventory optimization to reduce carrying costs without degrading availability",
+            "Warranty claim processing acceleration and cost reduction",
+            "Customer 360° digital vehicle dossier across sales, OTD, and quality systems",
+            "Inbound and outbound logistics throughput time optimization",
+            "Dealer support and proactive intervention intelligence"
+          ],
+          "proof_points": [
+            {
+              "customer": "European Premium OEM",
+              "metric": "$7M parts inventory reduction",
+              "context": "Linked spare-part and new-part inventories. Dealerships gained full visibility and faster parts access. Customer satisfaction improved."
+            },
+            {
+              "metric": ">$10Bn in annual industry warranty costs addressed",
+              "context": "Celonis trusted by 80% of Top 10 OEMs and 50% of Top 10 Auto Suppliers in EMEA and North America."
+            }
+          ],
+          "typical_personas": [
+            "VP Aftersales",
+            "Head of Aftersales",
+            "Inventory Manager",
+            "Warehouse Manager",
+            "VP Customer Service",
+            "C-Level / SVP (NPS and revenue focus)"
+          ],
+          "demo_views": [
+            "Aftersales Control Tower",
+            "Grounded Vehicle Manager",
+            "Parts Inventory Explorer",
+            "Customer Journey View"
+          ]
+        }
+      ]
+    },
+    {
+      "industry": "Banking",
+      "sub_industries": ["Retail Banking", "Commercial Banking", "Investment Banking"],
+      "overview": {
+        "state_of_industry": "To be curated from raw extraction",
+        "industry_challenges": [],
+        "celonis_value_proposition": null,
+        "key_messages": [],
+        "proof_points": [],
+        "key_personas": [],
+        "use_case_areas": ["Client Onboarding", "Risk & Controls"]
+      },
+      "spotlights": [
+        {
+          "domain_name": "Client Onboarding",
+          "status": "needs_curation"
+        },
+        {
+          "domain_name": "Risk & Controls",
+          "status": "needs_curation"
+        }
+      ]
+    },
+    {
+      "industry": "CPG",
+      "sub_industries": ["Food & Beverage", "Personal Care", "Household Products"],
+      "overview": {
+        "state_of_industry": "The Consumer Packaged Goods industry is navigating a fundamental shift in how consumers buy, what they expect, and how much power retailers now hold. Omnichannel has exploded from two touchpoints a decade ago to seven today — retail, marketplaces, direct-to-consumer, social commerce, last mile, B2B, and metaverse — representing a $1.5T US opportunity where omnichannel buyers now account for 91% of total purchases. At the same time, industry growth has decelerated from 5% at the turn of the century to near zero, driven by slower population growth, private label expansion, and macroeconomic pressure on consumer spending. Retailers are gaining leverage, squeezing terms, and demanding greater supply chain efficiency and compliance. Rising material costs (up 35% since 2019), limited end-to-end supply chain visibility (69% of businesses lack it), and deduction leakage (>10% of gross revenue) are compressing margins that were already under strain. The combination of external pressure and operational complexity makes process intelligence a strategic necessity — not a cost optimization exercise.",
+        "industry_challenges": [
+          "Omnichannel complexity — 7 consumer touchpoints requiring seamless, flexible experiences across retail, DTC, marketplaces, and social commerce while integrating sustainability commitments",
+          "Supply chain disruptions — rising material costs (35% since 2019), geopolitical volatility, limited E2E visibility (69% of businesses), and transportation inefficiencies degrading ETA accuracy and customer experience",
+          "Deduction leakage — >10% of gross revenue lost to retailer and carrier deductions processed across 24+ disconnected portals with >1 month average resolution time",
+          "Retailer squeeze — retailers gaining negotiating power, demanding greater supply chain compliance (OTIF penalties increasing), tightening terms, and pushing private label growth",
+          "Innovation speed — only 31% of CPG leaders confident in their ability to accelerate innovation and scale rapidly; manual, cross-functional launch processes missing retailer sell-in windows",
+          "Economic pressure — industry growth near zero; private label capturing value-conscious consumers; escalating and volatile commodity costs requiring aggressive cost management and working capital optimization"
+        ],
+        "celonis_value_proposition": "Celonis for CPG extracts data from all your systems — ERPs, CRMs, TPM platforms, retailer portals, and even Excel — and uses process intelligence to create a system-agnostic digital twin of your end-to-end operations. We surface where value is hiding across your customer-facing and supply chain processes, then provide tools to act on the insights and deploy AI and automation to optimize continuously. Whether the priority is recovering deduction revenue, improving OTIF to protect retailer relationships, or accelerating innovation speed-to-shelf, Celonis connects the dots your siloed systems cannot.",
+        "key_messages": [
+          "Celonis provides CPG companies with end-to-end transparency, surfaces opportunities intelligently, and automatically optimizes all customer-facing and supply chain processes — giving you the visibility to compete in a retailer-controlled market",
+          "Celonis helps CPG organizations identify and eliminate roadblocks within their control to create a more resilient and agile supply chain — turning execution volatility into competitive advantage",
+          "Celonis is uniquely positioned to address finance challenges and drive profitable growth by delivering quick wins against the key objectives of accelerating cost management, improving free cash flow, and growing market share"
+        ],
+        "proof_points": [
+          {
+            "customer": "Multinational CPG company (£14B revenue)",
+            "outcome": "MRO inventory optimization across three plants",
+            "detail": "Identified £1.2M in cost avoidance opportunities from excess, untouched, and duplicate MRO inventory. $200K cost avoided and $70K saved from excess inventory. 84 duplicate materials removed from master data. Piloted in US Evansville plant; expanded to Singapore and Hull UK; plans to expand into warehouse management."
+          }
+        ],
+        "key_personas": [
+          "CEO / CFO / COO / CIO",
+          "CSCO / Head of Supply Chain",
+          "VP Procurement / Head of Procurement",
+          "VP Finance / AR Director",
+          "VP Trade Promotions / VP Deductions",
+          "Head of Innovation / VP NPD",
+          "Head of GBS / Shared Services"
+        ],
+        "use_case_areas": ["Supply Chain", "Deductions", "Innovation to Shelf", "Finance"],
+        "terminology_use": ["OTIF", "deductions", "trade spend", "cost-to-serve", "Days of Inventory on Hand (DIO)", "schedule adherence", "phase in/phase out", "touchless order rate", "at-risk orders", "intermill transfers"],
+        "terminology_avoid": ["process mining (lead with outcomes instead)", "digital twin (jargon before value established)", "ERP integration (assume it; don't feature-lead)"]
+      },
+      "spotlights": [
+        {
+          "domain_name": "Supply Chain",
+          "alternative_names": ["CPG Supply Chain", "Cost-to-Serve", "Demand Planning"],
+          "strategic_priorities_framing": "CPG supply chains are shifting to precision-driven execution using intelligent orchestration to manage demand volatility, cost pressure, and service commitments while protecting margin and working capital. Intermill transfers alone account for ~60% of total distribution expenses — making network flow efficiency a direct margin lever.",
+          "key_pain_points": [
+            "Demand and supply imbalance — finished goods and raw material inventory misaligned due to forecast volatility and poor synchronization between demand planning and manufacturing execution (25–30% excess/shortage)",
+            "Plan-to-produce execution gaps — production plans fail to execute as intended due to capacity constraints, changeovers, and late demand signals (15–25% gap)",
+            "Cost-to-serve margin leakage — expedited shipments, inefficient fulfillment, and OTIF penalties caused by reactive planning and poor demand signal visibility (10–15% impact)",
+            "Lack of E2E supply chain visibility — 69% of businesses lack total visibility, significantly impacting ETA accuracy, logistics planning, and customer experience",
+            "Non-conforming intermill shipments — ~20–30% of transfers non-conforming, adding ~$100 per shipment in excess spend",
+            "Slow-moving and obsolete inventory — tying up working capital and warehouse space while creating writedown exposure"
+          ],
+          "celonis_value_proposition": "Celonis connects forecast, production, transportation, and customer sales data to expose bias, lag, and overproduction before they impact service or margin. The result is a single unified model — a digital twin of CPG supply chain operations — that enables teams to identify inventory risk, close plan-vs-actual production gaps, and optimize cost-to-serve proactively.",
+          "kpis_targeted": [
+            "Days of Inventory on Hand (DIO)",
+            "Schedule Adherence",
+            "OTIF (On-Time In-Full)",
+            "Cost-to-Serve per Unit",
+            "Forecast Accuracy",
+            "Freight Cost per Unit",
+            "Inventory Turnover (6x yearly target)",
+            "Overall Equipment Effectiveness (OEE)",
+            "On-Time Shipping Rate"
+          ],
+          "use_cases": [
+            "Demand-supply alignment — connect forecast, consumption, and production data to expose bias and overproduction",
+            "Inventory risk prediction — identify excess, aging, and shortage risk across raw materials and finished goods before impacting service or margin",
+            "Plan vs. actual production transparency — surface schedule instability driven by capacity constraints, changeovers, and downtime",
+            "Execution orchestration — dynamically re-prioritize production, maintenance, and materials based on real demand and service risk",
+            "OTIF penalty avoidance — proactively address OTIF exposure before penalties, deductions, or customer escalation",
+            "Load consolidation and network flow optimization — reduce non-conforming intermill shipments",
+            "Slow-moving and obsolete inventory management — identify and act on excess stock before writedown"
+          ],
+          "proof_points": [
+            {
+              "customer": "Multinational CPG company (£14B revenue, SAP source systems)",
+              "outcome": "£1.2M cost avoidance from MRO inventory optimization",
+              "detail": "Identified excess, untouched, and duplicate inventory across US, Singapore, and UK plants. $200K cost avoided and $70K saved from excess inventory. 84 duplicate materials removed from master data. Rolling out to additional plants with warehouse management expansion planned."
+            }
+          ],
+          "typical_personas": ["CSCO", "COO", "Head of Supply Chain", "VP Procurement", "Head of Planning", "Demand Planner"],
+          "demo_views": [
+            "Executive control tower — monitor OKRs and KPI cascade with AI-powered recommendations tied to strategic targets",
+            "Supply chain process initiatives — drill-down into plan-vs-actual gaps, inventory risk, and cost-to-serve drivers",
+            "Operational orchestration apps — role-based apps for planners, logistics teams, and procurement with AI-recommended next-best actions"
+          ]
+        },
+        {
+          "domain_name": "Deductions",
+          "alternative_names": ["Trade Deductions", "Revenue Recovery", "Trade Spend", "Deductions & Disputes"],
+          "strategic_priorities_framing": "Retailer and carrier deductions represent one of the largest, most under-managed margin leakage sources in CPG — exceeding 10% of gross revenue industry-wide. With 24+ disconnected retailer and carrier portals, resolution times exceeding one month, and automatic write-offs up to $5,000, the vast majority of CPG companies are writing off margin they have a legitimate right to recover. The Celonis Deductions & Disputes App powered by Valence is purpose-built to address this at scale.",
+          "key_pain_points": [
+            "Deduction volume exceeds 10% of gross revenue — with non-trade deductions representing pure margin leakage",
+            "Resolution backlogs — >1 month average resolution time for invalid claims, with automatic write-offs up to $5,000",
+            "24+ disconnected retailer and carrier portals — housing deductions, backup information, and case evidence in siloed systems",
+            "No cross-retailer visibility — inability to identify patterns, bottlenecks, or systemic root causes across the retailer portfolio",
+            "Manual evidence gathering — analysts spending weeks collecting PODs, remittances, and backup documents before a claim can be disputed",
+            "Trade promotions misalignment — no closed-loop visibility between planned trade investment and actual deduction outcomes"
+          ],
+          "celonis_value_proposition": "Celonis unifies data from ERPs, retailer portals (Amazon, Walmart, and 20+ others), and carrier systems into a single real-time view. AI interprets unstructured documents — remittances, proofs of delivery, deduction notices — and automates coding, validation, and evidence gathering. Invalid claims are identified and disputed proactively, with chargeback processes tailored to specific retailer requirements. The result: >70% recovery rate on invalid deductions and 60–80% automation of end-to-end deduction processing.",
+          "kpis_targeted": [
+            "Net Deductions as % of Gross Revenue",
+            "Deduction Recovery Rate (>70% target)",
+            "End-to-End Automation Rate (60–80% target)",
+            "Average Resolution Cycle Time",
+            "Invalid Claim Rate",
+            "Open Deduction Aging",
+            "Trade Spend ROI"
+          ],
+          "use_cases": [
+            "Recovery Monitor — E2E transparency across all deductions, statuses, and retailer portals",
+            "Cash discount deductions — automated validation and dispute workflow",
+            "Logistical deductions (OS&D, freight) — automated evidence retrieval and chargeback",
+            "Fines and penalties deductions — compliance validation against retailer requirements",
+            "Trade promotion deductions — closed-loop reconciliation between TPM planned spend and actual deductions",
+            "Cross-retailer visibility — identify patterns and systemic issues across the retailer portfolio",
+            "Gen AI for remittance interpretation — LLM-assisted processing of unstructured deduction documents"
+          ],
+          "proof_points": [
+            {
+              "customer": "CPG industry benchmark",
+              "outcome": ">70% recovery rate on invalid deductions; 60–80% automation of end-to-end deduction processing",
+              "detail": "Celonis Deductions & Disputes App powered by Valence connects 24+ retailer and carrier portals. 200+ CPG-focused Celonauts with deep domain expertise. 12-month implementation journey from AR entry through global deductions optimization."
+            }
+          ],
+          "typical_personas": ["CFO", "VP Finance", "VP Deductions", "Deductions Analyst", "VP Trade Promotions", "AR Director"],
+          "demo_views": [
+            "Finance control tower — real-time high-level overview for CFO/VP Finance strategic decisions on invoice-to-cash",
+            "Process analyst view — identify deduction coding inefficiencies, root causes, and retailer-level patterns",
+            "Deductions analyst operational app — act on AI agent recommendations to optimize recovery, reduce cycle time, and uphold retailer relationships"
+          ]
+        },
+        {
+          "domain_name": "Innovation to Shelf",
+          "alternative_names": ["Innovation-to-Shelf", "I2S", "Product Launch", "NPD", "New Product Development"],
+          "strategic_priorities_framing": "Speed to shelf is a strategic battleground in CPG — 76% of retailers cite shelf space as a significant negotiation tool, and only 31% of CPG leaders are confident in their ability to accelerate innovation and scale rapidly. The challenge is not a creativity or R&D problem: it is a cross-functional coordination and data alignment problem spanning PLM, ERP, advanced planning, CRM, and TMS systems.",
+          "key_pain_points": [
+            "Long development cycles from manual, cross-functional processes — ideate to shelf involves 6 stages and multiple systems with no unified coordination layer",
+            "Master data misalignment — inaccurate or incomplete product data (UPCs, pricing, attributes) blocks production, sales, and regulatory compliance",
+            "Phase in/phase out execution failures — lack of unified view of ongoing transitions causes planners to simultaneously overstock obsolete SKUs and understock new products",
+            "At-risk orders during transitions — customers ordering against outdated product codes cause missed orders, fulfillment delays, and revenue leakage",
+            "Cross-functional misalignment on launch timing — supply chain, commercial, and marketing teams operating on different schedules and documentation",
+            "Low innovation confidence — only 31% of CPG leaders confident in ability to accelerate innovation and scale rapidly, with 78% of retailers expanding into premium/niche segments"
+          ],
+          "celonis_value_proposition": "Celonis provides a centralized workspace for cross-functional teams to execute the end-to-end Innovation-to-Shelf process — integrating PLM, ERP, APS, CRM, and TMS data into a unified process intelligence layer. Teams can identify system misalignments before transition dates, manage at-risk orders during transitions, and accelerate development cycle time by replacing manual coordination with automated workflows.",
+          "kpis_targeted": [
+            "Time to Market (days)",
+            "On-Time Launch Rate",
+            "At-Risk Order %",
+            "Scrap Rate (phase-out)",
+            "Manual Activities per Year",
+            "Master Data Completeness %",
+            "Touchless Order Rate"
+          ],
+          "use_cases": [
+            "Phase In/Phase Out Planning App — centralized dashboard integrating all source systems; proactively identify misalignments before transition dates; ensure documentation completeness",
+            "At-Risk Open Order App — track product code changes during transitions, send automated customer notifications, adjust affected orders to prevent revenue leakage",
+            "Accelerate Time to Market App — centralized product development dashboard with automated workflows replacing manual coordination",
+            "Master data completeness monitoring — detect incomplete UPCs, pricing, or attribute data before it blocks downstream processes",
+            "Cross-functional launch alignment — unified view for supply chain, commercial, and marketing teams on timing, inventory, and readiness"
+          ],
+          "proof_points": [
+            {
+              "customer": "CPG industry context",
+              "outcome": "Only 31% of CPG leaders confident in innovation acceleration; 76% of retailers use shelf space as negotiation lever",
+              "detail": "The Innovation-to-Shelf process spans 6 stages (Ideate, Define, Plan, Source, Make, Deliver) across PLM, ERP, APS, CRM, and TMS. Celonis is the only solution that connects all of these systems to provide a unified execution layer for cross-functional teams — reducing cycle time, preventing scrap from phase-out failures, and protecting revenue during product transitions."
+            }
+          ],
+          "typical_personas": ["COO", "CIO", "Head of Innovation / VP NPD", "Head of Supply Chain Planning", "Master Data Manager", "Sales Ops Director", "Head of Commercialization"],
+          "demo_views": [
+            "Innovation leader view (Claudia) — strategic decisions based on end-to-end process insights across the launch portfolio",
+            "Process analyst view (Nieves) — identify inefficiencies and root causes in launch coordination and master data management",
+            "Planner operational view (Max) — human-in-the-loop oversight for production transitions, at-risk order management, and phase-out execution"
+          ]
+        }
+      ]
+    },
+    {
+      "industry": "Life Sciences",
+      "sub_industries": ["Pharma", "Biotech", "Med Device", "MedTech"],
+      "overview": {
+        "state_of_industry": "Life Sciences brings together pharmaceutical, biotech, and MedTech organizations with one shared mission: to improve and extend human life. These companies operate in one of the most complex and regulated environments in the world. Three macro pressures define the current landscape: (1) continued global supply chain disruptions — 35% of pharma supply chains cannot respond to disruptions within 5 days, and $35B in pharmaceutical products are lost or wasted annually due to supply chain inefficiencies; (2) rising drug development costs and clinical trial variability — bringing a new drug to market costs $1-2B and takes over a decade, with only 12% of drugs obtaining FDA/EMA approval and 60%+ of trials experiencing protocol amendments; (3) healthcare reform and macroeconomic pressure — the U.S. Inflation Reduction Act, aging population demographics, and rising costs are forcing companies to prioritize financial discipline and commercial impact. Simultaneously, AI investment is accelerating — 80% of R&D executives say data fragmentation is their number one blocker to AI success. Celonis is uniquely positioned to solve the foundational process visibility problem that makes all of this harder than it needs to be.",
+        "industry_challenges": [
+          "Supply chain disruptions — 35% of pharma supply chains cannot respond within 5 days; $35B in products lost annually due to supply chain inefficiencies",
+          "Rising R&D execution costs — $1-2B per drug, 10+ year timelines, 12% FDA/EMA approval rate creating enormous pressure on pipeline ROI",
+          "Clinical trial variability — 60%+ of trials experience protocol amendments, often avoidable; trial delays directly impact revenue and patient access",
+          "Regulatory complexity and inspection risk — stringent FDA, EMA, and MDR requirements demand traceability, SOP adherence, and audit-ready documentation at all times",
+          "Healthcare reform and pricing pressure — U.S. Inflation Reduction Act, value-based care shift, and macroeconomic factors compressing margins and straining working capital",
+          "AI readiness gap — 80% of R&D executives cite data fragmentation as their number one blocker; AI tools stall without clean, contextualized process data"
+        ],
+        "celonis_value_proposition": "Celonis is the connective tissue of the Life Sciences enterprise — capturing every moment of every in-flight process end to end across R&D, Manufacturing, Supply Chain, Quality, and Finance. We create a living digital twin that surfaces blind spots, uncovers root causes of delays and compliance risks, and enables teams to act before issues impact patients, timelines, or margins. 8 of the top 10 Pharma companies and 80% of the top 25 Life Sciences companies globally trust Celonis to improve how their processes run.",
+        "key_messages": [
+          "Processes are the greatest lever for change: By controlling your organization's processes, you create a more predictable organization that delivers greater value to your business and the patients you serve",
+          "Process intelligence is the connective tissue of the enterprise: Celonis creates an end-to-end process digital twin across R&D, Commercial, Manufacturing, Supply Chain, and Finance — enabling orchestration, decision support, and AI grounding across every function",
+          "When processes work, Life Sciences work: 80% of top 25 Life Sciences companies globally use process improvement to meet strategic goals — accelerating time to market, ensuring on-time delivery, and driving commercial effectiveness"
+        ],
+        "strategic_transformations": [
+          "Optimize working capital and ensure on-time delivery through E2E supply chain visibility",
+          "Accelerate time to market and improve cost effectiveness through clinical trial optimization",
+          "Boost commercial impact through improved financial discipline and order-to-cash management"
+        ],
+        "proof_points": [
+          {
+            "customer": "Johnson & Johnson",
+            "outcome": "20% improvement in manufacturing lead times, 12% increase in on-time delivery, 30% reduction in throughput time",
+            "detail": "Leveraged Celonis to gain visibility into production work order scheduling. Revealed erratic scheduling and erroneous work orders causing OTIF delays. Proactively mitigated stockout risk and minimized supply chain waste."
+          },
+          {
+            "customer": "STADA",
+            "outcome": "Six-digit quarterly P&L benefits from proactive inventory planning",
+            "detail": "Implemented Celonis for end-to-end transparency across Inventory Management. Identified and updated over 300 inaccurate lead times, receiving intelligent recommendations to ensure smooth supply and production."
+          },
+          {
+            "customer": "Fresenius Kabi",
+            "outcome": "€100K savings realized in 6 months; 24% higher cash discount realization rate within 3 months",
+            "detail": "Implemented the Celonis AP Execution App to optimize accounts payable processes. Improved invoice prioritization based on desired business outcomes with enhanced end-to-end transparency."
+          },
+          {
+            "customer": "Merck KGaA",
+            "outcome": "Significant improvements in working capital through scaled cash collection management",
+            "detail": "Leveraged Celonis to actively manage invoices valued at approximately €100 million, ranging from low to high value. Increased on-time payments and enhanced customer relationships."
+          },
+          {
+            "customer": "GE Healthcare",
+            "outcome": "$1.3B improvement in annual free cash flow",
+            "detail": "Applied Celonis to a $17B order backlog to optimize order management, billing, and shipping processes. Prevented approximately 1,000 incorrect payments per week."
+          },
+          {
+            "customer": "Global Life Sciences Company",
+            "outcome": "€28.2M reduction in outstanding invoices; €11M in potential missing sales identified",
+            "detail": "Utilized Celonis to improve revenue and cash flow by reducing unbilled orders."
+          }
+        ],
+        "key_personas": [
+          {
+            "role": "CSCO / VP Supply Chain",
+            "focus": "End-to-end supply chain visibility, inventory optimization, OTIF improvement, patient access"
+          },
+          {
+            "role": "CFO / VP Finance Operations",
+            "focus": "Working capital optimization, cash flow, AP/AR efficiency, commercial impact"
+          },
+          {
+            "role": "SVP / Head of R&D Operations",
+            "focus": "Cycle time reduction across drug development, cost efficiency, vendor oversight, AI readiness"
+          },
+          {
+            "role": "VP Clinical Operations",
+            "focus": "Study start-up acceleration, protocol deviation reduction, CRO performance, compliance"
+          },
+          {
+            "role": "Head of Regulatory Operations / Pharmacovigilance",
+            "focus": "Submission readiness, inspection preparation, SOP adherence, deviation management"
+          },
+          {
+            "role": "VP Manufacturing / Head of Quality Assurance",
+            "focus": "Batch release optimization, GMP compliance, first-time-right production, traceability"
+          }
+        ],
+        "use_case_areas": ["Pharma Supply Chain", "Pharma R&D", "MedTech", "Accounts Payable", "Order to Cash"],
+        "terminology_use": ["batch release", "clinical operations", "study start-up", "first patient enrolled", "OTIF", "patient access", "time to market", "inspection readiness", "process intelligence", "digital twin"],
+        "terminology_avoid": ["process mining (lead with outcomes instead)", "technology platform (lead with business outcomes)"]
+      },
+      "spotlights": [
+        {
+          "domain_name": "Pharma Supply Chain",
+          "alternative_names": ["Pharmaceutical Supply Chain", "Drug Supply Chain", "Clinical Supply Chain"],
+          "strategic_priorities_framing": "Pharma supply chain leaders face simultaneous pressure on three fronts: resilience (35% of supply chains cannot respond to disruptions within 5 days), reliability ($35B in products lost annually), and profitability (42% of EBITDA at risk from inability to adapt supply chains with outdated technology). Batch-level compliance, cycle time compression, and inventory rightsizing are the three levers that unlock the most value.",
+          "key_pain_points": [
+            "Batch-level visibility gaps — no E2E product genealogy across multi-site manufacturing and distribution networks, creating expiry risk and recall exposure",
+            "Inaccurate lead times causing a dual failure: excess safety stock tying up working capital AND stockouts on critical drug lines impacting patient access",
+            "Production work order scheduling issues — erratic scheduling and erroneous work orders cause OTIF delays and throughput waste",
+            "Emergency freight as a coping mechanism — symptom of poor demand signal and inventory visibility, not a root-cause fix",
+            "Recall and compliance exposure — inability to quickly identify affected batches extends recall scope and increases regulatory risk",
+            "Cold chain and temperature tracking complexity across global distribution networks"
+          ],
+          "celonis_value_proposition": "Celonis provides end-to-end batch-level transparency across the entire pharma supply network — from procurement through manufacturing, quality, and distribution. By connecting SAP, LIMS, WMS, and logistics systems, Celonis enables lead time rightsizing, inventory optimization, OTIF improvement, and proactive compliance management. The result: reduced writedowns, lower working capital, and reliable patient access.",
+          "kpis_targeted": [
+            "OTIF (On-Time-In-Full)",
+            "Batch Release Cycle Time",
+            "Inventory Days on Hand",
+            "Excess Inventory %",
+            "Writedown Value",
+            "Freight Cost",
+            "Manufacturing Lead Time",
+            "Throughput Time"
+          ],
+          "use_cases": [
+            "Batch-level E2E product genealogy and expiry management",
+            "Lead time accuracy identification and correction (inaccurate lead times → stockouts)",
+            "Work order scheduling optimization and erroneous order detection",
+            "Inventory rightsizing — identify under- and over-stocks with root cause analysis",
+            "Recall compliance workflow and affected batch identification",
+            "Backorder management with AI-driven resolution recommendations",
+            "Cold chain and temperature deviation monitoring"
+          ],
+          "proof_points": [
+            {
+              "customer": "Johnson & Johnson",
+              "outcome": "20% improvement in manufacturing lead times, 12% OTIF uplift, 30% reduction in throughput time",
+              "detail": "Revealed erratic scheduling and erroneous work orders. Proactively mitigated stockout risk."
+            },
+            {
+              "customer": "STADA",
+              "outcome": "Six-digit quarterly P&L benefits",
+              "detail": "Identified and updated 300+ inaccurate lead times. Intelligent recommendations for smooth supply and production."
+            },
+            {
+              "customer": "GE Healthcare",
+              "outcome": "$1.3B improvement in annual free cash flow",
+              "detail": "Optimized order management, billing, and shipping across $17B order backlog. Prevented ~1,000 incorrect payments per week."
+            }
+          ],
+          "ai_use_cases": [
+            "Backorder Assistant — AI analyzes order and customer data to recommend actions (expedite, cancel, release) reducing delays",
+            "Lead Time Recommendations — ML model optimizes lead times to minimize stockouts and improve inventory health",
+            "Material/Customer Duplication Detection — AI identifies master data duplicates eliminating excess stock and missed revenue",
+            "Invalid PO Detection — LLM flags discrepancies early, reducing rework and bad debt"
+          ],
+          "typical_personas": ["CSCO", "VP Supply Chain", "Head of Manufacturing", "VP Quality Assurance", "VP Inventory Management"],
+          "customer_journey_value": {
+            "wave_0": {"timeframe": "12 weeks", "focus": "Batch-level transparency", "value": "$10M annual"},
+            "wave_1": {"timeframe": "12 weeks", "focus": "Expansion to 2-3 brands", "value": "$50M annual"},
+            "wave_2": {"timeframe": "36 weeks", "focus": "Compliance expansion (all brands, procurement)", "value": "$100M annual"},
+            "wave_3": {"timeframe": "20 weeks", "focus": "E2E transactional network (org-wide logistics)", "value": "$150M annual"}
+          },
+          "demo_views": [
+            "Supply chain control tower with batch-level visibility",
+            "Lead time accuracy analysis and correction workflow",
+            "Inventory rightsizing with root cause analysis",
+            "AI-driven backorder resolution recommendations"
+          ]
+        },
+        {
+          "domain_name": "Pharma R&D",
+          "alternative_names": ["Pharma Research & Development", "Clinical Operations", "Drug Development", "Clinical Trials"],
+          "strategic_priorities_framing": "R&D leaders are under immense pressure to bring therapies to market faster, safer, and at lower cost — but this is happening at a time when protocols are more intricate, regulations are more stringent, and trials are more globalized. Most R&D systems (CTMS, eTMF, RIM, Argus, Medidata) are document-centric and transactional — they capture isolated actions, not how work flows end to end. Over 50% of drug development costs are tied to clinical operations, 60%+ of trials experience protocol amendments, and 80% of R&D executives say data fragmentation is their number one blocker to AI success.",
+          "key_pain_points": [
+            "No E2E visibility across study execution — CTMS, eTMF, RIM, Argus, and Medidata all operate in silos; no single view of how studies progress across functions, vendors, and systems",
+            "Study start-up delays — site activation bottlenecks, document package completion gaps, and sponsor-CRO handoff failures push First Patient Enrolled (FPE) 2-4+ weeks later than planned",
+            "Protocol deviations accumulating undetected — manual categorization, siloed QMS and CTMS, and reactive root cause analysis allow deviations to pile up until audit pressure surfaces them",
+            "TMF completeness gaps discovered too late — document rework and last-minute scrambles before submissions and inspections are common; 1 in 3 submissions has data quality issues",
+            "CRO performance blind spots — sponsors have limited real-time visibility into CRO execution; performance issues are discovered after timelines and budgets are already impacted",
+            "FTE capacity wasted on manual coordination — 885 working days per year saved in one case study by automating Request for Change classification alone"
+          ],
+          "celonis_value_proposition": "Celonis creates a living digital twin of clinical operations — connecting data from Veeva Vault, CTMS, Argus, Medidata, and other systems into a unified, real-time view of how studies, documents, and safety cases actually flow. By surfacing root causes of delays, compliance risks, and CRO performance issues, Celonis enables R&D teams to act before problems compound — accelerating timelines, elevating compliance, and grounding AI initiatives in trusted process data.",
+          "kpis_targeted": [
+            "Study Start-Up Cycle Time",
+            "First Patient Enrolled (FPE) Timeline",
+            "Protocol Deviation Rate",
+            "TMF Completeness %",
+            "SLA Adherence Rate",
+            "Time to Market",
+            "CTA Cycle Time",
+            "Inspection Readiness Score"
+          ],
+          "use_cases": [
+            "Study start-up acceleration — identify site activation delays and bottlenecks before FPE is impacted",
+            "Protocol deviation management — real-time triage, compliance write-up automation, risk impact scoring",
+            "Trial Master File optimization — quality scoring, inspection readiness monitoring, document completeness tracking",
+            "Issue and risk management — root cause summarization, resolution tracking, risk-based planning",
+            "Clinical Trial Application (CTA) cycle time compression",
+            "Adverse event reporting and case management — case intake triage, narrative generation, SLA compliance",
+            "Standards request and review acceleration",
+            "CRO vendor performance monitoring"
+          ],
+          "proof_points": [
+            {
+              "customer": "Global European Pharma Company",
+              "outcome": "Shortened First Patient Enrolled by 2-4 weeks",
+              "detail": "Used Celonis to identify site activation bottlenecks in study start-up workflow."
+            },
+            {
+              "customer": "Global US Pharmaceutical Company",
+              "outcome": "885 working days per year saved",
+              "detail": "Automated manual classification effort on Request for Change process."
+            },
+            {
+              "customer": "Global UK Pharmaceutical Company",
+              "outcome": "60+ days reduction per trial in Clinical Trial Application cycle time",
+              "detail": "Streamlined CTA process with end-to-end visibility and bottleneck resolution."
+            },
+            {
+              "customer": "Global European Pharma Company",
+              "outcome": "Protocol deviation categorization time reduced from 3 months to 2 weeks",
+              "detail": "Process intelligence identified root causes of deviation categorization delays."
+            },
+            {
+              "customer": "Global European Pharma Company",
+              "outcome": "8x acceleration in sample movement from collection to testing",
+              "detail": "Sample management process optimization using Celonis process intelligence."
+            },
+            {
+              "customer": "Life Sciences Company",
+              "outcome": "10% reduction in Standards Review Process cycle time",
+              "detail": "Accelerated time to market and improved SLA adherence on regulatory standards management."
+            },
+            {
+              "customer": "Life Sciences Company (Clinical Operations Issues Management)",
+              "outcome": "7 FTEs of potential capacity release identified; 52% of major issues lacking proper review surfaced",
+              "detail": "Uncovered critical gaps including 8% of issues being repeatedly reopened."
+            }
+          ],
+          "ai_use_cases": [
+            "Study Start-Up agents — site package completion tracking, activation delay prediction and alerting",
+            "Protocol Deviation Management agents — automated triage, compliance write-up generation, risk impact scoring",
+            "Trial Master File agents — quality scoring, inspection readiness assessment, document gap identification",
+            "Issue & Risk Management agents — root-cause summarization, resolution tracking, risk-based planning",
+            "Adverse Event Reporting agents — case intake triage, narrative generation, duplicate detection",
+            "Clinical Trial Application agents — submission tracker, CTA readiness scoring, country-specific checklist validation",
+            "Audit & Inspection Readiness agents — submission health monitoring, deviation summary, CAPA recommendation"
+          ],
+          "typical_personas": ["SVP/Head of R&D Operations", "VP Clinical Operations", "Head of Regulatory Operations", "Head of Pharmacovigilance", "VP Clinical Systems & Technology"],
+          "customer_journey_value": {
+            "wave_0": {"timeframe": "3 months", "focus": "Issue Management and Protocol Deviation", "value": "$10M"},
+            "wave_1": {"timeframe": "months 3-6", "focus": "Study Start-Up", "value": "$75M"},
+            "wave_2": {"timeframe": "months 6-12", "focus": "Trial Master File", "value": "$150M"},
+            "wave_3": {"timeframe": "years 1-3", "focus": "E2E Clinical Operations", "value": "$500M"}
+          },
+          "demo_views": [
+            "Clinical operations control tower with study-level risk visibility",
+            "Study start-up bottleneck analysis — site activation timeline",
+            "Protocol deviation management — real-time triage and compliance workflow",
+            "TMF completeness dashboard with inspection readiness score"
+          ]
+        },
+        {
+          "domain_name": "MedTech",
+          "alternative_names": ["Medical Technology", "Medical Devices", "Diagnostics", "Digital Health", "In Vitro Diagnostics"],
+          "strategic_priorities_framing": "MedTech companies face four simultaneous pressures in 2026: increasing supply chain volatility requiring resilience over cost efficiency; shift to value-based care linking pricing and reimbursement to clinical outcomes; escalating cost pressures from MDR compliance, inflation, and shrinking margins; and rising provider expectations for reliability, transparency, and seamless experience. 6 of the top 10 MedTech companies use Celonis, and $600M+ in value has been realized with proven methods.",
+          "key_pain_points": [
+            "Manufacturing margin erosion — quality and production system disconnects lead to batch rework, scrap, and missed right-first-time targets, directly impacting manufacturing margins",
+            "Regulatory complexity burden — FDA 21 CFR Part 820 and EU MDR requirements demand end-to-end traceability, design control documentation, and post-market surveillance processes that consume significant FTE capacity",
+            "Recall management uncertainty — inability to quickly identify affected device batches or product tranches extends recall scope, increases FSCA costs, and creates brand and regulatory risk",
+            "Revenue recognition delays — order management complexity, billing errors, and service contract management issues delay cash collection on high-value capital equipment",
+            "Excess inventory and working capital waste — safety stock buildup in response to supply chain volatility ties up capital; $7M FCF recovered in one case study through safety stock reduction",
+            "Field service efficiency gaps — reactive service scheduling and poor installed-base visibility lead to missed SLAs and revenue leakage from service contracts"
+          ],
+          "celonis_value_proposition": "Celonis delivers end-to-end process visibility across the MedTech value chain — from Design & Development through Manufacturing, Quality & Regulatory, and into Commercial and Post-Market operations. By connecting SAP, QMS, MES, and order management systems, Celonis enables right-first-time production, compliant regulatory operations, and accelerated revenue recognition — helping MedTech companies protect margins, reduce risk, and serve providers more effectively.",
+          "kpis_targeted": [
+            "First-Time-Right Production Rate",
+            "OTIF (On-Time-In-Full)",
+            "Batch Release Cycle Time",
+            "Time-to-Market",
+            "Days Sales Outstanding (DSO)",
+            "Free Cash Flow",
+            "Recall Cycle Time / FSCA Response Time",
+            "Excess Inventory %"
+          ],
+          "use_cases": [
+            "Right-first-time production — batch prioritization, quality exception routing, scrap prevention",
+            "Recall and field safety corrective action (FSCA) management — traceability, affected batch identification, scope minimization",
+            "Order-to-cash optimization — billing accuracy, service contract management, AR collection acceleration",
+            "Inventory rightsizing — safety stock reduction, demand sensing, lead time optimization",
+            "Regulatory compliance monitoring — MDR/FDA SOP adherence, CAPA management, audit readiness",
+            "Field service optimization — installed base visibility, service scheduling, SLA monitoring",
+            "Post-market surveillance — device performance tracking, signal detection, periodic reconciliation"
+          ],
+          "proof_points": [
+            {
+              "customer": "ThermoFisher Scientific",
+              "outcome": "$6.8M realized through improved lead times and optimized MOQ",
+              "detail": "Improved sourcing and procurement efficiency through process visibility."
+            },
+            {
+              "customer": "B BRAUN",
+              "outcome": "15% improvement in OTIF rate",
+              "detail": "Streamlined batch prioritization in production planning."
+            },
+            {
+              "customer": "STADA",
+              "outcome": "20% improvement in on-time batch release; 44% reduction in throughput time",
+              "detail": "Production planning and batch release process optimization."
+            },
+            {
+              "customer": "SCHOTT PHARMA",
+              "outcome": "35% reduction in excess stock",
+              "detail": "Shelf-life based stock level management delivered €14M in 6 months."
+            },
+            {
+              "customer": "Roche (Global Distributor)",
+              "outcome": "€14M realized in 6 months",
+              "detail": "Shelf-life based stock level management across global distribution network."
+            },
+            {
+              "customer": "sysmex",
+              "outcome": "$102M free cash flow opportunity identified",
+              "detail": "Identified late shipments and optimized order-to-cash process."
+            },
+            {
+              "customer": "MedTech Company",
+              "outcome": "$7M realized in FCF through safety stock reduction",
+              "detail": "Intelligent inventory management reduced excess safety stock while maintaining service levels."
+            },
+            {
+              "customer": "MedTech Company",
+              "outcome": "$5M reduction in past-due service contracts",
+              "detail": "Improved field service prioritization based on customer criticality and consumption data."
+            }
+          ],
+          "ai_use_cases": [
+            "Scrap Prevention Agent — predicts production deviations before waste occurs using real-time process signals",
+            "Material Availability Copilot — AI-powered replenishment planning to prevent stockouts",
+            "Backorder Assistant — AI-driven recommendations for backorder resolution (expedite, cancel, release)",
+            "Lead Time Recommendations — ML model optimizes lead times, reduces stockouts, improves inventory health",
+            "Invalid PO Detection — LLM identifies invalid PO references on invoices, reducing rework and bad debt",
+            "Pending PO Reduction — end-to-end app to resolve aged unbilled medical implants and capital equipment orders",
+            "Compliance Monitoring — LLM categorizes and routes support tickets to appropriate regulatory workflows"
+          ],
+          "typical_personas": ["CSCO / VP Supply Chain", "CFO / VP Finance Operations", "Head of Manufacturing / VP Production Operations", "VP Quality & Regulatory", "Head of Field Service Operations"],
+          "customer_journey_value": {
+            "summary": "$600M+ value realized with MedTech companies globally",
+            "note": "15% OTIF improvement through streamlined batch production; $100M+ value realized within Order to Cash alone"
+          },
+          "demo_views": [
+            "Manufacturing control tower — batch release and right-first-time production",
+            "Inventory management — excess stock identification and safety stock rightsizing",
+            "Order-to-cash dashboard — billing accuracy, DSO, and AR collection",
+            "Post-market surveillance — traceability and recall readiness"
+          ]
+        }
+      ]
+    },
+    {
+      "industry": "Manufacturing",
+      "sub_industries": ["Discrete", "Process", "Industrial"],
+      "overview": {
+        "state_of_industry": "In 2026, geopolitical tensions, rising costs, and the rise of AI are reshaping global manufacturing. Geopolitical tensions are causing manufacturing leaders to prioritize tax incentives and reassess export controls. Long-standing considerations like labor costs, talent availability, and energy costs have become more acute as companies reassess risk and resilience — with 39% of respondents seeing increases in supplier and material costs. To protect against global instability, manufacturing leaders are re-thinking how their entire value chain runs. Simultaneously, operational efficiency is a board-level priority, with manufacturers under pressure to reduce headcount vacancies and restructure quickly as volatility demands it. The rise of Agentic AI has made leaders and budgets more open to investing in technologies that change how their people work — 90% of manufacturers are utilizing AI, and 71% of organizations now regularly use GenAI in at least one business function.",
+        "industry_challenges": [
+          "Geopolitical volatility and tariff uncertainty reshaping demand and cost structures (70% of respondents say tariff impact on US demand equals or exceeds global impact)",
+          "Supplier and material cost increases (39% of manufacturers report increases)",
+          "Labor shortages and rising skill requirements with persistent vacancy rates above 5% at 1 in 4 manufacturers",
+          "Siloed systems (ERP, MES, PLM, WMS) preventing a shared, objective view of how the enterprise runs",
+          "Pressure to restructure value chains while maintaining operational continuity",
+          "Competitive pressure from AI-native manufacturers who can respond faster to disruption",
+          "Operational efficiency mandates requiring measurable output from AI and automation investments"
+        ],
+        "celonis_value_proposition": "Celonis builds a living digital twin of manufacturing operations — a real-time, system-agnostic model that captures how work actually flows across ERP, MES, PLM, WMS, and production systems. Because manufacturers have this digital twin, they can finally answer which orders are late and why, how exceptions are really handled across teams, where plans break downstream when something changes, and how to prevent these issues from recurring. This is the operational context that AI needs to work — and that no single system can provide alone.",
+        "key_messages": [
+          "Manufacturing leaders are reassessing their entire value chain — Celonis gives them the objective view of how their operations actually run to make those decisions with confidence",
+          "The digital twin connects your systems to give AI the operational context it needs to actually work",
+          "From idea to shipment — visibility drives prioritization drives results"
+        ],
+        "strategic_transformations": [
+          "Accelerate Time-to-Market",
+          "Optimize Shop Floor Performance",
+          "Build Supply Chain Resilience"
+        ],
+        "proof_points": [
+          {
+            "customer": "Mercedes-Benz",
+            "outcome": "50.9% inventory optimization with 30-day shortage prediction",
+            "detail": "Real-time visibility down to material number at plant level. Anticipated shortages 30 days in advance. Reduced tied-up capital, increased delivery precision, shortened lead times."
+          },
+          {
+            "customer": "Avnet",
+            "outcome": "~30% reduction in inventory holding costs, €4M working capital profit anticipated",
+            "detail": "40-50% reduction in volatile behavior and manual transactions. Intelligent demand planning replacing classical MRP. Smart inventory allocation with real-time strategic goals."
+          },
+          {
+            "customer": "Syngenta",
+            "outcome": "4,200+ production stops avoided in 10 months",
+            "detail": "Proactive production stop prediction and resolution across manufacturing operations."
+          },
+          {
+            "customer": "Siemens",
+            "outcome": "$15M saved through efficiency improvements and rework avoidance",
+            "detail": "End-to-end visibility enabling proactive rework prioritization and operational efficiency."
+          },
+          {
+            "customer": "Tier-1 Automotive OEM",
+            "outcome": ">€3M P&L impact at one production line in a 2-week sprint",
+            "detail": "5% OEE improvement and 15% scrap reduction achieved rapidly through shopfloor process intelligence."
+          }
+        ],
+        "key_personas": [
+          "COO",
+          "VP Manufacturing",
+          "VP Operations",
+          "Plant Manager",
+          "VP Supply Chain",
+          "Production Planner",
+          "VP Engineering",
+          "Head of R&D"
+        ],
+        "use_case_areas": ["Shopfloor", "Supply Chain", "Idea to Offer"],
+        "terminology_use": ["shopfloor", "OEE", "work order", "digital twin", "production planning", "engineering change", "BoM", "OTIF", "throughput", "changeover"],
+        "terminology_avoid": ["process mining (lead with outcomes instead)"]
+      },
+      "spotlights": [
+        {
+          "domain_name": "Shopfloor",
+          "alternative_names": ["Production Operations", "Manufacturing Execution", "Factory Operations"],
+          "strategic_priorities_framing": "Manufacturing leaders must improve production performance and resilience in a volatile environment where unplanned downtime and schedule compliance gaps directly erode margins",
+          "key_pain_points": [
+            "Unplanned machine downtime from unforeseen failures during emergency repairs",
+            "Defective parts entering production due to delayed QA results",
+            "Expensive overtime from poor order and rework prioritization",
+            "Production planning forecast miscommunications causing output drops (-13% output reported)",
+            "Data fragmentation across MES, ERP, SCADA, and shop floor devices",
+            "No real-time visibility into production bottlenecks until orders slip"
+          ],
+          "celonis_value_proposition": "Celonis connects production, maintenance, and quality data into a real-time digital twin of the shopfloor — enabling proactive bottleneck identification, autonomous rework prioritization, and OEE improvement without replacing existing systems",
+          "kpis_targeted": [
+            "Overall Equipment Effectiveness (OEE)",
+            "Production Schedule Adherence",
+            "First Pass Yield",
+            "Scrap Rate",
+            "Changeover Time",
+            "Rework Rate",
+            "Throughput Time"
+          ],
+          "use_cases": [
+            "Smart rework prioritization based on production impact",
+            "OEE monitoring and real-time bottleneck detection",
+            "Scrap root cause analysis",
+            "Production stop prediction and prevention",
+            "Automated quality exception routing",
+            "Production adherence dashboards and alerts"
+          ],
+          "proof_points": [
+            {
+              "customer": "Tier-1 Automotive OEM",
+              "metric": ">€3M P&L impact at one production line in a 2-week sprint",
+              "context": "5% OEE improvement and 15% scrap reduction achieved through real-time shopfloor process intelligence"
+            },
+            {
+              "customer": "Syngenta",
+              "metric": "4,200+ production stops avoided in 10 months",
+              "context": "Proactive identification and resolution of production blockers before they caused stoppages"
+            },
+            {
+              "customer": "Siemens",
+              "metric": "$15M saved through efficiency and rework avoidance",
+              "context": "End-to-end shopfloor visibility enabling proactive rework prioritization"
+            }
+          ],
+          "typical_personas": [
+            "Plant Manager",
+            "Production Planner",
+            "Operations Manager",
+            "Quality Engineer",
+            "VP Manufacturing"
+          ],
+          "demo_views": [
+            "Production Performance Dashboard",
+            "Shopfloor Process Explorer",
+            "Quality Root Cause Analysis",
+            "Autonomous Production Scheduling"
+          ]
+        },
+        {
+          "domain_name": "Supply Chain",
+          "alternative_names": ["Manufacturing Supply Chain", "Industrial Supply Chain", "Materials Management"],
+          "strategic_priorities_framing": "With 39% of manufacturers seeing supplier and material cost increases and tariff impacts reshaping demand patterns, supply chain resilience and working capital optimization are board-level priorities",
+          "key_pain_points": [
+            "Supplier and material cost volatility with insufficient lead time to respond",
+            "Shortages discovered too late — after production interruptions have already occurred",
+            "Excess inventory tying up working capital due to over-cautious safety stock strategies",
+            "Poor demand planning causing volatile MRP behavior and manual transaction overload",
+            "Lack of real-time material flow visibility from source to production line",
+            "Siloed procurement, production, and logistics systems preventing coordinated response"
+          ],
+          "celonis_value_proposition": "Celonis connects procurement, inventory, production, and logistics data to deliver real-time material flow visibility — enabling shortage prediction 30+ days ahead, intelligent inventory allocation, and working capital optimization without replacing existing planning systems",
+          "kpis_targeted": [
+            "On-Time-In-Full (OTIF)",
+            "Inventory Turns",
+            "Working Capital",
+            "Supplier On-Time Delivery",
+            "Shortage Frequency",
+            "Inventory Carrying Costs",
+            "Supply Chain Lead Time"
+          ],
+          "use_cases": [
+            "Material shortage prediction 30+ days in advance",
+            "Intelligent inventory allocation based on real-time strategic goals",
+            "Supplier lead time optimization and performance monitoring",
+            "S&OP process adherence and visibility",
+            "Inventory right-sizing to reduce carrying costs without stockouts",
+            "Production interruption prevention through proactive shortage management"
+          ],
+          "proof_points": [
+            {
+              "customer": "Mercedes-Benz",
+              "metric": "50.9% inventory optimization and 30-day shortage prediction capability",
+              "context": "Real-time visibility to material number at plant level. Improved delivery precision and reduced tied-up capital."
+            },
+            {
+              "customer": "Avnet",
+              "metric": "~30% inventory cost reduction, €4M working capital profit anticipated",
+              "context": "40-50% reduction in volatile behavior and manual transactions. Intelligent demand planning replacing classical MRP."
+            }
+          ],
+          "typical_personas": [
+            "VP Supply Chain",
+            "CSCO",
+            "VP Procurement",
+            "VP Demand Planning",
+            "VP Inventory",
+            "COO"
+          ],
+          "demo_views": [
+            "Supply Chain Control Tower",
+            "Shortage Prediction Dashboard",
+            "Inventory Optimization Explorer",
+            "Supplier Performance View"
+          ]
+        },
+        {
+          "domain_name": "Idea to Offer",
+          "alternative_names": ["I2O", "Product Development", "Engineering & Innovation", "New Product Introduction"],
+          "strategic_priorities_framing": "Manufacturers face intense pressure to accelerate time-to-market while controlling engineering costs — but late-stage design changes, manual cross-team coordination, and disconnected PLM and ERP systems make this nearly impossible without end-to-end process visibility",
+          "key_pain_points": [
+            "Late-stage design changes causing project delays and budget overruns",
+            "40% of engineering capacity lost to non-value-added administrative work and coordination overhead",
+            "Unclear change consequences leading to costly late-stage rework loops",
+            "Missing PLM-ERP connections — design decisions disconnected from downstream cost and production impact",
+            "Complex cross-team coordination with high idle times between engineering stages",
+            "Lengthy engineering change resolution cycles averaging weeks instead of days"
+          ],
+          "celonis_value_proposition": "Celonis bridges PLM, ERP, and MES into a unified view of the idea-to-offer process — enabling teams to identify blockers, automate engineering coordination, and reduce time-to-market with agentic assistants for design, change management, and sourcing",
+          "kpis_targeted": [
+            "Time-to-Market",
+            "Engineering Change Cycle Time",
+            "Engineering Productivity",
+            "BoM Accuracy",
+            "Design Review Efficiency",
+            "Cost per Engineering Change"
+          ],
+          "use_cases": [
+            "Engineering change management automation and cycle time reduction",
+            "BoM and sourcing visibility with cost impact estimation",
+            "Design review efficiency improvement",
+            "Requirement traceability across PLM and ERP",
+            "Project planning and execution monitoring",
+            "Simultaneous engineering coordination across teams"
+          ],
+          "proof_points": [
+            {
+              "customer": "Automotive OEM",
+              "metric": ">15% engineering productivity improvement, >25% time-to-market reduction",
+              "context": "55% throughput time improvement for ECM process. >90% efficiency gains from automated price estimation. 40% reduction in manual review work for engineering changes."
+            }
+          ],
+          "typical_personas": [
+            "VP Engineering",
+            "Head of R&D",
+            "Program Manager",
+            "Chief Product Officer",
+            "VP Product Development"
+          ],
+          "demo_views": [
+            "I2O Process Overview",
+            "Engineering Change Explorer",
+            "BoM Cost Visibility",
+            "Program Launch Tracker"
+          ]
+        }
+      ]
+    },
+    {
+      "industry": "Retail",
+      "sub_industries": ["Grocery", "Fashion", "Home Improvement"],
+      "overview": {
+        "state_of_industry": "To be curated from raw extraction",
+        "industry_challenges": [],
+        "celonis_value_proposition": null,
+        "key_messages": [],
+        "proof_points": [],
+        "key_personas": [],
+        "use_case_areas": ["Omnichannel Commerce", "Supply Chain"]
+      },
+      "spotlights": [
+        {
+          "domain_name": "Omnichannel Commerce",
+          "status": "needs_curation"
+        },
+        {
+          "domain_name": "Supply Chain",
+          "status": "needs_curation"
+        }
+      ]
+    },
+    {
+      "industry": "Telco",
+      "sub_industries": ["Mobile", "Fixed Line", "Cable"],
+      "overview": {
+        "state_of_industry": "To be curated from raw extraction",
+        "industry_challenges": [],
+        "celonis_value_proposition": null,
+        "key_messages": [],
+        "proof_points": [],
+        "key_personas": [],
+        "use_case_areas": ["Customer"]
+      },
+      "spotlights": [
+        {
+          "domain_name": "Customer",
+          "status": "needs_curation"
+        }
+      ]
+    },
+    {
+      "industry": "Utilities",
+      "sub_industries": ["Electric", "Gas", "Water"],
+      "overview": {
+        "state_of_industry": "To be curated from raw extraction",
+        "industry_challenges": [],
+        "celonis_value_proposition": null,
+        "key_messages": [],
+        "proof_points": [],
+        "key_personas": [],
+        "use_case_areas": ["Grid", "Customer"]
+      },
+      "spotlights": [
+        {
+          "domain_name": "Grid",
+          "status": "needs_curation"
+        },
+        {
+          "domain_name": "Customer",
+          "status": "needs_curation"
+        }
+      ]
+    },
+    {
+      "industry": "Public Sector",
+      "sub_industries": ["Federal", "State/Local", "Healthcare"],
+      "overview": {
+        "state_of_industry": "To be curated from raw extraction",
+        "industry_challenges": [],
+        "celonis_value_proposition": null,
+        "key_messages": [],
+        "proof_points": [],
+        "key_personas": [],
+        "use_case_areas": []
+      },
+      "spotlights": []
+    }
+  ]
+}
