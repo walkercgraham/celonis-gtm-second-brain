@@ -12,6 +12,8 @@ status: active
 
 Your Obsidian habit lives or dies on consistency, not volume. Here's a system designed around your actual workday as a Celonis GTM professional.
 
+> **Note:** If you have the agent system enabled, several of these steps happen automatically — the chief-of-staff creates your daily note and runs per-meeting prep each morning, the loop-keeper maintains open-loops nightly, and the capture-keeper files your Slack thoughts hourly. This guide covers the manual workflow; where an agent automates a step, it's noted.
+
 ---
 
 ## Morning Routine (5 minutes — with your coffee)
@@ -32,6 +34,8 @@ Glance at your schedule. Add any meetings to the daily note with time slots. Thi
 
 **Time:** ~5 minutes. Do this before opening Slack or email.
 
+> **With agents:** The chief-of-staff agent does steps 1–4 automatically at 06:30 and posts a briefing to your Slack channel. You check `_current/agent-inbox.md` for overnight proposals, mark your ✅/❌ verdicts, and you're ready.
+
 ---
 
 ## During the Day (Capture, Don't Organise)
@@ -47,6 +51,8 @@ Everything goes into `00-inbox/`. Don't think about where it belongs. Don't add 
 - Ideas for initiatives → even half-formed ones
 
 **Keyboard shortcut:** Set up QuickAdd plugin so you can create an inbox note with one hotkey (`Ctrl+Shift+N`).
+
+> **With agents:** The capture-keeper agent monitors a dedicated Slack channel hourly. Send a voice memo or typed thought there — it gets filed into your daily note with wikilinks and any to-dos added to open-loops. Lowest-friction capture when you're away from the laptop.
 
 ### Meeting Notes During Calls
 Keep Obsidian open during calls. Use the meeting template. Focus on:
@@ -71,7 +77,7 @@ Run through `00-inbox/`. For each item:
 - Add at least one `[[wikilink]]` to a related note
 - If it's an action item, add it to tomorrow's daily note
 
-**With Claude Code:** Run `/process-inbox` and let it handle the mechanical parts. Review what it did, adjust any links or tags.
+**With Claude Code:** Run `/process-inbox` and let it handle the mechanical parts. Review what it did, adjust any links or tags. The loop-keeper agent runs at 22:00 and handles open-loops maintenance automatically.
 
 ### 2. Fill in the Work Log
 Go back to your daily note. Under "Work Log," jot down what actually happened. This doesn't need to be detailed — 3-5 bullet points. This becomes invaluable when you need to write a weekly update or remember what happened on a specific day.
@@ -111,6 +117,8 @@ Anything that's done → move to `04-archive/`. Update status to `complete`. Don
 Create `01-daily/YYYY-WXX-review.md` summarising the week. This note links to the daily notes and any significant project updates.
 
 **With Claude Code:** Run `/weekly-review` for an auto-generated draft, then edit it.
+
+> **With agents:** The chief-of-staff writes the weekly review automatically on Friday 17:00 and the weekly prep on Sunday 17:00. The account-sentinel (Fri 16:00) and opportunity-scout (Fri 15:00) feed into these. The field-brief (Sun 20:00) curates 3 enterprise AI articles with draft vault notes. All findings land in `_current/agent-inbox.md`.
 
 ---
 
@@ -183,6 +191,8 @@ Week 12: Your weekly reviews surface patterns you'd never have noticed.
 Week 26: You have a genuine knowledge graph. Claude Code can traverse it and generate deliverables directly from your accumulated context.
 
 The key is to survive the first two weeks. After that, the search-and-find value alone justifies the effort. Everything after that is compounding returns.
+
+Once you enable the agent system (typically week 3–4), the compounding accelerates — agents monitor accounts continuously, surface risks and opportunities you'd miss, and curate research while you sleep. By week 16 you have a genuine autonomous intelligence system running on your portfolio.
 
 ---
 

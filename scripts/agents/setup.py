@@ -35,7 +35,7 @@ def ask(prompt, default="", validator=None, required=True):
 
 def validate_slack_id(v):
     if not re.match(r'^[A-Z][A-Z0-9]{8,}$', v):
-        return "Slack IDs look like U05CJNA8NMP or C0C6BCVG8TB (uppercase letters + digits)."
+        return "Slack IDs look like U0123456789 or C0123456789 (uppercase letters + digits)."
     return None
 
 
