@@ -1,0 +1,4 @@
+# Live-mode write allowlist. See ingestor/allowed-paths.txt for syntax.
+_current/open-loops.md
+04-archive/open-loops-done-*.md
+_current/agent-inbox.md

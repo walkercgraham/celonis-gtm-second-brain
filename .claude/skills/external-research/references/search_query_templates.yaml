@@ -5,7 +5,7 @@
 # - Industry-specific search queries
 # - Signals to watch by industry
 # - Celonis relevance mapping
-# - Aramco example queries
+# - Acme Petroleum example queries
 #
 # See: industry_research_guide.yaml
 #
@@ -138,7 +138,7 @@ mandatory_investor_sources:
           - "site:tadawul.com.sa [Company]"
           - "[Company] Tadawul filing"
           - "site:[company].com investor relations"
-        note: "Large Saudi companies (Aramco, SABIC) have excellent English IR"
+        note: "Large Saudi companies (large SOEs, SABIC) have excellent English IR"
 
       uae:
         filing_types: ["Annual Report", "ADX/DFM Announcements"]
@@ -212,7 +212,7 @@ mandatory_investor_sources:
 #   Common blocks: LinkedIn (999), Reuters (403), Bloomberg (403)
 #
 # Example workflow:
-#   1. WebFetch "https://html.duckduckgo.com/html/?q=Saudi+Aramco+earnings+call+2025"
+#   1. WebFetch "https://html.duckduckgo.com/html/?q=Acme+Petroleum+earnings+call+2025"
 #   2. Extract URLs from results
 #   3. WebFetch each promising URL with targeted extraction prompt
 # =============================================================================
@@ -222,10 +222,10 @@ web_search_urls:
   google_fallback: "https://www.google.com/search?q="
 
   example_searches:
-    earnings: "https://html.duckduckgo.com/html/?q=Saudi+Aramco+Q4+2025+earnings+call+transcript"
-    strategy: "https://html.duckduckgo.com/html/?q=Saudi+Aramco+investor+day+2025+presentation"
-    technology: "https://html.duckduckgo.com/html/?q=Saudi+Aramco+SAP+digital+transformation"
-    competitive: "https://html.duckduckgo.com/html/?q=Saudi+Aramco+process+mining+Celonis"
+    earnings: "https://html.duckduckgo.com/html/?q=Acme+Petroleum+Q4+2025+earnings+call+transcript"
+    strategy: "https://html.duckduckgo.com/html/?q=Acme+Petroleum+investor+day+2025+presentation"
+    technology: "https://html.duckduckgo.com/html/?q=Acme+Petroleum+SAP+digital+transformation"
+    competitive: "https://html.duckduckgo.com/html/?q=Acme+Petroleum+process+mining+Celonis"
 
 company_financials:
   earnings_calls:
@@ -347,7 +347,7 @@ industry_specific:
   # These are quick-reference queries - full playbooks are in the industry guide
 
   energy_oil_gas:
-    # Primary test case: Saudi Aramco
+    # Primary test case: Acme Petroleum
     # Full guidance: industry_research_guide.yaml > energy_oil_gas
     earnings_and_strategy:
       - "[Company] quarterly earnings oil production"
@@ -366,12 +366,12 @@ industry_specific:
       - "[Company] SAP PM plant maintenance"
       - "[Company] digital twin asset"
       - "[Company] Fourth Industrial Revolution 4IR"
-    aramco_specific:
-      - "Saudi Aramco Q4 2025 earnings results"
-      - "Aramco operational excellence initiative"
-      - "Saudi Aramco downstream expansion"
-      - "Aramco In-Kingdom Value IKTVA"
-      - "site:aramco.com investor presentation"
+    acme_petroleum_specific:
+      - "Acme Petroleum Q4 2025 earnings results"
+      - "Acme Petroleum operational excellence initiative"
+      - "Acme Petroleum downstream expansion"
+      - "Acme Petroleum In-Kingdom Value IKTVA"
+      - "site:acme-petroleum.example.com investor presentation"
 
   manufacturing:
     - "[Company] lean manufacturing"

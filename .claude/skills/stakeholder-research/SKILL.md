@@ -13,7 +13,7 @@ This skill performs deep stakeholder research and populates the `stakeholder` se
 |------|---------|--------------|
 | `references/role_research_guide.yaml` | Role-specific priorities, pain points, and engagement approaches | After identifying stakeholder's role/title |
 | `references/stakeholder_search_templates.yaml` | Search query patterns for stakeholder research | When starting research |
-| `references/example_outputs/aramco_stakeholder_example.yaml` | Gold standard showing expected depth | To understand expected output format |
+| `references/example_outputs/acme_petroleum_stakeholder_example.yaml` | Gold standard showing expected depth | To understand expected output format |
 
 ## Prerequisites
 

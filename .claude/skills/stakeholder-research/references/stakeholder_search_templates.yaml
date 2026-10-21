@@ -2,7 +2,7 @@
 # Organized by research category
 #
 # Replace [Name], [Company], [Title], [Industry], [Year] with actual values
-# Example: [Name] = "Ibrahim Al Buainain", [Company] = "Saudi Aramco"
+# Example: [Name] = "Mohammed Al Rashid", [Company] = "Acme Petroleum"
 #
 # WEB SEARCH APPROACH:
 # Use DuckDuckGo HTML endpoint for search, then fetch top results
@@ -30,11 +30,11 @@ duckduckgo_searches:
 
   profile_searches:
     - query: "[Name]+[Company]+[Title]"
-      example: "https://html.duckduckgo.com/html/?q=Ibrahim+Al+Buainain+Saudi+Aramco+EVP+Manufacturing"
+      example: "https://html.duckduckgo.com/html/?q=Mohammed+Al+Rashid+Acme+Petroleum+EVP+Manufacturing"
     - query: "[Name]+[Company]+biography"
-      example: "https://html.duckduckgo.com/html/?q=Ibrahim+Al+Buainain+Saudi+Aramco+biography"
+      example: "https://html.duckduckgo.com/html/?q=Mohammed+Al+Rashid+Acme+Petroleum+biography"
     - query: "[Name]+[Company]+LinkedIn"
-      example: "https://html.duckduckgo.com/html/?q=Ibrahim+Al+Buainain+Saudi+Aramco+LinkedIn"
+      example: "https://html.duckduckgo.com/html/?q=Mohammed+Al+Rashid+Acme+Petroleum+LinkedIn"
 
   career_searches:
     - query: "[Name]+appointed+[Company]"
@@ -266,36 +266,36 @@ search_operators:
     - "[Name] [Company] -LinkedIn -Facebook -Twitter"
 
 # =============================================================================
-# ARAMCO-SPECIFIC (Test Case)
+# EXAMPLE COMPANY (Test Case)
 # =============================================================================
-aramco_specific:
-  note: "Queries tailored for Saudi Aramco stakeholder research"
+acme_petroleum_specific:
+  note: "Queries tailored for Acme Petroleum stakeholder research"
 
   profile:
-    - "site:aramco.com [Name]"
-    - "site:linkedin.com/in [Name] Aramco"
-    - "[Name] Saudi Aramco biography"
-    - "[Name] Saudi Aramco executive"
+    - "site:acme-petroleum.example.com [Name]"
+    - "site:linkedin.com/in [Name] Acme Petroleum"
+    - "[Name] Acme Petroleum biography"
+    - "[Name] Acme Petroleum executive"
 
   statements:
-    - "[Name] Aramco interview"
-    - "[Name] Saudi Aramco keynote"
+    - "[Name] Acme Petroleum interview"
+    - "[Name] Acme Petroleum keynote"
     - "[Name] ADIPEC presentation"
     - "[Name] World Petroleum Congress"
-    - "[Name] Aramco operational excellence"
-    - "[Name] Aramco digital transformation"
+    - "[Name] Acme Petroleum operational excellence"
+    - "[Name] Acme Petroleum digital transformation"
 
   news:
-    - "[Name] Aramco announced"
-    - "[Name] Aramco appointed"
-    - "[Name] Aramco Arab News"
-    - "[Name] Aramco Reuters"
+    - "[Name] Acme Petroleum announced"
+    - "[Name] Acme Petroleum appointed"
+    - "[Name] Acme Petroleum Arab News"
+    - "[Name] Acme Petroleum Reuters"
 
   example_queries:
-    # Specific queries for Ibrahim Q. Al Ghamdi test case
-    - "site:linkedin.com/in Ibrahim Al Ghamdi Aramco"
-    - "Ibrahim Al Ghamdi EVP Manufacturing Aramco"
-    - "Ibrahim Al Ghamdi Saudi Aramco biography"
-    - "Ibrahim Al Ghamdi Aramco interview"
-    - "Ibrahim Al Ghamdi ADIPEC"
-    - "Ibrahim Al Ghamdi Aramco operational excellence"
+    # Specific queries for Ahmed Al Farsi test case
+    - "site:linkedin.com/in Ahmed Al Farsi Acme Petroleum"
+    - "Ahmed Al Farsi EVP Manufacturing Acme Petroleum"
+    - "Ahmed Al Farsi Acme Petroleum biography"
+    - "Ahmed Al Farsi Acme Petroleum interview"
+    - "Ahmed Al Farsi ADIPEC"
+    - "Ahmed Al Farsi Acme Petroleum operational excellence"

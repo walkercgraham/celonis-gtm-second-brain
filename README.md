@@ -49,7 +49,7 @@ One vault. One command before every call. Full context in seconds.
 ### 1. Clone and open
 
 ```bash
-git clone https://github.com/walkercgraham/celonis-gtm-second-brain.git
+git clone https://github.com/your-org/celonis-gtm-second-brain.git
 cd celonis-gtm-second-brain
 ```
 

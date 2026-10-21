@@ -1,0 +1,109 @@
+# Agent team configuration. Read by every agent and by scripts/agents/guard.py.
+# guard.py parses this with a minimal stdlib parser: keep to simple `key: value` lines,
+# two-space indentation, no inline maps or multi-line strings.
+#
+# SETUP: Run /setup-agents to create your config.yaml from this template,
+# or copy this file to config.yaml and fill in the values below.
+
+mode: shadow                 # start in shadow mode; switch to live after reviewing shadow output
+allow_main: true             # agents commit + push on main
+slack_self_user_id: ""       # your Slack user ID (Slack profile → ⋯ → Copy member ID)
+slack_agent_channel_id: ""   # create a private channel for agent output (e.g. #my-agent-log)
+slack_capture_channel_id: "" # create a channel for quick captures (e.g. #my-second-brain)
+timezone: ""                 # e.g. America/New_York, Europe/London, Asia/Dubai
+vault_path: ""               # absolute path to your vault — set by /setup-agents
+
+agents:
+  ingestor:
+    mode: shadow
+    model: sonnet
+    schedule: "0 13,18 * * 1-5"   # twice daily on weekdays; adjust to your working hours
+    batch_size: 5                 # account-ingestor subagents spawned per batch
+    max_threads_per_account: 10   # Gmail threads a subagent opens in full
+  chief-of-staff:
+    mode: shadow
+    model: sonnet
+    schedule_daily: "30 6 * * 1-5"       # adjust to your morning routine
+    schedule_weekly_review: "0 17 * * 5"  # Friday: backward-looking review + reflection prompts
+    schedule_weekly_prep: "0 18 * * 0"    # Sunday: next-week plan from Friday's review + sentinel
+    weekly_assembly_model: opus
+    this_week_level: 4       # becomes 5 on day 30 if approval rate > 80%
+  prep:
+    model: sonnet
+  loop-keeper:
+    mode: shadow
+    model: sonnet
+    schedule: "0 22 * * 1-5"   # nightly, after your workday ends
+  account-sentinel:
+    mode: shadow
+    model: sonnet
+    schedule: "0 16 * * 5"     # Friday afternoon, before weekly review
+  account-analyst:
+    model: sonnet
+  opportunity-scout:
+    mode: shadow
+    model: opus
+    schedule: "0 15 * * 5"     # Friday, before sentinel
+  field-brief:
+    mode: shadow
+    model: opus
+    schedule: "0 20 * * 0"     # Sunday evening: picks ready before Monday's chief-of-staff
+  account-watch:
+    mode: shadow
+    model: sonnet
+    schedule: "45 5 * * 1,3,5"   # Mon/Wed/Fri before chief-of-staff morning run
+    max_accounts_per_run: 8      # more active hubs than this → rotate by oldest last_checked
+    researcher_batch_size: 4     # account-researcher subagents spawned in parallel per batch
+    searches_per_account: 5      # each researcher's own budget
+    fetches_per_account: 4
+    profile_extra_searches: 3    # added when a profile is built or refreshed
+    profile_extra_fetches: 2
+    deep_read_extra_fetches: 4   # added when a results / annual report / CMD date is in the window
+    profile_refresh_days: 90
+    require_verdict: true        # guard refuses to commit a run without a PASS verdict
+  account-researcher:
+    model: sonnet
+  capture-keeper:
+    mode: shadow
+    model: sonnet
+    schedule: "0 8-20 * * 1-5"   # hourly during working hours; script-led, near-free when no new messages
+  critic:
+    model: sonnet
+
+accounts:
+  decay_days: 21                 # reactivated (non-pinned) accounts go back to context after this many days without a signal
+  upcoming_meeting_days: 7       # chief-of-staff looks this far ahead for client-attendee meetings that reactivate an account
+
+open_loops:
+  this_week_cap: 25          # items due within 7 days
+  stale_after_days: 14       # overdue and not mentioned since due date → Stale: confirm or drop
+  archive_after_days: 30     # overdue this long with no mention → archive with restore line
+
+inbox:
+  daily_visible_cap: 5
+  budget_loop_keeper: 1
+  budget_ingestor: 1
+  budget_chief_of_staff: 2
+  budget_account_sentinel: 3
+  budget_opportunity_scout: 3
+  budget_field_brief: 1        # one entry per weekly run, 3 article picks inside it
+  budget_account_watch: 1      # shadow: one Shadow review entry per run; live: one entry, only for new HIGH signals
+  budget_capture_keeper: 0     # captures land in the daily note / 00-inbox / open-loops, never the agent inbox
+
+sentinel:
+  quiet_account_days: 14
+  hub_lag_days: 7
+  stakeholder_silence_days: 21
+  date_at_risk_days: 21
+  blocker_aging_days: 14
+  overdue_cluster_min: 3
+  analyst_batch_size: 5
+
+prep:
+  kl_cache_ttl_days: 30
+  kl_gate_stages: "discovery, qualification, demo"
+  signal_window_days: 14
+
+guard:
+  lock_wait_minutes: 10
+  push_retries: 4

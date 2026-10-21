@@ -1,0 +1,140 @@
+# Account Watch — region packs, vendor watchlist and query templates. You maintain this file; the agent reads it only.
+# An account's region comes from its hub frontmatter `region:` (else the profile infers it from HQ).
+# Region codes: uk · ie · gcc-ae · gcc-sa · gcc-qa · gcc-kw · gcc-bh · gcc-om · za · us · ca · eu-de · eu-fr · eu-nl · eu-be
+# To switch on a region set `mode: active`. Activate only the regions you have active accounts in.
+#
+# Source types (tier): S1 annual reports / investor decks (1) · S2 results, trading updates, transcripts (1) ·
+# S3 exchange (1) / registry (2) filings · S4 company newsroom, exec interviews, keynotes (1) · S5 regulators, government,
+# state media (2) · S6 ratings, bonds, sukuk (2) · S7 tier-1 business press (3) · S8 trade press, analyst coverage (4) ·
+# S9 vendor / SI / AI-company / competitor announcements (3–4) · S10 job postings (5) · S11 public tenders (2) ·
+# S12 executive social posts, people moves (5)
+
+regions:
+  uk:
+    mode: inactive
+    codes: [uk]
+    S3_exchange: ["londonstockexchange.com (RNS)", "investegate.co.uk"]
+    S3_registry: ["find-and-update.company-information.service.gov.uk (Companies House officers + filings)"]
+    S5_regulators: ["fca.org.uk", "bankofengland.co.uk/prudential-regulation", "gov.uk/cma", "ico.org.uk",
+                    "ofgem.gov.uk", "ofwat.gov.uk", "gov.uk/mhra", "caa.co.uk", "orr.gov.uk"]
+    S5_government: ["gov.uk"]
+    S6_ratings: ["moodys.com", "spglobal.com/ratings", "fitchratings.com"]
+    S7_press: ["ft.com", "reuters.com", "bloomberg.com", "thetimes.co.uk", "cityam.com", "theguardian.com/business"]
+    S8_trade: ["computerweekly.com", "uktech.news", "sifted.eu", "insurancetimes.co.uk", "insuranceage.co.uk",
+               "pharmatimes.com", "pharmaceutical-technology.com"]
+    S10_jobs: ["linkedin.com/jobs", "uk.indeed.com"]
+    S11_tenders: ["find-tender.service.gov.uk", "contractsfinder.service.gov.uk"]
+  ie:
+    mode: inactive
+    codes: [ie]
+    S3_exchange: ["euronext.com/en/markets/dublin"]
+    S3_registry: ["cro.ie"]
+    S5_regulators: ["centralbank.ie", "dataprotection.ie", "cru.ie", "hpra.ie", "ccpc.ie"]
+    S5_government: ["gov.ie"]
+    S6_ratings: ["moodys.com", "spglobal.com/ratings", "fitchratings.com"]
+    S7_press: ["irishtimes.com/business", "businesspost.ie", "independent.ie/business", "rte.ie/news/business", "reuters.com"]
+    S8_trade: ["siliconrepublic.com", "techcentral.ie"]
+    S10_jobs: ["irishjobs.ie", "linkedin.com/jobs"]
+    S11_tenders: ["etenders.gov.ie"]
+  gcc:
+    mode: inactive
+    codes: [gcc-ae, gcc-sa, gcc-qa, gcc-kw, gcc-bh, gcc-om]
+    arabic_query_weekly: true      # one Arabic query per account per week (Wednesday run)
+    S3_exchange:
+      gcc-ae: ["dfm.ae", "adx.ae", "nasdaqdubai.com"]
+      gcc-sa: ["saudiexchange.sa (Tadawul)"]
+      gcc-qa: ["qe.com.qa"]
+      gcc-kw: ["boursakuwait.com.kw"]
+      gcc-bh: ["bahrainbourse.com"]
+      gcc-om: ["msx.om"]
+    S3_registry: ["adgm.com (public register)", "difc.ae (public register)", "mc.gov.sa (CR)", "moci.gov.qa"]
+    S5_regulators: ["sca.gov.ae", "dfsa.ae", "adgm.com/fsra", "cma.org.sa", "sama.gov.sa", "qfcra.com", "cbuae.gov.ae",
+                    "gaca.gov.sa", "tdra.gov.ae", "cst.gov.sa", "zatca.gov.sa", "mof.gov.ae (e-invoicing)"]
+    S5_state_media: ["wam.ae", "spa.gov.sa", "qna.org.qa", "kuna.net.kw", "bna.bh", "omannews.gov.om",
+                     "mediaoffice.ae (Dubai Media Office)", "mediaoffice.abudhabi", "pif.gov.sa", "vision2030.gov.sa"]
+    S6_ratings: ["moodys.com", "spglobal.com/ratings", "fitchratings.com", "sukuk issuance via zawya.com / reuters.com"]
+    S7_press: ["thenationalnews.com", "gulfnews.com", "arabnews.com", "argaam.com", "zawya.com", "agbi.com",
+               "arabianbusiness.com", "asharqbusiness.com", "khaleejtimes.com", "reuters.com"]
+    S7_press_arabic: ["argaam.com/ar", "spa.gov.sa/ar", "wam.ae/ar", "aleqt.com", "albayan.ae"]
+    S8_trade: ["itp.net (CIO Middle East)", "gulfbusiness.com", "meed.com", "lloydslist.com",
+               "porttechnology.org", "airport-world.com"]
+    S10_jobs: ["bayt.com", "gulftalent.com", "linkedin.com/jobs"]
+    S11_tenders:
+      gcc-ae: ["esupply.dubai.gov.ae", "adgpg.gov.ae (Abu Dhabi procurement)"]
+      gcc-sa: ["etimad.sa"]
+      gcc-qa: ["monaqasat.mof.gov.qa"]
+      gcc-kw: ["capt.gov.kw"]
+      gcc-bh: ["tenderboard.gov.bh"]
+      gcc-om: ["etendering.tenderboard.gov.om"]
+  za:
+    mode: inactive
+    codes: [za]
+    S3_exchange: ["jse.co.za (SENS)", "sharenet.co.za/sens"]
+    S3_registry: ["cipc.co.za"]
+    S5_regulators: ["fsca.co.za", "resbank.co.za/prudential-authority", "compcom.co.za", "nersa.org.za", "icasa.org.za",
+                    "inforegulator.org.za (POPIA)", "portsregulator.org"]
+    S5_government: ["gov.za", "sanews.gov.za"]
+    S6_ratings: ["moodys.com", "spglobal.com/ratings", "fitchratings.com"]
+    S7_press: ["businesslive.co.za (Business Day, Financial Mail)", "moneyweb.co.za", "news24.com/fin24",
+               "dailymaverick.co.za/business-maverick", "reuters.com"]
+    S8_trade: ["itweb.co.za", "techcentral.co.za", "mybroadband.co.za"]
+    S10_jobs: ["pnet.co.za", "careers24.com", "linkedin.com/jobs"]
+    S11_tenders: ["etenders.gov.za"]
+  na:
+    mode: inactive
+    codes: [us, ca]
+    S3_exchange: ["sec.gov/edgar (10-K, 10-Q, 8-K — Item 5.02 = executive changes, DEF 14A)", "sedarplus.ca"]
+    S3_registry: ["state Secretary of State business search"]
+    S5_regulators: ["sec.gov", "ftc.gov", "fda.gov", "occ.gov", "federalreserve.gov", "naic.org", "ferc.gov", "faa.gov"]
+    S5_government: ["whitehouse.gov", "canada.ca"]
+    S6_ratings: ["moodys.com", "spglobal.com/ratings", "fitchratings.com"]
+    S7_press: ["wsj.com", "bloomberg.com", "reuters.com", "nytimes.com/section/business", "businessinsider.com", "theglobeandmail.com"]
+    S8_trade: ["ciodive.com", "axios.com/pro", "theinformation.com", "supplychaindive.com"]
+    S10_jobs: ["linkedin.com/jobs", "indeed.com"]
+    S11_tenders: ["sam.gov", "state procurement portals", "canadabuys.canada.ca"]
+  eu-dach:
+    mode: inactive
+    codes: [eu-de, eu-at, eu-ch]
+    S3_exchange: ["dgap.de (DGAP ad-hoc)", "six-group.com/en/products-services/the-swiss-stock-exchange"]
+    S3_registry: ["handelsregister.de", "zefix.ch"]
+    S5_regulators: ["bafin.de", "finma.ch", "bundeskartellamt.de", "bfdi.bund.de"]
+    S5_government: ["bundesregierung.de", "admin.ch"]
+    S6_ratings: ["moodys.com", "spglobal.com/ratings", "fitchratings.com"]
+    S7_press: ["handelsblatt.com", "reuters.com", "bloomberg.com", "manager-magazin.de", "nzz.ch"]
+    S8_trade: ["computerwoche.de", "it-finanzmagazin.de", "logistik-heute.de"]
+    S10_jobs: ["linkedin.com/jobs", "stepstone.de"]
+    S11_tenders: ["ted.europa.eu", "simap.ch"]
+
+# S9: companies whose announcements naming an account are TECH-VENDOR signals (set vendor_group to the key).
+vendors:
+  frontier_ai_labs: ["Anthropic", "OpenAI", "Google DeepMind", "Gemini Enterprise", "Mistral AI", "Cohere", "xAI"]
+  regional_ai: ["G42", "Core42", "Inception", "Presight", "Humain", "e& enterprise"]
+  data_ai_platforms: ["Databricks", "Snowflake", "Palantir", "Microsoft Fabric", "Azure OpenAI", "Microsoft Copilot",
+                      "AWS Bedrock", "Google Vertex AI", "Scale AI"]
+  emerging_ai_transformation: ["Sierra", "Glean", "Writer", "Harvey", "Cognition", "Decagon", "Faculty", "Aily Labs",
+                               "Dataiku", "H2O.ai"]
+  consultancies_si: ["Accenture", "Deloitte", "PwC", "EY", "KPMG", "McKinsey QuantumBlack", "BCG X", "Capgemini", "TCS",
+                     "Infosys", "Wipro", "Genpact", "IBM Consulting"]
+  process_intelligence: ["SAP Signavio", "SAP LeanIX", "UiPath", "ServiceNow", "Microsoft Power Automate Process Mining",
+                         "ARIS", "Appian", "Pega", "Automation Anywhere", "IBM Process Mining"]
+
+# Query templates per source type. Placeholders: {name} legal name, {alias}, {exec} an executive's name, {month} "October 2026",
+# {site_list} "site:a OR site:b" built from the region pack's list for that source type, {vendor} a vendors: entry.
+# {name_ar} the Arabic legal name from the profile (GCC accounts only).
+queries:
+  S1: ['"{name}" (annual report OR "integrated report" OR "capital markets day" OR "investor presentation") {month}']
+  S2: ['"{name}" (results OR "trading update" OR "earnings call" OR guidance) {month}', '{site_list} "{name}"']
+  S3: ['{site_list} "{name}"', '"{name}" (appoints OR appointment OR resigns OR "steps down") (CEO OR CFO OR CIO OR director) {month}']
+  S4: ['"{name}" (announces OR launches OR partnership OR "selects") {month}', '"{exec}" interview {month}']
+  S5: ['{site_list} "{name}"', '"{name}" (fine OR enforcement OR regulator OR mandate) {month}']
+  S6: ['"{name}" (Moody''s OR "S&P" OR Fitch OR rating OR bond OR sukuk) {month}']
+  S7: ['"{name}" (restructuring OR "job cuts" OR layoffs OR redundancies OR acquisition OR divest OR "cost cutting") {month}',
+       '{site_list} "{name}" {month}']
+  S8: ['{site_list} "{name}"']
+  S9: ['"{name}" ("{vendor}") (selects OR partnership OR deploys OR "customer story" OR agreement)',
+       '"{name}" (Anthropic OR OpenAI OR Databricks OR Palantir OR Snowflake OR "AI partnership")',
+       '"{name}" (Signavio OR UiPath OR ServiceNow OR "process mining" OR Celonis)']
+  S10: ['{site_list} "{name}" ("process excellence" OR "process mining" OR "AI CoE" OR transformation OR S/4HANA OR automation)']
+  S11: ['{site_list} "{name}"']
+  S12: ['"{exec}" (joins OR "new role" OR appointed OR "steps down") {month}', 'site:linkedin.com/posts "{name}" "{exec}"']
+  arabic: ['"{name_ar}" (إعادة هيكلة OR تعيين OR استحواذ OR الذكاء الاصطناعي OR نتائج)']

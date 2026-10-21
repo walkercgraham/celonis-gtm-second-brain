@@ -1,0 +1,25 @@
+# Live-mode write allowlist. See ingestor/allowed-paths.txt for syntax.
+_current/this-week.md
+_current/agent-inbox.md
+01-daily/*/*.md
+02-areas/celonis/_internal/reviews/*.md
+02-areas/celonis/_internal/reviews/this-week-archive/*.md
+_agents/inbox-archive/*.md
+# Applying ✅ (chief-of-staff.md step 5): promote drafts into the playbook, queue todos, mark drafts promoted
+02-areas/celonis/_internal/playbook/*.md
+# apply: promote into a client's outputs/ (copy of a ✅'d draft only; never edits hubs)
+02-areas/celonis/*/outputs/*.md
+_current/open-loops.md
+_agents/opportunity-scout/drafts/*.md
+# Applying ✅'d field-brief entries: promote drafts into reading/, link them in the enterprise-AI MOC, mark drafts promoted
+03-resources/reading/*.md
+03-resources/concepts/_moc-enterprise-ai.md
+_agents/field-brief/drafts/*.md
+# apply: promote-signals — ✅'d account-watch shadow reviews, via account_watch_promote.py only (add-only, critic-checked)
+02-areas/celonis/*/*-external-research.md
+_agents/account-watch/state.json
+_agents/account-watch/log.md
+# apply: reactivate <slug> — status/involvement/modified lines only (critic-checked)
+HUB
+# Prep subagents may refresh their Knowledge Lake cache in any mode
+shadow: _agents/prep/kl-cache/*.md

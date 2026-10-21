@@ -1,0 +1,2 @@
+# Live-mode write allowlist. Proposals and reports live under _agents/account-sentinel/ (always allowed).
+_current/agent-inbox.md

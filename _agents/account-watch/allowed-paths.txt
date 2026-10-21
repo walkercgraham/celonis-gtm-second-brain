@@ -1,0 +1,5 @@
+# Live-mode write allowlist. _agents/account-watch/** (profiles, shadow, state, log) is always allowed.
+_current/agent-inbox.md
+02-areas/celonis/*/*-external-research.md
+# Shadow mode: the ONE shadow-review inbox entry per run (critic-checked: nothing else in the inbox may change)
+shadow: _current/agent-inbox.md

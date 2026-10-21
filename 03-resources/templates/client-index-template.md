@@ -3,8 +3,18 @@ type: project
 client: "{{title}}"
 status: active
 stage: discovery
+involvement: lead
+health: green
 created: {{date}}
 modified: {{date}}
+last_signal: {{date}}
+next_action: ""
+email_domains: []
+slack_channels: []
+slack_keywords: []
+region: ""
+related:
+  - "[[active-clients]]"
 ---
 
 # {{title}}

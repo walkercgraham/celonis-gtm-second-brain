@@ -1,0 +1,1 @@
+# Subagent of the ingestor — runs inside the ingestor's guard session. Read-only: returns an ACCOUNT block, writes nothing.

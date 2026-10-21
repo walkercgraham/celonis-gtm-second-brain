@@ -138,7 +138,7 @@ Stakeholder Mismatch:
   → Verify correct title
 
 Status Mismatch:
-- sasol.md hub status: "active, progressing well"
+- example-client.md hub status: "active, progressing well"
 - Last 2 meeting notes mention: "blocked on data access", "waiting on [person]"
   → Hub may need status update
 

@@ -269,6 +269,8 @@ action-items: []
 | Client Index | `03-resources/templates/client-index-template.md` | Client hub files (`[client].md`) |
 | Stakeholder | `03-resources/templates/stakeholder-template.md` | People notes |
 | Project | `03-resources/templates/project-template.md` | Sub-project hub files |
+| External Research | `03-resources/templates/external-research-template.md` | Account-watch research logs |
+| Reading Note | `03-resources/templates/reading-template.md` | Field-brief article drafts |
 
 ---
 
@@ -343,3 +345,44 @@ Team meetings and internal syncs live in:
 1. `/weekly-review`
 2. Update `_current/this-week.md`
 3. Clean `_current/open-loops.md`
+
+---
+
+## Agent System
+
+This vault includes an autonomous agent system that runs in the background on scheduled tasks. See `AGENTS.md` for the full charter and `_agents/README.md` for setup instructions.
+
+### Key Files
+- `AGENTS.md` — charter read by every agent (decision rights, output contract, run protocol)
+- `_agents/config.yaml` — central configuration (copy from `config-template.yaml`)
+- `_current/agent-inbox.md` — where agents write proposals; you ✅ or ❌ them
+- `.claude/agents/*.md` — individual agent definitions
+- `_agents/<agent>/allowed-paths.txt` — path enforcement per agent
+- `scripts/agents/guard.py` — safety infrastructure (locking, git, Slack, path enforcement)
+
+### How It Works
+1. Agents run on cron schedules via Claude Code scheduled tasks
+2. Every run follows: `guard.py start` → work → critic QA → `guard.py finish` → `guard.py post`
+3. The critic subagent runs 7 checks on every agent's output before it commits
+4. Shadow mode writes only to `_agents/<agent>/shadow/` — review before going live
+5. Agents communicate with you through `_current/agent-inbox.md` (max 5 items in `## Today`)
+6. Your ✅/❌ verdicts are carried out by chief-of-staff each morning
+
+### Client Hub Frontmatter (Agent-Required Fields)
+Client hub files (`02-areas/celonis/<client>/<client>.md`) need these fields for agents to work:
+```yaml
+email_domains: [example.com]        # Gmail domain(s) for this client
+slack_channels: [C0123456789]       # Slack channel ID(s) for this client
+slack_keywords: ["Client Name"]     # Keywords to search in DMs/group DMs
+region: uk                          # Region code (see regions.yaml)
+involvement: lead                   # lead | consultative
+health: green                       # green | amber | red
+last_signal: 2026-01-15             # Date of last meaningful signal (auto-updated)
+next_action: ""                     # What happens next
+```
+
+### Progressive Enablement
+Start with Tier 1 agents in shadow mode. Review shadow output for 1–2 weeks before switching to live. Enable tiers progressively:
+- **Tier 1:** chief-of-staff, loop-keeper, prep, critic (vault + calendar)
+- **Tier 2:** ingestor, account-sentinel, opportunity-scout, capture-keeper (+ Gmail, Slack, Knowledge Lake)
+- **Tier 3:** field-brief, account-watch (+ WebSearch, WebFetch)

@@ -15,7 +15,7 @@ This skill performs deep company research from public sources and populates the 
 | `references/non_us_company_guide.yaml` | EMEA, APAC, and private company research strategies | For non-US headquartered or private companies |
 | `references/source_quality_guide.yaml` | Source tier definitions and quality ratings | When documenting findings |
 | `references/search_query_templates.yaml` | Generic search query patterns | When needing query ideas |
-| `references/example_outputs/aramco_research_example.yaml` | Gold standard showing expected depth | To understand expected output format |
+| `references/example_outputs/acme_petroleum_research_example.yaml` | Gold standard showing expected depth | To understand expected output format |
 | `references/example_outputs/research_finding_templates.yaml` | Templates with good/bad examples | When formatting findings |
 
 ## Prerequisites

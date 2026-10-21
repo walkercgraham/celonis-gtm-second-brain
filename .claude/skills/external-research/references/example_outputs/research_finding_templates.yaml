@@ -80,7 +80,7 @@ strategic_priority:
         SVP presented at World Petroleum Congress: "Our company-wide operational
         excellence program targets $2B in annual efficiency gains through process
         optimization and digital tools."
-      source: "World Petroleum Congress 2025, Aramco presentation"
+      source: "World Petroleum Congress 2025, Acme Petroleum presentation"
       quality: "Direct"
 
 # =============================================================================
@@ -308,8 +308,8 @@ source_documentation:
     id: 1
     tier: 1
     type: "Earnings Call Transcript"
-    title: "Saudi Aramco Q4 2025 Earnings Call"
-    url: "seekingalpha.com/article/aramco-q4-2025-earnings-call-transcript"
+    title: "Acme Petroleum Q4 2025 Earnings Call"
+    url: "seekingalpha.com/article/acme-petroleum-q4-2025-earnings-call-transcript"
     date: "2026-02-15"
     quality: "Direct"
     key_extracts:

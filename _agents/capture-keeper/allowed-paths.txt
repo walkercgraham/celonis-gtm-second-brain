@@ -1,0 +1,4 @@
+# Live-mode write allowlist. All writes go through scripts/agents/capture.py.
+01-daily/*/*.md
+00-inbox/*.md
+_current/open-loops.md

@@ -65,6 +65,6 @@ Report:
 
 When moving/renaming files, follow vault conventions:
 - Meeting notes: `YYYY-MM-DD - Meeting - [Company/Person].md`
-- Client folders: lowercase, hyphenated (e.g., `saudi-aramco`)
+- Client folders: lowercase, hyphenated (e.g., `acme-corp`)
 - Concept notes: Title Case (e.g., `Monte Carlo Simulation.md`)
 - All other notes: lowercase-hyphenated

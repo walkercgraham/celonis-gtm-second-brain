@@ -7,7 +7,7 @@ Turn a raw meeting transcript into a fully linked, structured meeting note — w
 Two modes — try Granola first, fall back to inline paste:
 
 ### Mode A: Granola auto-fetch (preferred)
-If `$ARGUMENTS` is provided (meeting name, client, or date like "smurfit", "today", "2026-04-30"):
+If `$ARGUMENTS` is provided (meeting name, client, or date like "acme-corp", "today", "2026-04-30"):
 1. Call `query_granola_meetings` with the argument as the query
 2. If a clear match is found, use its transcript and metadata — proceed to Step 1
 3. If multiple matches, list them and ask the user to confirm which one

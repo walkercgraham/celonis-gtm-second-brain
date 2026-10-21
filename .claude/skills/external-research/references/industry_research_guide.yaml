@@ -1,10 +1,10 @@
 # Industry Research Guide for External Research Skill
 # Provides industry-specific research approaches, search queries, and signals
-# Primary example: Saudi Aramco (Energy/Oil&Gas)
+# Primary example: Acme Petroleum (Energy/Oil&Gas)
 
 metadata:
   purpose: "Industry-specific research guidance for External Research skill"
-  primary_example: "Saudi Aramco (Energy/Oil&Gas)"
+  primary_example: "Acme Petroleum (Energy/Oil&Gas)"
   version: "1.0"
   last_updated: "2026-04-06"
   cross_reference: "references/industry_messaging_library.json"
@@ -18,7 +18,7 @@ energy_oil_gas:
       Research approach for integrated oil companies, national oil companies (NOCs),
       refiners, chemical producers, and mining companies.
     sub_industries:
-      - "Oil & Gas - Integrated (e.g., Aramco, Shell, ExxonMobil)"
+      - "Oil & Gas - Integrated (e.g., Shell, ExxonMobil, TotalEnergies)"
       - "Oil & Gas - E&P (upstream focused)"
       - "Oil & Gas - Refining & Marketing (downstream focused)"
       - "Chemicals & Petrochemicals"
@@ -42,14 +42,14 @@ energy_oil_gas:
       approach: "Annual reports, press releases, government announcements"
 
   # ---------------------------------------------------------------------------
-  # ARAMCO-SPECIFIC EXAMPLE (Running example throughout)
+  # EXAMPLE COMPANY (Running example throughout)
   # ---------------------------------------------------------------------------
-  aramco_example:
-    company: "Saudi Aramco"
+  acme_petroleum_example:
+    company: "Acme Petroleum"
     ticker: "2222.SR (Tadawul)"
     disclosure_sources:
       primary:
-        - url: "aramco.com/en/investors"
+        - url: "acme-petroleum.example.com/en/investors"
           content: "Quarterly results, annual reports, investor presentations"
         - url: "tadawul.com.sa"
           content: "Official filings, board reports, material announcements"
@@ -60,28 +60,28 @@ energy_oil_gas:
 
     search_queries_that_work:
       earnings_and_financials:
-        - "Saudi Aramco Q4 2025 earnings results"
-        - "Aramco quarterly earnings transcript"
-        - "Saudi Aramco annual report 2024 PDF"
-        - "Aramco capital expenditure capex program"
-        - "site:aramco.com investor presentation"
+        - "Acme Petroleum Q4 2025 earnings results"
+        - "Acme Petroleum quarterly earnings transcript"
+        - "Acme Petroleum annual report 2024 PDF"
+        - "Acme Petroleum capital expenditure capex program"
+        - "site:acme-petroleum.example.com investor presentation"
       strategic_priorities:
-        - "Aramco downstream expansion strategy"
-        - "Saudi Aramco operational excellence initiative"
-        - "Aramco In-Kingdom Total Value Add IKTVA"
-        - "Aramco CEO Amin Nasser strategy"
-        - "Saudi Aramco energy transition"
+        - "Acme Petroleum downstream expansion strategy"
+        - "Acme Petroleum operational excellence initiative"
+        - "Acme Petroleum In-Kingdom Total Value Add IKTVA"
+        - "Acme Petroleum CEO CEO Name strategy"
+        - "Acme Petroleum energy transition"
       technology_signals:
-        - "Aramco SAP implementation"
-        - "Saudi Aramco digital transformation"
-        - "Aramco predictive maintenance program"
-        - "Aramco AI artificial intelligence"
-        - "Saudi Aramco Fourth Industrial Revolution 4IR"
+        - "Acme Petroleum SAP implementation"
+        - "Acme Petroleum digital transformation"
+        - "Acme Petroleum predictive maintenance program"
+        - "Acme Petroleum AI artificial intelligence"
+        - "Acme Petroleum Fourth Industrial Revolution 4IR"
       trigger_events:
-        - "Aramco acquisition announcement"
-        - "Saudi Aramco new refinery"
-        - "Aramco joint venture JV"
-        - "Saudi Aramco IPO expansion"
+        - "Acme Petroleum acquisition announcement"
+        - "Acme Petroleum new refinery"
+        - "Acme Petroleum joint venture JV"
+        - "Acme Petroleum IPO expansion"
 
     key_findings_to_expect:
       strategic_priorities:

@@ -1,0 +1,2 @@
+# Live-mode write allowlist. Drafts live under _agents/opportunity-scout/drafts/ (always allowed).
+_current/agent-inbox.md

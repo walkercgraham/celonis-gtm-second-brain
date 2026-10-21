@@ -1,10 +1,10 @@
 # Non-US Company Research Guide
 # Guidance for researching EMEA, APAC, and private companies
-# Primary example: Saudi Aramco (Saudi Arabia / EMEA)
+# Primary example: Acme Petroleum (Saudi Arabia / EMEA)
 
 metadata:
   purpose: "Research guidance for companies outside US regulatory framework"
-  primary_example: "Saudi Aramco (Tadawul-listed, Saudi Arabia)"
+  primary_example: "Acme Petroleum (Tadawul-listed, Saudi Arabia)"
   version: "1.0"
   last_updated: "2026-04-06"
 
@@ -30,13 +30,13 @@ emea:
     by country. Most large companies publish English investor materials.
 
   # ---------------------------------------------------------------------------
-  # MIDDLE EAST (Aramco focus)
+  # MIDDLE EAST (Acme Petroleum focus)
   # ---------------------------------------------------------------------------
   middle_east:
     saudi_arabia:
       overview: |
         Saudi Arabia has a well-developed capital market with Tadawul (Saudi Exchange).
-        Large-cap companies like Aramco provide comprehensive English disclosures.
+        Large-cap companies like Acme Petroleum provide comprehensive English disclosures.
 
       primary_exchange: "Tadawul (Saudi Exchange)"
       regulator: "Capital Market Authority (CMA)"
@@ -59,17 +59,17 @@ emea:
 
       language:
         primary: "Arabic"
-        english_availability: "HIGH for large caps (Aramco, SABIC, STC)"
+        english_availability: "HIGH for large caps (Acme Petroleum, SABIC, STC)"
         recommendation: "Search English IR section first"
 
-      # ARAMCO-SPECIFIC GUIDANCE
-      aramco_example:
-        company: "Saudi Aramco"
+      # EXAMPLE COMPANY GUIDANCE
+      acme_petroleum_example:
+        company: "Acme Petroleum"
         ticker: "2222.SR"
 
         primary_sources:
-          - source: "Aramco Investor Relations"
-            url: "aramco.com/en/investors"
+          - source: "Acme Petroleum Investor Relations"
+            url: "acme-petroleum.example.com/en/investors"
             content:
               - "Annual Reports (English PDF)"
               - "Quarterly results presentations"
@@ -93,11 +93,11 @@ emea:
             quality: "Tier 1 - Direct"
 
         search_queries_that_work:
-          - "Saudi Aramco annual report 2024 PDF"
-          - "Aramco investor presentation"
-          - "site:aramco.com investor"
-          - "Aramco earnings call transcript"
-          - "Saudi Aramco Q4 2025 results"
+          - "Acme Petroleum annual report 2024 PDF"
+          - "Acme Petroleum investor presentation"
+          - "site:acme-petroleum.example.com investor"
+          - "Acme Petroleum earnings call transcript"
+          - "Acme Petroleum Q4 2025 results"
 
         what_to_expect:
           available_in_english:
@@ -193,7 +193,7 @@ emea:
   africa:
     south_africa:
       primary_exchange: "Johannesburg Stock Exchange (JSE)"
-      major_companies: ["Sasol", "Anglo American", "Naspers"]
+      major_companies: ["Acme Mining", "Anglo American", "Naspers"]
       language: "English"
       disclosure_quality: "Strong (comparable to UK)"
 
@@ -439,14 +439,14 @@ non_english_sources:
       - "Include original source URL for verification"
 
     example:
-      finding: "Aramco announced expansion of Jazan refinery"
-      source: "Saudi Aramco press release (Arabic original, English translation)"
+      finding: "Acme Petroleum announced expansion of Jazan refinery"
+      source: "Acme Petroleum press release (Arabic original, English translation)"
       quality: "Direct"
-      note: "English version available on aramco.com"
+      note: "English version available on acme-petroleum.example.com"
 
-  aramco_specific:
+  acme_petroleum_specific:
     situation: |
-      Saudi Aramco provides comprehensive English materials through their
+      Acme Petroleum provides comprehensive English materials through their
       IR website. Arabic sources exist but are rarely needed for research.
 
     english_sources:
@@ -456,7 +456,7 @@ non_english_sources:
       - "Sustainability reports"
 
     recommendation: |
-      For Aramco, conduct research entirely in English using aramco.com/en/investors.
+      For this example company, conduct research entirely in English using acme-petroleum.example.com/en/investors.
       Arabic sources are unnecessary for typical presales research.
 
 # =============================================================================
@@ -488,5 +488,5 @@ quality_adjustments:
     source_expectation: "8-12 sources"
     tier_1_availability: "MEDIUM - varies by company"
     confidence_adjustment: |
-      Some SOEs have excellent disclosure (Aramco)
+      Some SOEs have excellent disclosure (large SOEs)
       Others are opaque - adjust expectations accordingly

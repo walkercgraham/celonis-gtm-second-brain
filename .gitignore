@@ -12,3 +12,18 @@
 
 # Claude
 .claude/plans/
+
+# Agent system — runtime state (never committed)
+_agents/.lock
+_agents/.guard.log
+_agents/.outbox/
+_agents/.secrets/
+_agents/config.yaml
+_agents/*/.run/
+_agents/*/state.json
+_agents/*/shadow/
+_agents/*/quarantine/
+_agents/capture-keeper/state-*.json
+_agents/account-watch/watchlist.yaml
+_agents/account-watch/profiles/
+_agents/inbox-archive/

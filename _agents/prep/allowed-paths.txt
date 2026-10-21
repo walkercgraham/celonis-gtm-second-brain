@@ -1,0 +1,2 @@
+# Subagent of chief-of-staff. Returns briefing text; the only file it writes is its cache.
+_agents/prep/kl-cache/*.md

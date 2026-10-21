@@ -1,0 +1,3 @@
+# The critic runs inside another agent's guard session. It may always write _agents/critic/verdicts/**
+# and _agents/critic/log.md; in live mode it may also edit wording of that run's new inbox entries.
+_current/agent-inbox.md

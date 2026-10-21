@@ -68,7 +68,7 @@ quality_ratings:
     examples:
       - "LinkedIn profile states: 'EVP Global Manufacturing since 2023'"
       - "In interview, stated: 'Our top priority is operational excellence'"
-      - "Company bio describes 20-year career at Aramco"
+      - "Company bio describes 20-year career at Acme Petroleum"
     confidence: "High"
     use_for:
       - "Name, title, tenure"
@@ -118,12 +118,12 @@ documentation_format:
 
   example_documentation:
     good_example:
-      finding: "20+ year career at Saudi Aramco, rose through refinery operations"
+      finding: "20+ year career at Acme Petroleum, rose through refinery operations"
       source: "LinkedIn Profile"
-      url: "linkedin.com/in/ibrahim-al-ghamdi"
+      url: "linkedin.com/in/ahmed-al-farsi"
       date: "Current (accessed 2026-04-07)"
       quality: "Direct"
-      quote: "Experience section shows continuous Aramco tenure since 2003"
+      quote: "Experience section shows continuous Acme Petroleum tenure since 2003"
 
     bad_example:
       finding: "Long career at company"

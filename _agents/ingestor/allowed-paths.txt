@@ -1,0 +1,7 @@
+# Live-mode write allowlist (glob; `**` crosses folders, `*` does not). `HUB` = 02-areas/celonis/<c>/<c>.md
+# Lines prefixed `shadow:` are also allowed in shadow mode. _agents/<self>/** and critic verdicts are always allowed.
+# Slim ingestor: Slack/Gmail scan only — daily-note Log lines + one inbox entry. Meetings are /meeting's job.
+_current/agent-inbox.md
+01-daily/*/*.md
+# Reactivation tripwire + last_signal: hub frontmatter status/involvement/reactivated/last_signal/modified only
+HUB
